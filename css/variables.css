@@ -1,17 +1,22 @@
 :root {
   /* Colors */
-  --black: #000000;
-  --white: #FFFFFF;
-  --text-primary: rgba(255, 255, 255, 0.85);
-  --text-secondary: rgba(255, 255, 255, 0.6);
-  --text-dim: rgba(255, 255, 255, 0.5);
-  --magenta: #DA63DA;
-  --lime: #66FF00;
-  --gold: #E8A724;
+  --bg: #FAFAF8;
+  --bg-nav: #F2F1ED;
+  --bg-card: #FFFFFF;
+  --text-primary: #2C2C2C;
+  --text-secondary: #6B6B6B;
+  --text-dim: #9A9A9A;
+  --text-label: #888888;
+  --accent: #7A2680;
+  --green: #1B6B35;
+  --gold: #8B5E14;
+  --rule: rgba(0, 0, 0, 0.07);
+  --rule-strong: rgba(0, 0, 0, 0.12);
 
   /* Fonts */
   --font-mono: 'Space Mono', monospace;
   --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
 
   /* Spacing — fluid (scales between mobile 375px and desktop 1440px) */
   --space-xs: clamp(3px, 0.3vw, 4px);

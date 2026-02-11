@@ -26,16 +26,14 @@
 .project__press a {
   font-family: var(--font-mono);
   font-size: 0.6875rem;
-  color: var(--magenta);
+  color: var(--accent);
   text-decoration: none;
   display: block;
   line-height: 1.8;
-  opacity: 0.85;
 }
 
 .project__press a:hover {
   opacity: 1;
-  text-shadow: 0 0 1px currentColor;
 }
 
 .project__title {
@@ -137,7 +135,7 @@
 .project__video {
   width: 100%;
   margin: var(--space-xl) 0;
-  background: #111;
+  background: #f0f0ee;
 }
 
 .project__video iframe {
@@ -151,7 +149,7 @@
 .project__details {
   margin: var(--space-xl) 0;
   padding: var(--space-lg) 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--rule);
 }
 
 .project__details dt {
@@ -176,7 +174,7 @@
   align-items: center;
   margin-top: var(--space-3xl);
   padding-top: var(--space-lg);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--rule);
 }
 
 .project__nav a {
@@ -184,7 +182,7 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--magenta);
+  color: var(--accent);
 }
 
 .project__nav a:hover {
@@ -249,7 +247,7 @@
   margin-top: var(--space-2xl);
   margin-bottom: var(--space-lg);
   padding-top: var(--space-lg);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--rule);
 }
 
 .project__section-label {
@@ -263,8 +261,8 @@
 
 /* Statistical data / results panel */
 .project__results {
-  background: rgba(255, 255, 255, 0.03);
-  border-left: 3px solid var(--magenta);
+  background: rgba(0, 0, 0, 0.02);
+  border-left: 3px solid var(--accent);
   padding: var(--space-lg);
   margin: var(--space-lg) 0;
   overflow-x: auto;
@@ -275,7 +273,7 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--magenta);
+  color: var(--accent);
   margin-bottom: var(--space-md);
 }
 
@@ -294,12 +292,12 @@
   color: var(--text-dim);
   text-align: left;
   padding: var(--space-sm) var(--space-md);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--rule);
 }
 
 .project__results td {
   padding: var(--space-sm) var(--space-md);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
   line-height: 1.6;
 }
 
@@ -320,7 +318,7 @@
   font-size: 0.75rem;
   line-height: 1.7;
   color: var(--text-secondary);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--rule);
   padding: var(--space-md) var(--space-lg);
   margin: var(--space-lg) 0;
 }

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anirudh Sharma</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/space-grotesk-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+    @font-face {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('assets/fonts/space-mono-regular.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Space Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('assets/fonts/space-mono-bold.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url('assets/fonts/space-grotesk-regular.woff2') format('woff2');
+    }
+
+    :root {
+      --bg: #FAFAF8;
+      --bg-nav: #F2F1ED;
+      --bg-card: #FFFFFF;
+      --text-body: #2C2C2C;
+      --text-secondary: #6B6B6B;
+      --text-dim: #9A9A9A;
+      --text-label: #888888;
+      --accent: #7A2680;
+      --green: #1B6B35;
+      --gold: #8B5E14;
+      --rule: rgba(0, 0, 0, 0.07);
+      --rule-strong: rgba(0, 0, 0, 0.12);
+
+      --font-mono: 'Space Mono', monospace;
+      --font-body: 'Space Grotesk', sans-serif;
+
+      --nav-w: 220px;
+      --nav-w-tablet: 190px;
+
+      --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+      --dur: 0.25s;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-body);
+      font-family: var(--font-body);
+      font-size: 0.9375rem;
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color var(--dur) var(--ease);
+    }
+    a:hover { color: var(--gold); }
+
+    p { margin-bottom: 0.9em; }
+    p:last-child { margin-bottom: 0; }
+    ul, ol { list-style: none; }
+
+    ::selection { background: var(--accent); color: #fff; }
+
+    /* ─── Nav ─── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0;
+      width: var(--nav-w);
+      height: 100vh;
+      background: var(--bg-nav);
+      padding: 28px 20px;
+      overflow-y: auto;
+      z-index: 100;
+      border-right: 1px solid var(--rule);
+    }
+
+    .nav__list { padding: 0; margin: 0; }
+    .nav__item { margin-bottom: 1px; }
+
+    .nav__link {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      padding: 3px 0;
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      color: var(--accent);
+      text-decoration: none;
+      transition: color var(--dur) var(--ease);
+      white-space: nowrap;
+    }
+    .nav__link:hover { color: var(--gold); }
+    .nav__link--active { font-weight: 700; }
+
+    .nav__link--home {
+      color: var(--green);
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .nav__link--home:hover { color: var(--green); opacity: 0.7; }
+    .nav__link--meta { color: var(--gold); }
+
+    .nav__num {
+      font-size: 0.5625rem;
+      color: var(--text-dim);
+      min-width: 1.5em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .nav__category {
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-dim);
+      margin-top: 14px;
+      margin-bottom: 3px;
+      padding-left: calc(1.5em + 6px);
+    }
+
+    /* Hamburger */
+    .nav__toggle {
+      display: none;
+      position: fixed;
+      top: 14px; left: 14px;
+      z-index: 200;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+    }
+    .nav__toggle-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text-body);
+      margin-bottom: 5px;
+      transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
+    }
+    .nav__toggle-bar:last-child { margin-bottom: 0; }
+    .nav__toggle--open .nav__toggle-bar:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav__toggle--open .nav__toggle-bar:nth-child(2) { opacity: 0; }
+    .nav__toggle--open .nav__toggle-bar:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* ─── Home layout ─── */
+    .home {
+      display: flex;
+      min-height: 100dvh;
+      align-items: center;
+      padding: 32px 24px;
+    }
+
+    .home__content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      max-width: 1060px;
+    }
+
+    /* ─── Visually hidden h1 for SEO ─── */
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .home__rule {
+      border: none;
+      height: 1px;
+      background: var(--rule-strong);
+      margin: 14px 0 12px;
+    }
+
+    /* ─── Bio text ─── */
+    .home__bio {
+      font-size: 0.9375rem;
+      line-height: 1.72;
+      color: var(--text-body);
+    }
+
+    .home__bio strong {
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .home__bio a {
+      color: var(--gold);
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+    }
+    .home__bio a:hover {
+      border-bottom-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .home__rule--aside {
+      margin: 14px 0 12px;
+    }
+
+    .home__aside {
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 0;
+    }
+    .home__aside a { color: var(--accent); font-weight: 500; }
+
+    /* ─── Right column ─── */
+    .home__right { order: -1; flex-shrink: 0; }
+
+    .home__photo {
+      position: relative;
+    }
+
+    .home__photo img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      filter: grayscale(15%) contrast(1.02);
+    }
+
+    /* ─── Credentials ─── */
+    .home__credentials {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .home__cred-title {
+      font-family: var(--font-mono);
+      font-size: 0.5625rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-label);
+      margin-bottom: 2px;
+    }
+
+    .home__cred-items {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      line-height: 1.55;
+      color: var(--text-secondary);
+      margin-bottom: 0;
+    }
+
+    .home__cred-items a {
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--rule);
+    }
+    .home__cred-items a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ─── Tablet+ : side by side ─── */
+    @media (min-width: 769px) {
+      .home {
+        margin-left: var(--nav-w-tablet);
+        padding: 24px 40px;
+      }
+      .home__content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 56px;
+      }
+      .home__text { order: 1; flex: 1; min-width: 0; max-width: 560px; }
+      .home__right { order: 2; flex: 0 0 260px; padding-left: 8px; }
+    }
+
+    @media (min-width: 1200px) {
+      .home {
+        margin-left: var(--nav-w);
+        padding: 32px 64px;
+      }
+      .home__content { gap: 64px; }
+      .home__right { flex: 0 0 300px; }
+      .nav { width: var(--nav-w); }
+    }
+
+    @media (min-width: 769px) and (max-width: 1199px) {
+      .nav { width: var(--nav-w-tablet); padding: 20px 16px; }
+      .nav__link { font-size: 0.625rem; }
+    }
+
+    @media (max-width: 768px) {
+      .nav__toggle { display: block; }
+      .nav {
+        transform: translateX(-100%);
+        transition: transform var(--dur) var(--ease);
+        width: 260px;
+        padding: 56px 20px 20px;
+      }
+      .nav--open { transform: translateX(0); }
+      .nav--open::after {
+        content: '';
+        position: fixed;
+        top: 0; left: 260px; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, 0.15);
+      }
+      .home__name { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
+    <span class="nav__toggle-bar"></span>
+    <span class="nav__toggle-bar"></span>
+    <span class="nav__toggle-bar"></span>
+  </button>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="index-light.html" class="nav__link nav__link--home nav__link--active">
+          <span class="nav__num">01</span> Anirudh Sharma
+        </a>
+      </li>
+      <li class="nav__category">Ventures</li>
+      <li class="nav__item"><a href="projects/lechal.html" class="nav__link"><span class="nav__num">02</span> Lechal</a></li>
+      <li class="nav__item"><a href="projects/jackboy.html" class="nav__link"><span class="nav__num">03</span> Jackboy</a></li>
+      <li class="nav__item"><a href="projects/air-synth.html" class="nav__link"><span class="nav__num">04</span> Air-Synth</a></li>
+      <li class="nav__item"><a href="projects/air-ink.html" class="nav__link"><span class="nav__num">05</span> Air-Ink</a></li>
+      <li class="nav__category">Research</li>
+      <li class="nav__item"><a href="projects/glassified.html" class="nav__link"><span class="nav__num">06</span> Glassified</a></li>
+      <li class="nav__item"><a href="projects/chalkaat.html" class="nav__link"><span class="nav__num">07</span> Chalkaat</a></li>
+      <li class="nav__item"><a href="projects/mozart.html" class="nav__link"><span class="nav__num">08</span> Mozart</a></li>
+      <li class="nav__item"><a href="projects/ballshooter.html" class="nav__link"><span class="nav__num">09</span> Ballshooter</a></li>
+      <li class="nav__item"><a href="projects/zixel.html" class="nav__link"><span class="nav__num">10</span> Zixel</a></li>
+      <li class="nav__item"><a href="projects/soundscape.html" class="nav__link"><span class="nav__num">11</span> Soundscape</a></li>
+      <li class="nav__category">Experiments</li>
+      <li class="nav__item"><a href="projects/heartbeat.html" class="nav__link"><span class="nav__num">12</span> HeartbeatAMP</a></li>
+      <li class="nav__item"><a href="projects/tessellations.html" class="nav__link"><span class="nav__num">13</span> Tessellations</a></li>
+      <li class="nav__item"><a href="projects/nostalgia.html" class="nav__link"><span class="nav__num">14</span> Nostalgia Room</a></li>
+      <li class="nav__item"><a href="projects/in-toilet.html" class="nav__link"><span class="nav__num">15</span> In-toilet Sensing</a></li>
+      <li class="nav__category" style="margin-top: 18px"></li>
+      <li class="nav__item"><a href="work.html" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
+      <li class="nav__item"><a href="cv.html" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
+      <li class="nav__item"><a href="mailto:anirudhs@mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="home">
+    <div class="home__content">
+      <div class="home__text">
+        <h1 class="sr-only">Anirudh Sharma</h1>
+        <div class="home__bio">
+          <p>Anirudh is a researcher and inventor working on small on-device models, sensor fusion, and new materials to make physical objects and environments responsive to people. His research has led to wearable navigation systems for the visually impaired, carbon capture pigments used by global brands, and AR tools for fabrication, each moving from lab prototypes to deployed products and ventures.</p>
+          <p>He currently leads Spatial AI at <strong>Amazon Lab126</strong> (sensor fusion, on-device inference). Previously at Usefulsensors (founding team of Tensorflow / Google Brain), and Google and HP Labs (gestural input, stroke recognition). At the <strong>MIT Media Lab</strong> Fluid Interfaces Group, he built AR interfaces on transparent displays under Prof. Pattie Maes, and co-led the India Initiative to bring design innovation to the country's grassroots. Published in <strong>ACM CHI</strong>, <strong>UIST</strong>, <strong>ICMI</strong>, and <strong>SIGGRAPH</strong>.</p>
+          <p>He founded <a href="projects/lechal.html">Ducere/Lechal</a>, India's first wearable tech startup, making haptic navigation shoes for the visually impaired (100K+ units, exited 2018). His spinoff <a href="https://graviky.com">Graviky</a> sequesters carbon emissions from air pollution, recycling them into AIR-INK, a pigment that has sparked a global art movement. Used by 10,000+ artists, adopted by Stella McCartney, PANGAIA, Diageo's Johnnie Walker, and Mastercard. Part of the Harvard Art Museums' Forbes Pigment Collection.</p>
+        </div>
+        <hr class="home__rule home__rule--aside">
+        <p class="home__aside">Driven by social impact. Loves magic, tabla, bonfires, and unlikely collaborations across disciplines. If your work touches the physical world in unexpected ways, <a href="mailto:anirudhs@mit.edu">reach out</a>.</p>
+      </div>
+
+      <div class="home__right">
+        <div class="home__photo">
+          <img src="assets/images/profile/anirudh-sharma.png" width="442" height="524" alt="Anirudh Sharma">
+        </div>
+        <div class="home__credentials">
+          <div class="home__cred">
+            <h3 class="home__cred-title">Recognition</h3>
+            <p class="home__cred-items">MIT TR35 &middot; Forbes 30 under 30 &middot; TIME Invention of the Year &middot; Cannes Gold Lion &middot; TED Speaker &middot; INK Fellow &middot; Foreign Policy 100 Global Thinkers &middot; Falling Walls Science Startup of the Year &middot; MIT SOLVE &middot; 2&times; Google Summer of Code</p>
+          </div>
+          <div class="home__cred">
+            <h3 class="home__cred-title">Press</h3>
+            <p class="home__cred-items">WIRED &middot; Forbes &middot; Fast Company &middot; TIME &middot; The Guardian &middot; USA Today &middot; Smithsonian &middot; MIT News</p>
+          </div>
+          <div class="home__cred">
+            <h3 class="home__cred-title">Talks</h3>
+            <p class="home__cred-items"><a href="https://www.ted.com/talks/anirudh_sharma_ink_made_of_air_pollution">TED</a> &middot; CES &middot; SXSW &middot; Aspen Ideas &middot; Cooper Hewitt Triennial &middot; Da Vinci Museum Milan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const nav = document.querySelector('.nav');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('nav--open');
+        toggle.classList.toggle('nav__toggle--open', open);
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.addEventListener('click', e => {
+        if (e.target === nav && nav.classList.contains('nav--open')) {
+          nav.classList.remove('nav--open');
+          toggle.classList.remove('nav__toggle--open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
