@@ -1,0 +1,36 @@
+:root {
+  /* Colors */
+  --black: #000000;
+  --white: #FFFFFF;
+  --text-primary: rgba(255, 255, 255, 0.85);
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --text-dim: rgba(255, 255, 255, 0.5);
+  --magenta: #DA63DA;
+  --lime: #66FF00;
+  --gold: #E8A724;
+
+  /* Fonts */
+  --font-mono: 'Space Mono', monospace;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  /* Spacing — fluid (scales between mobile 375px and desktop 1440px) */
+  --space-xs: clamp(3px, 0.3vw, 4px);
+  --space-sm: clamp(6px, 0.6vw, 8px);
+  --space-md: clamp(12px, 1.2vw, 16px);
+  --space-lg: clamp(20px, 2.4vw, 32px);
+  --space-xl: clamp(32px, 3.6vw, 48px);
+  --space-2xl: clamp(40px, 4.8vw, 64px);
+  --space-3xl: clamp(56px, 7.2vw, 96px);
+
+  /* Nav */
+  --nav-width: 240px;
+  --nav-width-tablet: 200px;
+
+  /* Layout */
+  --content-max: 720px;
+  --grid-gap: clamp(2px, 0.3vw, 4px);
+
+  /* Transitions */
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration: 0.3s;
+}
