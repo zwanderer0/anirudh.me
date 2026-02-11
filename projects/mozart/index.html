@@ -20,6 +20,7 @@
   <meta name="twitter:image" content="https://anirudh.me/assets/images/projects/mozart/mozart-main.jpg">
   <link rel="preload" href="../../assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/space-grotesk-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="../../css/variables.css">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/nav.css">
@@ -53,8 +54,14 @@
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../../work/" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
       <li class="nav__item"><a href="../../cv/" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
-      <li class="nav__item"><a href="mailto:anirudhs@mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
+      <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&to=anirudhs@mit.edu" target="_blank" class="nav__link nav__link--meta" data-caption="anirudhs@mit.edu"><span class="nav__num">18</span> Contact</a></li>
     </ul>
+    <div class="nav__social">
+      <a href="https://scholar.google.com/citations?user=-tjtOPAAAAAJ&hl=en&oi=sra" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+      <a href="https://www.linkedin.com/in/zwanderer/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/zwanderer0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://x.com/zwander3r" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
   </nav>
   <main class="main project">
     <div class="project__header">
@@ -73,8 +80,8 @@
 
     <div class="project__hero">
       <figure>
-        <img src="../../assets/images/projects/mozart/arz.webp" width="2048" height="1439" alt="Mozart multimodal 3D modeling interface">
-        <figcaption>System architecture of the MozArt multimodal interaction framework, illustrating the mapping between heterogeneous input modalities (voice, touch, textual, laser, mouse) and augmented reality output channels (3D CAD, 2D drawing, annotations). The layered AR representation demonstrates the fusion of real-world context with computer-generated modeling information.</figcaption>
+        <img src="../../assets/images/projects/mozart/mozart.jpg" width="2048" height="1362" alt="Mozart multimodal 3D modeling interface">
+        <figcaption>A user operating the MozArt prototype: direct touch gestures on an inclined multitouch surface manipulate 3D geometric primitives, while a headset-mounted microphone enables concurrent speech input for multimodal command fusion.</figcaption>
       </figure>
     </div>
 
@@ -92,19 +99,9 @@
         <p class="project__section-label">Approach</p>
       </div>
 
-      <div class="project__aside">
-        <div>
-          <figure>
-            <img src="../../assets/images/projects/mozart/mozart.jpg" width="2048" height="1362" alt="Mozart system overview" loading="lazy">
-            <figcaption>A user operating the MozArt prototype, employing direct touch gestures on an inclined multitouch surface to manipulate 3D geometric primitives rendered in isometric projection. The headset-mounted microphone enables concurrent speech input for multimodal command fusion during the conceptual modeling workflow.</figcaption>
-          </figure>
-        </div>
-        <div>
-          <p>We propose a computer modeling interface to bring 3D visualization to the common layman who wishes to rapidly visualize their imagination. This work is motivated to employ natural expression with the fewest restrictions to free CAD users from tedious command buttons and menu items. We explored both the hardware and software aspects of the interface, specifically, the use of <strong>intuitive speech commands and multitouch gestures on an inclined interactive surface.</strong></p>
-          <p>The initial TUIO and OSC touch-based integration was developed during Google Summer of Code. Touch+Speech multimodal fusion was subsequently implemented with Sriganesh Madhvanath at HP Labs, combining simultaneous gesture and voice input into a unified command stream for 3D object manipulation.</p>
-          <p>Team: Anirudh Sharma, Sriganesh Madhvanath, Ankit Shekhawat, Mark Billinghurst.</p>
-        </div>
-      </div>
+      <p>We propose a computer modeling interface to bring 3D visualization to the common layman who wishes to rapidly visualize their imagination. This work is motivated to employ natural expression with the fewest restrictions to free CAD users from tedious command buttons and menu items. We explored both the hardware and software aspects of the interface, specifically, the use of <strong>intuitive speech commands and multitouch gestures on an inclined interactive surface.</strong></p>
+      <p>The initial TUIO and OSC touch-based integration was developed during Google Summer of Code. Touch+Speech multimodal fusion was subsequently implemented with Sriganesh Madhvanath at HP Labs, combining simultaneous gesture and voice input into a unified command stream for 3D object manipulation.</p>
+      <p>Team: Anirudh Sharma, Sriganesh Madhvanath, Ankit Shekhawat, Mark Billinghurst.</p>
 
       <!-- ── 3. VIDEO ── -->
       <div class="project__section">
@@ -125,6 +122,11 @@
       <div class="project__results">
         <h4>Participants</h4>
         <p>12 participants (8 male, 4 female, ages 20&ndash;29) with no prior experience in 3D modeling software. All participants completed both conditions in counterbalanced order.</p>
+      </div>
+
+      <!-- ── RESULTS ── -->
+      <div class="project__section">
+        <p class="project__section-label">Results</p>
       </div>
 
       <div class="project__results">

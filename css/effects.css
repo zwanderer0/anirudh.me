@@ -31,19 +31,6 @@
   animation-delay: calc(var(--i, 0) * 22ms + 60ms);
 }
 
-/* ── Active nav dot ── */
-.nav__link--active::before {
-  content: '';
-  position: absolute;
-  left: -10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background: currentColor;
-  /* no glow on light theme */
-}
 
 /* ── Page content entrance ── */
 .project__header {

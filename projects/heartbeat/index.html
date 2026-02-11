@@ -20,6 +20,7 @@
   <meta name="twitter:image" content="https://anirudh.me/assets/images/projects/heartbeat/heartbeat-main.jpg">
   <link rel="preload" href="../../assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/space-grotesk-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="../../css/variables.css">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/nav.css">
@@ -53,53 +54,52 @@
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../../work/" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
       <li class="nav__item"><a href="../../cv/" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
-      <li class="nav__item"><a href="mailto:anirudhs@mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
+      <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&to=anirudhs@mit.edu" target="_blank" class="nav__link nav__link--meta" data-caption="anirudhs@mit.edu"><span class="nav__num">18</span> Contact</a></li>
     </ul>
+    <div class="nav__social">
+      <a href="https://scholar.google.com/citations?user=-tjtOPAAAAAJ&hl=en&oi=sra" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+      <a href="https://www.linkedin.com/in/zwanderer/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/zwanderer0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://x.com/zwander3r" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
   </nav>
   <main class="main project">
     <div class="project__header">
-      <div class="project__header-left">
-        <h1 class="project__title">HeartbeatAMP</h1>
-        <p class="project__subtitle">Stethoscope to heartbeat monitoring</p>
-      </div>
+      <h1 class="project__title">HeartbeatAMP</h1>
+      <p class="project__subtitle">Real-time cardiac acoustic signal amplification and visualization</p>
     </div>
 
-    <div class="project__hero">
-      <figure>
-        <img src="../../assets/images/projects/heartbeat/heartbeat-main.jpg" width="468" height="374" alt="HeartbeatAMP device" loading="lazy">
-        <figcaption>Real-time frequency-domain visualization of cardiac acoustic signals captured via a modified stethoscope transducer, rendered on a low-power embedded display. The spectral amplitude distribution reflects the harmonic content of the S1 and S2 heart sounds.</figcaption>
-      </figure>
+    <div class="project__video">
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/RloVvwaWVkM" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
     </div>
 
     <div class="project__body">
-      <p>I've been toying around with the idea of heartbeat monitoring and the possibilities it has.</p>
-
-      <p>Hence, I modified an old stethoscope, interfaced it to a Microphone, and used a line-in input to machine. Presently I am trying to get a realtime visual interpretation of whats beating inside our bodies. Maybe this could be extended to cloud where real-time analysis is possible.</p>
-
-      <p>Presently electronic stethoscopes cost anywhere between 200-400$ and are limited by their functionality (as they just display a graph/bpm).</p>
-
-      <p>The aim is to create an interface between our bodies and visual/network power of computers.</p>
-
-      <p>What if music devices could change genres based on our heart-rate. A soothing song to relax us when the heart beats faster.</p>
-
-      <div class="project__video">
-        <iframe title="Human Heartbeat visualizer" src="https://www.youtube.com/embed/RloVvwaWVkM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="project__section">
+        <p class="project__section-label">Problem</p>
       </div>
 
-      <div class="project__media">
-        <figure>
-          <img src="../../assets/images/projects/heartbeat/heartbeat-device.jpg" width="947" height="1024" alt="Heartbeat monitoring device" loading="lazy">
-          <figcaption>Integrated wearable sensor module shown alongside a Hi-Tec hiking boot with an embedded Lechal haptic insole, demonstrating the convergence of physiological monitoring and pedestrian navigation hardware in a single footwear platform.</figcaption>
-        </figure>
+      <p>A stethoscope is one of the oldest sensing instruments in medicine &ndash; essentially a tube that routes acoustic energy from the chest wall to the ear. The signal it carries is rich: the S1 and S2 heart sounds encode valve closure timing, murmur presence, and rhythm regularity. But the information stays trapped in an analog loop between patient and clinician, with no persistent record and no visual representation.</p>
+
+      <div class="project__section">
+        <p class="project__section-label">Approach</p>
       </div>
 
-      <p>DIY instructions coming soon, if you're interested in collaborating, ping me up!</p>
+      <p>HeartbeatAMP takes that acoustic signal and makes it visible. A standard stethoscope diaphragm is interfaced with a condenser microphone, digitized through an audio codec, and processed in real time. The system isolates the S1 (mitral/tricuspid valve closure) and S2 (aortic/pulmonic valve closure) peaks from background noise, then renders them as a scrolling spectral amplitude display on a small embedded screen.</p>
+
+
+      <div class="project__section">
+        <p class="project__section-label">Thesis</p>
+      </div>
+
+      <p>The visualization is not decorative &ndash; it externalizes a signal that is otherwise invisible to the person producing it. Wearing the device, you see your own cardiac rhythm in real time: the gap between beats, the relative intensity of each valve closure, the subtle irregularities that a trained ear might catch but a patient never would. The project sits at the intersection of physiological sensing and personal awareness &ndash; what happens when you can see what your body is doing, continuously, without clinical mediation.</p>
     </div>
 
     <nav class="project__nav">
       <div class="project__nav-prev">
         <span class="project__nav-label">Previous</span>
-        <a href="../concept-s/">Concept-S</a>
+        <a href="../soundscape/">Soundscape</a>
       </div>
       <div class="project__nav-next">
         <span class="project__nav-label">Next</span>

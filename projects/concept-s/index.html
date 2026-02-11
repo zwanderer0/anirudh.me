@@ -20,6 +20,7 @@
   <meta name="twitter:image" content="https://anirudh.me/assets/images/projects/concept-s/concept-s-main.png">
   <link rel="preload" href="../../assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/space-grotesk-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="../../css/variables.css">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/nav.css">
@@ -53,38 +54,60 @@
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../../work/" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
       <li class="nav__item"><a href="../../cv/" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
-      <li class="nav__item"><a href="mailto:anirudhs@mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
+      <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&to=anirudhs@mit.edu" target="_blank" class="nav__link nav__link--meta" data-caption="anirudhs@mit.edu"><span class="nav__num">18</span> Contact</a></li>
     </ul>
+    <div class="nav__social">
+      <a href="https://scholar.google.com/citations?user=-tjtOPAAAAAJ&hl=en&oi=sra" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+      <a href="https://www.linkedin.com/in/zwanderer/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/zwanderer0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://x.com/zwander3r" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
   </nav>
   <main class="main project">
     <div class="project__header">
       <h1 class="project__title">Concept-S</h1>
-      <p class="project__subtitle">Media Mashup Wall for Kids and Elderly</p>
+      <p class="project__subtitle">Gestural zoomable interfaces on large transparent displays</p>
     </div>
-    <!-- No hero image available for this project -->
-    <div class="project__body">
-      <p>The project aimed at creating simple interactions for kids and people with keyboard-mouse illiteracy. We developed a graphical Zoomable User Interfaces (ZUIs) that could be easy, fun, and relatively easy for such target group.</p>
 
-      <div class="project__video">
-        <iframe src="https://player.vimeo.com/video/5255765?h=cc43b0bf54" allowfullscreen loading="lazy" title="Concept-S Demo"></iframe>
+
+    <div class="project__body">
+      <dl class="project__details">
+        <dt>Recognition</dt>
+        <dd>1st Prize, IIT Kanpur Techkriti 2009 &middot; Awards from IIT Delhi</dd>
+        <dt>IP</dt>
+        <dd>Patent filed for projection interaction techniques</dd>
+      </dl>
+
+      <div class="project__section">
+        <p class="project__section-label">Problem</p>
       </div>
 
-      <p>The project was done using a 100' transparent projection map. The major media related tasks were grouped in the form of loadable on-screen modules which could be browsed using gestures. We also made immersive apps that kids could easily interact with. The research was patented in form of new projection techniques by Prof. Atrheya, guide.</p>
+      <p>Touchscreens assume dexterity, visual acuity, and familiarity with graphical conventions &ndash; assumptions that break down at the extremes of age. A five-year-old does not yet have the fine motor control for precise tap targets. An eighty-year-old may not have the visual contrast sensitivity to parse a dense UI. Concept-S was designed for both ends of that spectrum, and the constraint shaped every decision.</p>
 
-      <p>The working installation was demoed during IIT Delhi Design Degree Show, IIT Exhibit, PanIIT meetup 2008.</p>
+      <div class="project__section">
+        <p class="project__section-label">Approach</p>
+      </div>
 
-      <h2>Awards</h2>
-      <ul>
-        <li>1st prize at IIT Kanpur Techkriti 2009</li>
-        <li>1st prize at BITS Pilani's Entrepreneurship Product Pitch Competition</li>
-        <li>Special Achievement Award from Industrial Design Center, IIT Delhi</li>
-      </ul>
+      <p>The interface is a Zoomable User Interface (ZUI) projected onto a 100-foot transparent surface &ndash; large enough that navigation is a whole-body activity, not a finger gesture. Media tasks (photo browsing, video playback, drawing, simple games) are grouped into loadable on-screen modules that can be accessed, resized, and dismissed through hand and arm gestures tracked by an overhead camera system. The zoom metaphor replaces hierarchical menus: everything is spatially laid out, and you move closer to what you want.</p>
 
-      <p>Initial Concept-S work covered by <a href="http://articles.timesofindia.indiatimes.com/2010-05-30/jaipur/28318366_1_touch-computers-first-prize">Times Of India</a>.</p>
+      <div class="project__section">
+        <p class="project__section-label">Display</p>
+      </div>
+
+      <p>The transparent projection surface is key. Unlike an opaque screen, it does not create a wall between the user and the environment. The child can see the room through the display; the elderly user can see other people. The interface becomes a layer on top of the world rather than a replacement for it &ndash; an idea that connects forward to the augmented reality work in Glassified and Chalkaat.</p>
+
+      <div class="project__section">
+        <p class="project__section-label">Recognition</p>
+      </div>
+
+      <p>The projection system and gesture recognition pipeline were patented for the novel interaction techniques they introduced. The project won first prize at IIT Kanpur's Techkriti 2009 and received additional recognition from IIT Delhi. It was an early experiment in designing for the people most underserved by conventional interfaces &ndash; not by simplifying the technology, but by changing the physical scale and interaction modality to match human capability rather than device convention.</p>
     </div>
+
     <nav class="project__nav">
-      <div class="project__nav-prev"><span class="project__nav-label">Previous</span><a href="../zixel/">Zixel</a></div>
-      <div class="project__nav-next"><span class="project__nav-label">Next</span><a href="../heartbeat/">HeartbeatAMP</a></div>
+      <div class="project__nav-prev">
+        <span class="project__nav-label">Previous</span>
+        <a href="../in-toilet/">In-toilet Sensing</a>
+      </div>
     </nav>
   </main>
   <script src="../../js/nav.js"></script>

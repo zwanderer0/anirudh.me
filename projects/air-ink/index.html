@@ -20,6 +20,7 @@
   <meta name="twitter:image" content="https://anirudh.me/assets/images/projects/air-ink/air-ink-main.png">
   <link rel="preload" href="../../assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/space-grotesk-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="../../css/variables.css">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/nav.css">
@@ -53,15 +54,21 @@
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../../work/" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
       <li class="nav__item"><a href="../../cv/" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
-      <li class="nav__item"><a href="mailto:anirudhs@mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
+      <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&to=anirudhs@mit.edu" target="_blank" class="nav__link nav__link--meta" data-caption="anirudhs@mit.edu"><span class="nav__num">18</span> Contact</a></li>
     </ul>
+    <div class="nav__social">
+      <a href="https://scholar.google.com/citations?user=-tjtOPAAAAAJ&hl=en&oi=sra" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+      <a href="https://www.linkedin.com/in/zwanderer/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/zwanderer0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://x.com/zwander3r" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
   </nav>
 
   <main class="main project">
     <div class="project__header">
       <div class="project__header-left">
         <h1 class="project__title">AIR-INK</h1>
-        <p class="project__subtitle">Printing with captured carbon</p>
+        <p class="project__subtitle">Printing ink made from captured air pollution</p>
       </div>
       <div class="project__press">
         <a href="https://www.ted.com/talks/anirudh_sharma_ink_made_of_air_pollution">TED Talk</a>
@@ -77,8 +84,8 @@
 
     <div class="project__hero">
       <figure>
-        <img src="../../assets/images/projects/air-ink/process.png" width="2048" height="1176" alt="AIR-INK carbon capture to ink pipeline" loading="lazy">
-        <figcaption>End-to-end AIR-INK production pipeline: PM2.5 capture via the Kaalink device, harvesting from unregulated emission sources (diesel generators, pyrolysis plants, breweries), treatment and recycling of sequestered carbonaceous waste, formulation into pigment, and replacement of conventional fossil-derived carbon black.</figcaption>
+        <img src="../../assets/images/projects/air-ink/kaalink-on-car.png" width="1400" height="788" alt="Kaalink carbon capture device mounted on a car in Bangalore" loading="lazy">
+        <figcaption>Early Kaalink prototype mounted on a Tata Indica in Bangalore, capturing soot particles directly from the tailpipe exhaust. The sheet-metal funnel directs exhaust gases through the filterless capture medium housed in the cylindrical unit on the roof rack. This was the first road test of the vehicular carbon capture system.</figcaption>
       </figure>
     </div>
 
@@ -87,142 +94,159 @@
         <iframe title="AIR-INK" src="https://player.vimeo.com/video/219679305?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
       </div>
 
-      <div class="project__media">
-        <figure>
-          <img src="../../assets/images/projects/air-ink/why-air.png" width="1024" height="681" alt="Why AIR-INK addresses air pollution" loading="lazy">
-          <figcaption>Comparative particle-size diagram illustrating the scale of PM2.5 (&le;2.5 &mu;m) relative to coarser particulate fractions (50&ndash;70 &mu;m and &le;10 &mu;m). Conventional carbon-black pigment production burns approximately 200 L of fuel per 20 kg of pigment; AIR-INK sequesters equivalent carbon-rich particles directly from combustion exhaust.</figcaption>
-        </figure>
-      </div>
-
-      <p>According to WHO, 5&ndash;6 million people die every year as a result of exposure (direct and/or indirect) to air pollution. Much of these emissions come from fossil fuels; when fossil fuels burn, they produce carbon-rich atmospheric particles (also known as PM2.5) that pollute the air and cause climate change. The global warming potential of carbon PM is 460 times higher than CO2. <strong>AIR-INK is made by a proprietary process that utilizes a filter-less media to capture PM2.5 carbon emissions, treat them for impurities, and turns them into industrial pigments, ink, and composite materials.</strong> I led the technical development and engineering. This work went through joint-development pilots at multiple locations with top international corporations such as Kering Group, DELL, Pangaia, Mastercard, and Diageo Group, featured at World Economic Forum, UN Environment as a case-study.</p>
-
-      <p>It addresses two problems related to air pollution and the circular economy:</p>
-
-      <p><strong>Firstly</strong>, it prevents the release of carbon emissions/PM2.5/particulate matter and air pollutants into air; <strong>Secondly</strong>, (hence) it replaces carbon black in the ink-making process, thereby aiding the printing industry in reducing its dependence on fossil fuels.</p>
-
-      <p>We designed a filterless capture technology, and treatment process to harvest and utilize carbon emissions.</p>
-
-      <p><strong>Winner</strong>: MIT SOLVE 2020, Shell &ndash; Make The Future Grant, General Motors Circular Economy Grant 2020, Finalist &ndash; Masschallenge 2019</p>
-
-      <div class="project__media project__media--two-col">
-        <figure>
-          <img src="../../assets/images/projects/air-ink/kaali.jpeg" width="1400" height="900" alt="Kaalink early prototype for vehicular capture" loading="lazy">
-          <figcaption>CAD rendering of the Kaalink stationary-source capture unit integrated atop a diesel generator (DG) set. The filterless emission-capture module (stainless-steel cylinder) interfaces directly with the exhaust stack to intercept PM2.5 particulate matter before atmospheric release.</figcaption>
-        </figure>
-        <figure>
-          <img src="../../assets/images/projects/air-ink/kaal.jpeg" width="1024" height="683" alt="Kaalink DG set prototype for capturing PM2.5 from stacks" loading="lazy">
-          <figcaption>Kaalink research prototype v2 for vehicular tailpipe mounting, shown in a laboratory setting. The machined stainless-steel cylindrical housing contains the filterless carbon-capture medium; laboratory glassware with solvent is visible in the background, used during the post-capture particulate extraction and purification process.</figcaption>
-        </figure>
-      </div>
-
-      <div class="project__media project__media--two-col">
-        <figure>
-          <img src="../../assets/images/projects/air-ink/z.png" width="1594" height="802" alt="AIR-INK product range" loading="lazy">
-          <figcaption>Left: internal view of the Kaalink capture cartridge showing accumulated carbonaceous soot deposits on the collection substrate. Right: classified post-tailpipe particulate-matter samples harvested via Kaalink from multiple vehicle types and engine ages, demonstrating variation in carbon morphology and yield across diesel and petrol combustion sources.</figcaption>
-        </figure>
-        <figure>
-          <img src="../../assets/images/projects/air-ink/99.png" width="1596" height="892" alt="AIR-INK applications" loading="lazy">
-          <figcaption>Bulk inventory of sequestered carbon particulate stored in sacks at an industrial harvesting facility, representing raw feedstock awaiting treatment and refinement into AIR-INK pigment.</figcaption>
-        </figure>
-      </div>
-
-      <div class="project__media">
-        <figure>
-          <img src="../../assets/images/projects/air-ink/AIRINK.png" width="1192" height="908" alt="AIR-INK product" loading="lazy">
-          <figcaption>Production batch of AIR-INK bottled pigment, formulated from sequestered vehicular carbon emissions. Each bottle contains carbon-based ink derived from captured PM2.5 particulate matter.</figcaption>
-        </figure>
-      </div>
-
+      <!-- ── 1. PROBLEM ── -->
       <div class="project__section">
-        <p class="project__section-label">Collaboration</p>
-        <h3>Collaboration with Carbon Tile</h3>
+        <p class="project__section-label">Problem</p>
       </div>
 
-      <p>Credit: Tejas Sidnal, Giriprasad K. Carbon Craft Design utilizes one tonne of black carbon particles removed from the atmosphere in 2020. The team also employs local artisans from other parts of India to use a traditional handcrafted technique to make cement tiles instead of the conventional vitrified tiles that involve large energy consumption during manufacturing and polishing.</p>
-
-      <div class="project__media project__media--two-col">
-        <figure>
-          <img src="../../assets/images/projects/air-ink/tile0.jpeg" width="1024" height="682" alt="Carbon Craft Design tiles" loading="lazy">
-          <figcaption>Artisan hand-packing a carbon-pigmented cement mixture into a tile mold during the traditional handcrafted fabrication process. The carbon-black aggregate used as the chromatic agent is derived from sequestered atmospheric particulate matter supplied by AIR-INK.</figcaption>
-        </figure>
-        <figure>
-          <img src="../../assets/images/projects/air-ink/tiles.jpeg" width="1024" height="576" alt="Carbon Craft tiles made with AIR-INK carbon" loading="lazy">
-          <figcaption>Finished Carbon Craft Design tile samples and product specification sheet displaying geometric patterns achieved through varying concentrations of AIR-INK-derived carbon pigment in the cement matrix, producing a tonal gradient from light grey to near-black.</figcaption>
-        </figure>
-      </div>
-
-      <p>Image credits: Carbon Craft Tiles</p>
+      <p>According to the WHO, 5&ndash;6 million people die every year from exposure to air pollution. A significant fraction of this comes from fossil fuel combustion, which produces carbon-rich particulate matter (PM2.5) &ndash; particles small enough to penetrate deep into the lungs and bloodstream. The global warming potential of black carbon is 460 times higher than CO2. Meanwhile, the printing industry burns approximately 200 litres of fossil fuel to produce 20 kg of conventional carbon-black pigment &ndash; creating new pollution to make ink.</p>
 
       <div class="project__media">
         <figure>
-          <img src="../../assets/images/projects/air-ink/x1.png" width="2048" height="1115" alt="Carbon tile collaboration" loading="lazy">
-          <figcaption>Carbon Tile product line produced in collaboration with AIR-INK. Tiles of varying dimensions and geometric patterns are shown alongside raw carbon pigment and white cement base material, demonstrating the range of chromatic densities achievable with emission-derived carbon as the sole colorant.</figcaption>
+          <img src="../../assets/images/projects/air-ink/why-air.png" width="1024" height="681" alt="PM2.5 particle size comparison" loading="lazy">
+          <figcaption>Comparative particle-size diagram showing PM2.5 (&le;2.5 &mu;m) relative to coarser fractions. Conventional carbon-black production burns fossil fuel to create pigment; AIR-INK sequesters equivalent particles directly from combustion exhaust.</figcaption>
         </figure>
       </div>
 
+      <!-- ── 2. CAPTURE TECHNOLOGY ── -->
       <div class="project__section">
-        <p class="project__section-label">Industrial Pilot</p>
-        <h3>Industrial Pilots for Flexographic and Surface Printing with Diageo International</h3>
+        <p class="project__section-label">Capture Technology</p>
+      </div>
+
+      <p>The core innovation is Kaalink &ndash; a filterless capture device that intercepts PM2.5 soot particles from combustion exhaust before they enter the atmosphere. Unlike conventional filters that clog and require replacement, the Kaalink uses a proprietary capture medium that accumulates carbon without restricting airflow or increasing backpressure on the engine. The device mounts directly onto exhaust stacks of diesel generators, vehicles, pyrolysis plants, and brewery chimneys.</p>
+
+      <div class="project__media project__media--two-col">
+        <figure>
+          <img src="../../assets/images/projects/air-ink/kaali.jpeg" width="1400" height="900" alt="Kaalink capture unit on diesel generator" loading="lazy">
+          <figcaption>Kaalink capture unit integrated atop a diesel generator set. The filterless emission-capture module interfaces directly with the exhaust stack to intercept PM2.5 particulate matter.</figcaption>
+        </figure>
+        <figure>
+          <img src="../../assets/images/projects/air-ink/kaal.jpeg" width="1024" height="683" alt="Kaalink laboratory prototype" loading="lazy">
+          <figcaption>Kaalink research prototype v2 for vehicular tailpipe mounting. The machined stainless-steel housing contains the filterless carbon-capture medium; laboratory glassware with solvent for post-capture extraction is visible.</figcaption>
+        </figure>
+      </div>
+
+      <!-- ── 3. FROM CARBON TO INK ── -->
+      <div class="project__section">
+        <p class="project__section-label">From Carbon to Ink</p>
+      </div>
+
+      <p>Captured soot is not ink. The raw particulate contains heavy metals, polycyclic aromatic hydrocarbons, and volatile organic compounds that must be removed before the carbon can be used safely. The treatment process strips these contaminants through a series of chemical washes and thermal steps, leaving purified carbon particles that are then milled to a controlled particle-size distribution and dispersed into water-based or solvent-based ink vehicles. The result is a pigment that is chemically indistinguishable from conventional carbon black &ndash; but made from waste instead of new fossil fuel.</p>
+
+      <div class="project__media">
+        <figure>
+          <img src="../../assets/images/projects/air-ink/process.png" width="2048" height="1176" alt="AIR-INK end-to-end production pipeline" loading="lazy">
+          <figcaption>End-to-end AIR-INK production pipeline: PM2.5 capture via Kaalink, harvesting from unregulated emission sources, treatment and purification, formulation into pigment, and replacement of fossil-derived carbon black.</figcaption>
+        </figure>
+      </div>
+
+      <div class="project__media project__media--two-col">
+        <figure>
+          <img src="../../assets/images/projects/air-ink/z.png" width="1594" height="802" alt="Captured carbon samples" loading="lazy">
+          <figcaption>Left: accumulated carbonaceous deposits inside a Kaalink cartridge. Right: classified particulate samples from multiple vehicle types, showing variation in carbon morphology across diesel and petrol sources.</figcaption>
+        </figure>
+        <figure>
+          <img src="../../assets/images/projects/air-ink/99.png" width="1596" height="892" alt="Bulk carbon feedstock" loading="lazy">
+          <figcaption>Bulk sequestered carbon stored at an industrial harvesting facility &ndash; raw feedstock awaiting treatment and refinement into AIR-INK pigment.</figcaption>
+        </figure>
       </div>
 
       <div class="project__media">
         <figure>
-          <img src="../../assets/images/projects/air-ink/JWALKR.jpeg" width="1920" height="1079" alt="Diageo Johnnie Walker bottles printed with AIR-INK" loading="lazy">
-          <figcaption>Large-format outdoor advertisement for the Johnnie Walker Black Label x AIR-INK limited edition, featuring the Warsaw-inspired bottle designed by Alek Morawski. The label graphics were printed entirely with ink derived from captured air pollution, deployed across six international markets by Diageo.</figcaption>
+          <img src="../../assets/images/projects/air-ink/AIRINK.png" width="1192" height="908" alt="AIR-INK bottled pigment" loading="lazy">
+          <figcaption>Production batch of AIR-INK bottled pigment. Each bottle contains carbon-based ink derived from captured PM2.5 particulate matter.</figcaption>
         </figure>
       </div>
 
-      <div class="project__media project__media--two-col">
-        <figure>
-          <img src="../../assets/images/projects/air-ink/bsp.jpeg" width="550" height="309" alt="AIR-INK transferred to bottles via Diageo manufacturing" loading="lazy">
-          <figcaption>Industrial bottle-printing line at a Diageo manufacturing facility, transferring AIR-INK-based graphics onto Johnnie Walker bottles via automated surface-printing rollers. The process validates the compatibility of emission-derived carbon pigment with high-throughput commercial printing equipment.</figcaption>
-        </figure>
-        <figure>
-          <img src="../../assets/images/projects/air-ink/AIR-INK-JW.png" width="1102" height="618" alt="Diageo Johnnie Walker Black x AIR-INK press release" loading="lazy">
-          <figcaption>Close-up of the Johnnie Walker Black Label limited edition bottle label, printed with AIR-INK. The label denotes the "Printed with AIR-INK" designation and QR code for provenance tracking, documenting the use of sequestered carbon particulate as the sole pigment source in the flexographic printing process.</figcaption>
-        </figure>
-      </div>
-
+      <!-- ── 4. COLLABORATIONS ── -->
       <div class="project__section">
-        <p class="project__section-label">Industrial Pilot</p>
-        <h3>DELL Packaging Pilot and Case-study</h3>
+        <p class="project__section-label">Collaborations</p>
+      </div>
+
+      <h3>Carbon Craft Design</h3>
+      <p>Carbon Craft Design (Tejas Sidnal, Giriprasad K.) utilized one tonne of black carbon particles removed from the atmosphere in 2020 to produce handcrafted cement tiles. Local artisans use a traditional technique instead of energy-intensive vitrified tile manufacturing &ndash; the carbon serves as both pigment and aggregate, producing geometric patterns in varying tonal densities from light grey to near-black.</p>
+
+      <div class="project__media project__media--two-col">
+        <figure>
+          <img src="../../assets/images/projects/air-ink/tile0.jpeg" width="1024" height="682" alt="Artisan making carbon tiles" loading="lazy">
+          <figcaption>Artisan hand-packing a carbon-pigmented cement mixture into a tile mold. The carbon-black aggregate is derived from sequestered atmospheric particulate supplied by AIR-INK.</figcaption>
+        </figure>
+        <figure>
+          <img src="../../assets/images/projects/air-ink/tiles.jpeg" width="1024" height="576" alt="Carbon Craft tile samples" loading="lazy">
+          <figcaption>Finished tile samples with geometric patterns achieved through varying concentrations of AIR-INK-derived carbon pigment in the cement matrix.</figcaption>
+        </figure>
+      </div>
+
+      <div class="project__media">
+        <figure>
+          <img src="../../assets/images/projects/air-ink/x1.png" width="2048" height="1115" alt="Carbon Tile product line" loading="lazy">
+          <figcaption>Carbon Tile product line: tiles of varying dimensions alongside raw carbon pigment and white cement base, demonstrating the chromatic range achievable with emission-derived carbon as the sole colorant. Image credit: Carbon Craft Design.</figcaption>
+        </figure>
+      </div>
+
+      <h3>Diageo / Johnnie Walker</h3>
+      <p>An industrial pilot with Diageo International validated AIR-INK for high-throughput flexographic and surface printing. The Johnnie Walker Black Label limited edition was printed entirely with ink derived from captured air pollution and deployed across six international markets. The process demonstrated compatibility of emission-derived pigment with commercial printing equipment at production line speeds.</p>
+
+      <div class="project__media">
+        <figure>
+          <img src="../../assets/images/projects/air-ink/JWALKR.jpeg" width="1920" height="1079" alt="Johnnie Walker x AIR-INK billboard" loading="lazy">
+          <figcaption>Large-format billboard for the Johnnie Walker Black Label x AIR-INK limited edition, featuring the Warsaw-inspired bottle designed by Alek Morawski. Label graphics printed entirely with captured air pollution.</figcaption>
+        </figure>
       </div>
 
       <div class="project__media project__media--two-col">
         <figure>
-          <img src="../../assets/images/projects/air-ink/dell-graviky.png" width="1486" height="670" alt="Dell collaboration with Graviky Labs" loading="lazy">
-          <figcaption>Dell packaging printed with AIR-INK carbon pigment by Graviky Labs, bearing the "Printed with AIR-INK" certification mark. This pilot demonstrated the feasibility of substituting fossil-derived carbon black with emission-captured particulate in commercial corrugated packaging print runs.</figcaption>
+          <img src="../../assets/images/projects/air-ink/bsp.jpeg" width="550" height="309" alt="Diageo bottle printing line" loading="lazy">
+          <figcaption>Industrial bottle-printing line at a Diageo manufacturing facility, transferring AIR-INK graphics onto Johnnie Walker bottles via automated surface-printing rollers.</figcaption>
         </figure>
         <figure>
-          <img src="../../assets/images/projects/air-ink/dp.png" width="2048" height="950" alt="Dell packaging pilot" loading="lazy">
-          <figcaption>Market application roadmap for AIR-INK-derived carbon: Phase 1 (ongoing) targets pigmentation use-cases including co-branded packaging and apparel; Phase 2 (R&amp;D) extends the material into polymer/composite applications such as construction materials, fertilizer carriers, and consumer plastics.</figcaption>
+          <img src="../../assets/images/projects/air-ink/AIR-INK-JW.png" width="1102" height="618" alt="Johnnie Walker AIR-INK label detail" loading="lazy">
+          <figcaption>Label detail showing the "Printed with AIR-INK" designation and QR code for provenance tracking.</figcaption>
         </figure>
       </div>
 
+      <h3>DELL Packaging</h3>
+      <p>A packaging pilot with DELL demonstrated the feasibility of substituting fossil-derived carbon black with emission-captured particulate in commercial corrugated packaging print runs.</p>
+
+      <div class="project__media project__media--two-col">
+        <figure>
+          <img src="../../assets/images/projects/air-ink/dell-graviky.png" width="1486" height="670" alt="Dell AIR-INK packaging" loading="lazy">
+          <figcaption>Dell packaging printed with AIR-INK carbon pigment, bearing the "Printed with AIR-INK" certification mark.</figcaption>
+        </figure>
+        <figure>
+          <img src="../../assets/images/projects/air-ink/dp.png" width="2048" height="950" alt="AIR-INK application roadmap" loading="lazy">
+          <figcaption>Application roadmap: Phase 1 targets pigmentation (packaging, apparel); Phase 2 extends into polymer/composite applications (construction materials, consumer plastics).</figcaption>
+        </figure>
+      </div>
+
+      <!-- ── 5. IMPACT ── -->
       <div class="project__section">
         <p class="project__section-label">Impact</p>
-        <h3>Commercial Scale and Cultural Adoption</h3>
       </div>
+
+      <p>AIR-INK went through joint-development pilots with Kering Group, DELL, PANGAIA, Mastercard, and Diageo Group. Featured as a case study at the World Economic Forum and UN Environment. Used by over 10,000 artists and printmakers worldwide. Part of the Harvard Art Museums' Forbes Pigment Collection &ndash; the first pigment in the collection derived from sequestered atmospheric carbon.</p>
+
+      <p><strong>Awards</strong>: MIT SOLVE 2020, TIME Best Inventions, Cannes Gold Lion, Shell Make The Future Grant, General Motors Circular Economy Grant 2020, Masschallenge Finalist 2019.</p>
 
       <div class="project__media project__media--two-col">
         <figure>
-          <img src="../../assets/images/projects/air-ink/airink-flexographic.png" width="1012" height="817" alt="AIR-INK Flexographic Ink industrial product" loading="lazy">
-          <figcaption>AIR-INK Water-Based Flexographic Ink, produced by recycling carbon emissions. Industrial packaging format for commercial print runs across corrugated, label, and textile applications.</figcaption>
+          <img src="../../assets/images/projects/air-ink/airink-flexographic.png" width="1012" height="817" alt="AIR-INK flexographic ink" loading="lazy">
+          <figcaption>AIR-INK Water-Based Flexographic Ink for commercial print runs across corrugated, label, and textile applications.</figcaption>
         </figure>
         <figure>
           <img src="../../assets/images/projects/air-ink/naomicampbell.jpeg" width="2240" height="2730" alt="Naomi Campbell wearing PANGAIA x AIR-INK" loading="lazy">
-          <figcaption>Naomi Campbell wearing PANGAIA apparel dyed with AIR-INK-derived carbon pigment, produced in collaboration with Graviky Labs. The collection used captured air pollution as a sustainable dye substitute for conventional textile colorants.</figcaption>
+          <figcaption>Naomi Campbell wearing PANGAIA apparel dyed with AIR-INK-derived carbon pigment.</figcaption>
         </figure>
       </div>
 
       <div class="project__media project__media--two-col">
         <figure>
-          <img src="../../assets/images/projects/air-ink/forbes-pigment-collection.png" width="720" height="542" alt="AIR-INK in the Harvard Art Museums Forbes Pigment Collection" loading="lazy">
-          <figcaption>AIR-INK markers and pigment vials on display in the Harvard Art Museums' Forbes Pigment Collection, one of the world's largest archives of historical and contemporary pigments. AIR-INK is the first pigment in the collection derived from sequestered atmospheric carbon.</figcaption>
+          <img src="../../assets/images/projects/air-ink/forbes-pigment-collection.png" width="720" height="542" alt="AIR-INK in Forbes Pigment Collection" loading="lazy">
+          <figcaption>AIR-INK in the Harvard Art Museums' Forbes Pigment Collection &ndash; one of the world's largest archives of historical and contemporary pigments.</figcaption>
         </figure>
         <figure>
-          <img src="../../assets/images/projects/air-ink/artist-mural.png" width="720" height="542" alt="Artist creating mural with AIR-INK markers" loading="lazy">
-          <figcaption>Artist creating a large-scale mural using AIR-INK markers. Over 10,000 artists and printmakers worldwide have used the pigment, which is derived from captured vehicular and industrial carbon emissions.</figcaption>
+          <img src="../../assets/images/projects/air-ink/artist-mural.png" width="720" height="542" alt="Artist using AIR-INK" loading="lazy">
+          <figcaption>Artist creating a large-scale mural with AIR-INK markers, derived from captured vehicular and industrial carbon emissions.</figcaption>
         </figure>
       </div>
     </div>

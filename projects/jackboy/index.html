@@ -19,6 +19,7 @@
   <meta name="twitter:image" content="https://anirudh.me/assets/images/projects/jackboy/jack-header.png">
   <link rel="preload" href="../../assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/space-grotesk-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <title>Jackboy &ndash; Anirudh Sharma</title>
   <link rel="stylesheet" href="../../css/variables.css">
   <link rel="stylesheet" href="../../css/base.css">
@@ -63,8 +64,14 @@
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../../work/" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
       <li class="nav__item"><a href="../../cv/" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
-      <li class="nav__item"><a href="mailto:anirudhs@mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
+      <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&to=anirudhs@mit.edu" target="_blank" class="nav__link nav__link--meta" data-caption="anirudhs@mit.edu"><span class="nav__num">18</span> Contact</a></li>
     </ul>
+    <div class="nav__social">
+      <a href="https://scholar.google.com/citations?user=-tjtOPAAAAAJ&hl=en&oi=sra" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+      <a href="https://www.linkedin.com/in/zwanderer/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/zwanderer0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://x.com/zwander3r" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
   </nav>
 
   <main class="main project">
@@ -92,6 +99,11 @@
           <img src="../../assets/images/projects/jackboy/jackboy-poster.png" width="864" height="1302" alt="Jackboy concept poster" loading="lazy">
           <figcaption>Jackboy prototype in operation: a custom sensor PCB module is connected to an Android smartphone via the audio jack, with the companion application rendering a real-time thermal heatmap overlay of the captured scene.</figcaption>
         </figure>
+      </div>
+
+      <!-- ── 1. PROBLEM ── -->
+      <div class="project__section">
+        <p class="project__section-label">Problem</p>
       </div>
 
       <p>Apart from the access to the built-in set of sensors (GPS, camera, microphone, etc.), Jackboy gives an opportunity to add more sensors to Smartphones as and when required and utilized by research labs, expert users, or the maker community. Our low-cost, plug-and-play, by encoding sensor data into audio jack or microphone readable signals on phones, computers, cameras, or anything supporting 3.5 mm Audio Jacks (later evolved to generic microphones).</p>
@@ -123,11 +135,21 @@
         </ul>
       </div>
 
+      <!-- ── 2. APPROACH ── -->
+      <div class="project__section">
+        <p class="project__section-label">Approach</p>
+      </div>
+
       <div class="project__media">
         <figure>
           <img src="../../assets/images/projects/jackboy/jackboy-system-arch.png" width="2048" height="955" alt="Jackboy system architecture diagram" loading="lazy">
           <figcaption>System architecture diagram titled "Phone as a probe to the real world": built-in smartphone sensors (GPS, camera, accelerometer, proximity, NFC, ambient light) are fused with external Jackboy sensor modules to enable environmental sensing (temperature, humidity, pressure, soil health, air quality, UV, blood alcohol, water safety) and quantified-self applications (ECG, heart-rate, food organic sensing, spirometry), with auditory/haptic feedback and internet connectivity.</figcaption>
         </figure>
+      </div>
+
+      <!-- ── 3. HARDWARE ── -->
+      <div class="project__section">
+        <p class="project__section-label">Hardware</p>
       </div>
 
       <div class="project__media">
@@ -138,6 +160,11 @@
       </div>
 
       <p>We built the Jackboy on an analogy similar to a multipurpose screwdriver, the affordance of a plug-and-play device, with a modular framework to interface with different sensors through 3.5 mm Audio Jack route.</p>
+
+      <!-- ── 4. APPLICATIONS ── -->
+      <div class="project__section">
+        <p class="project__section-label">Applications</p>
+      </div>
 
       <div class="project__media project__media--two-col">
         <figure>

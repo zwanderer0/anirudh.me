@@ -20,6 +20,7 @@
   <meta name="twitter:image" content="https://anirudh.me/assets/images/projects/air-synth/air-synth-main.jpeg">
   <link rel="preload" href="../../assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/space-grotesk-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="../../css/variables.css">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/nav.css">
@@ -63,8 +64,14 @@
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../../work/" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
       <li class="nav__item"><a href="../../cv/" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
-      <li class="nav__item"><a href="mailto:anirudhs@mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
+      <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&to=anirudhs@mit.edu" target="_blank" class="nav__link nav__link--meta" data-caption="anirudhs@mit.edu"><span class="nav__num">18</span> Contact</a></li>
     </ul>
+    <div class="nav__social">
+      <a href="https://scholar.google.com/citations?user=-tjtOPAAAAAJ&hl=en&oi=sra" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+      <a href="https://www.linkedin.com/in/zwanderer/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/zwanderer0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://x.com/zwander3r" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
   </nav>
 
   <main class="main project">
@@ -90,7 +97,17 @@
     </div>
 
     <div class="project__body">
+      <!-- ── 1. RECOGNITION ── -->
+      <div class="project__section">
+        <p class="project__section-label">Recognition</p>
+      </div>
+
       <p>Presented at UN COP 27 and Falling Walls Berlin. The reactor design and build process have been <a href="https://www.hackster.io/air-synth/air-synth-162320">open-sourced on Hackster</a> for anyone to replicate.</p>
+
+      <!-- ── 2. PROBLEM ── -->
+      <div class="project__section">
+        <p class="project__section-label">Problem</p>
+      </div>
 
       <p>Billions of tonnes of CO2 emissions are released into the environment every year leading to global warming and air pollution. However, if captured and recycled CO2 can be used as a raw feed to make C1-C2 industrial precursors. This has created a new circular opportunity that helps large companies produce sustainable products while reducing their CO2 impact.</p>
 
@@ -103,6 +120,11 @@
           <img src="../../assets/images/projects/air-synth/air-synth-aii.png" width="2048" height="1163" alt="Air-Synth carbon capture process" loading="lazy">
           <figcaption>Real-time monitoring dashboard displaying CO<sub>2</sub> input concentration, humidity, and synthesis metrics during an active electrochemical reduction run, with an Erlenmeyer flask visible alongside the reactor apparatus.</figcaption>
         </figure>
+      </div>
+
+      <!-- ── 3. REACTOR DESIGN ── -->
+      <div class="project__section">
+        <p class="project__section-label">Reactor Design</p>
       </div>
 
       <p>I led the carbon capture cell design and validation by organizing a small team of electro-chemical engineers (from the University of Birmingham, Manipal University, Fabmat Jaipur, and MIT) and industrial designers to help design a tabletop reactor that turns CO2 emissions from the air into ethanol, methanol, and ethylene industrial precursors.</p>
@@ -131,6 +153,11 @@
           <img src="../../assets/images/projects/air-synth/gasairsynth.png" width="770" height="736" alt="Air-Synth gas analysis" loading="lazy">
           <figcaption>Close-up of the machined stainless-steel Air-Synth reactor cell, featuring a central catalyst window, compression bolts, and quick-connect gas fittings for CO<sub>2</sub> inlet and product-stream outlet.</figcaption>
         </figure>
+      </div>
+
+      <!-- ── 4. OPEN SOURCE ── -->
+      <div class="project__section">
+        <p class="project__section-label">Open Source</p>
       </div>
 
       <p>The modular design is currently being developed in collaboration with Open Air collective.</p>

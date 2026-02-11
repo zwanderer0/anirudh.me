@@ -20,6 +20,7 @@
   <meta name="twitter:image" content="https://anirudh.me/assets/images/projects/zixel/tumblr_mbzoxh8hHq1rfo1juo6_1280.jpg">
   <link rel="preload" href="../../assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/space-grotesk-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="../../css/variables.css">
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/nav.css">
@@ -53,77 +54,102 @@
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../../work/" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
       <li class="nav__item"><a href="../../cv/" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
-      <li class="nav__item"><a href="mailto:anirudhs@mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
+      <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&to=anirudhs@mit.edu" target="_blank" class="nav__link nav__link--meta" data-caption="anirudhs@mit.edu"><span class="nav__num">18</span> Contact</a></li>
     </ul>
+    <div class="nav__social">
+      <a href="https://scholar.google.com/citations?user=-tjtOPAAAAAJ&hl=en&oi=sra" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+      <a href="https://www.linkedin.com/in/zwanderer/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/zwanderer0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://x.com/zwander3r" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
   </nav>
   <main class="main project">
     <div class="project__header">
       <div class="project__header-left">
         <h1 class="project__title">Zixel</h1>
-        <p class="project__subtitle">A 2.5-D Graphical Tactile Display System</p>
+        <p class="project__subtitle">Shape-changing physical pixels &ndash; a 2.5D tactile display</p>
       </div>
       <div class="project__press">
-        <a href="https://www.academia.edu/34563951/Zixel_A_2_5_D_Graphical_Tactile_Display_System">SIGGRAPH Asia / TEI 2012</a>
+        <a href="https://dl.acm.org/doi/10.1145/2407516.2407517">ACM SIGGRAPH Asia 2011</a>
+        <a href="https://dl.acm.org/doi/10.1145/2148131.2148186">ACM TEI 2012</a>
       </div>
     </div>
-    <div class="project__citation">First Author. ACM SIGGRAPH Asia 2011. TEI 2012. <a href="https://www.academia.edu/34563951/Zixel_A_2_5_D_Graphical_Tactile_Display_System">Paper</a></div>
+
+    <div class="project__video">
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <iframe src="https://player.vimeo.com/video/29779889" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+
     <div class="project__hero">
       <figure>
-        <img src="../../assets/images/projects/zixel/tumblr_mbzoxh8hHq1rfo1juo6_1280.jpg" width="800" height="450" alt="Zixel single-actuator unit and system schematic">
-        <figcaption>Left: A single Zixel actuator unit consisting of three RGB-illuminated pins mounted on a piezoelectric linear drive, with a flexible ribbon cable for signal and power delivery. Right: System-level schematic depicting the RGBZ pixel array, dual actuator stage with dead-volume compensation, optical encoder feedback loop, and actuating control pathway governing per-pixel stroke displacement.</figcaption>
+        <img src="../../assets/images/projects/zixel/tumblr_mbzoxh8hHq1rfo1juo6_1280.jpg" width="800" height="600" alt="Zixel display prototype" loading="lazy">
+        <figcaption>Zixel prototype: an array of RGBZ pixels where each pin extends along the Z-axis and emits programmable RGB light.</figcaption>
       </figure>
     </div>
+
     <div class="project__body">
+      <dl class="project__details">
+        <dt>Publication</dt>
+        <dd>ACM SIGGRAPH Asia 2011, ACM TEI 2012</dd>
+        <dt>Achievement</dt>
+        <dd>Finest reported pin pitch for shape displays at time of publication: 0.3cm &times; 0.3cm</dd>
+      </dl>
 
-      <div class="project__aside">
-        <div>
-          <figure>
-            <img src="../../assets/images/projects/zixel/Screenshot-2022-11-22-at-2.23.52-PM.png" width="1146" height="1032" alt="Zixel temporal surface deformation sequence" loading="lazy">
-            <figcaption>Temporal sequence of a simulated 3-D bar-graph surface rendered on the Zixel display at intervals from t=0s to t=1.5s, illustrating the progressive actuation of individual pixel columns to form a dynamic topographic relief pattern.</figcaption>
-          </figure>
-        </div>
-        <div>
-          <p>What if computer graphics of the present day could be physically touched and felt, in addition to being seen? Virtually rendered graphics displayed on a regular 2-D screen provide a rich visual feedback about the object. Present day touchscreen based devices employ direct manipulation of the screen elements, which are essentially a 2-D extension of the real 3D form. However, the feedback is limited by what the screen can render. We looked upon and found that there is a missing z-dimension without which a display lacks the stimulus for the sense of touch since there is no confirming tactile feel that buttons and UI controls provide when they are touched.</p>
-
-          <p>Interactive RGBZ (Red, Green, Blue, Z-axis) Pin-Art which is controlled by the computer and can render colored pixels. This project aims at extending the present 2-D displays into a 2.5 D form where graphics as well as haptic sensation could be directly communicated. We also define a basic actuated addition to present 2-D pixel form, a physical Z-axis, which caters to the physical manifestation of the virtual object for rich tactile and graphical feedback.</p>
-        </div>
+      <div class="project__section">
+        <p class="project__section-label">Concept</p>
       </div>
 
-      <p>Update: TEI 2012 | <strong>SIGGRAPH</strong> ASIA 2011 <a href="https://www.academia.edu/34563951/Zixel_A_2_5_D_Graphical_Tactile_Display_System?source=swp_share">paper</a>.</p>
+      <p>A pixel on a screen has three channels: red, green, blue. A Zixel has four: red, green, blue, and Z &ndash; a physical height axis. Each element is a pin mounted on a piezoelectric linear actuator that can extend and retract along a vertical axis, with an RGB LED at its tip. An array of Zixels becomes a surface that is simultaneously a color display and a tactile relief map, where the topography changes in real time.</p>
+
+      <div class="project__section">
+        <p class="project__section-label">Why</p>
+      </div>
+
+      <p>The motivation is straightforward: screens are flat, and the world is not. Topographic data &ndash; terrain, molecular surfaces, architectural models, data visualizations with a Z dimension &ndash; loses its most informative property when projected onto a plane. Zixel restores that dimension physically. You can see the data and feel it at the same time, which turns out to matter for spatial reasoning tasks where touch provides information that vision alone cannot.</p>
 
       <div class="project__media project__media--two-col">
         <figure>
-          <img src="../../assets/images/projects/zixel/tumblr_mbzoxh8hHq1rfo1juo8_1280.jpg" width="800" height="450" alt="Zixel CAD rendering of single unit and assembled array" loading="lazy">
-          <figcaption>CAD renderings of the Zixel hardware. Left: Exploded view of a single RGBZ pixel element showing the translucent colored diffuser cap seated atop the metallic actuator shaft. Right: A fully assembled multi-column display array rendering a pixelated topographic surface with per-pixel color mapping from black through orange to red, demonstrating simultaneous chromatic and z-axis displacement output.</figcaption>
+          <img src="../../assets/images/projects/zixel/Screenshot-2022-11-22-at-2.23.52-PM.png" width="600" height="400" alt="Zixel CAD rendering" loading="lazy">
+          <figcaption>CAD model of the Zixel actuator assembly, showing the piezoelectric drive, pin guide, and RGB LED mount.</figcaption>
         </figure>
         <figure>
-          <img src="../../assets/images/projects/zixel/tumblr_mbzoxh8hHq1rfo1juo3_1280.jpg" width="800" height="584" alt="Zixel 3-D model of RGBZ character rendering" loading="lazy">
-          <figcaption>Oblique-perspective 3-D model of a 16x16 Zixel grid rendering a polychromatic character sprite. Discrete pixel columns are displaced along the z-axis and assigned individual hue values, demonstrating the system's capacity for combined spatial relief and color-mapped graphical output at sub-centimeter resolution.</figcaption>
+          <img src="../../assets/images/projects/zixel/Screenshot-2022-11-22-at-2.24.08-PM.png" width="600" height="400" alt="Zixel array close-up" loading="lazy">
+          <figcaption>Close-up of the actuator array at 0.3cm pin pitch &ndash; the finest resolution reported for shape-changing displays at the time.</figcaption>
         </figure>
       </div>
 
-      <figure>
-        <img src="../../assets/images/projects/zixel/Screenshot-2022-11-22-at-2.24.08-PM.png" width="1194" height="930" alt="Pressure distribution simulation over time" loading="lazy">
-        <figcaption>Time-resolved simulation of pressure distribution across the actuated display surface under a dynamic acceleration algorithm (t=0.1s to t=48s). The evolving 3-D surface plots illustrate non-uniform force propagation and convergence behavior as the pin array transitions between target topographic states.</figcaption>
-      </figure>
-
-      <div class="project__video">
-        <iframe src="https://player.vimeo.com/video/29779889?color&amp;autopause=0&amp;loop=1&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0" allowfullscreen loading="lazy" title="Zixel Demo"></iframe>
+      <div class="project__section">
+        <p class="project__section-label">Engineering</p>
       </div>
 
-      <figure>
-        <img src="../../assets/images/projects/zixel/Screenshot-2022-11-22-at-2.23.16-PM.png" width="2048" height="1098" alt="Comparative analysis of tactile display systems" loading="lazy">
-        <figcaption>Comparative survey of shape-changing tactile display systems, benchmarking Zixel against prior platforms (Tangible, Feelex, Lumen, Matrix, PopUp, ShapeShift) across hardware form factor, spatial resolution per pin, actuation mechanism, and integrated sensing modalities. Zixel achieves the finest reported pin pitch at 0.3cm x 0.3cm using piezoelectric linear drive motors.</figcaption>
-      </figure>
+      <p>The engineering challenge is density. Shape displays exist, but most have pin pitches measured in centimeters &ndash; coarse enough that the tactile image feels blocky. Zixel achieved 0.3cm &times; 0.3cm pitch, which at the time of publication was the finest reported for any shape-changing display. The constraint is the actuator: piezoelectric drives are compact but generate limited force and stroke length, so the mechanical design had to balance resolution against travel range and actuation speed.</p>
 
-      <figure>
-        <img src="../../assets/images/projects/zixel/tumblr_mbzoxh8hHq1rfo1juo5_1280.jpg" width="800" height="450" alt="Zixel physical prototype rendering pyramids" loading="lazy">
-        <figcaption>Functional Zixel prototype operating in a laboratory setting, physically rendering a pair of pyramid geometries on the actuated pin-array surface. The corresponding reference image of the Great Pyramids of Giza is displayed on the adjacent monitor, demonstrating real-time translation from a 2-D source image to a tangible 2.5-D topographic output.</figcaption>
-      </figure>
+      <div class="project__media project__media--two-col">
+        <figure>
+          <img src="../../assets/images/projects/zixel/tumblr_mbzoxh8hHq1rfo1juo3_1280.jpg" width="600" height="400" alt="Zixel topographic rendering" loading="lazy">
+          <figcaption>Zixel array rendering a dynamic topographic surface with synchronized RGB illumination.</figcaption>
+        </figure>
+        <figure>
+          <img src="../../assets/images/projects/zixel/tumblr_mbzoxh8hHq1rfo1juo5_1280.jpg" width="600" height="400" alt="Zixel display in operation" loading="lazy">
+          <figcaption>The display in operation, showing height variation and color mapping across the pin array.</figcaption>
+        </figure>
+      </div>
+
+      <p>The project was published at ACM SIGGRAPH Asia 2011 and ACM TEI 2012. It sits in a lineage of tangible interface research &ndash; from MIT's inFORM to the Tangible Media Group's vision of Radical Atoms &ndash; where the goal is to make digital information physically present, not just visually rendered.</p>
     </div>
+
+    <div class="project__citation">Sharma A. et al. Zixel: A 2.5-D Graphical Tactile Display. <em>ACM SIGGRAPH Asia 2011 Emerging Technologies.</em> <a href="https://dl.acm.org/doi/10.1145/2407516.2407517">Paper</a></div>
+
     <nav class="project__nav">
-      <div class="project__nav-prev"><span class="project__nav-label">Previous</span><a href="../ballshooter/">Ballshooter</a></div>
-      <div class="project__nav-next"><span class="project__nav-label">Next</span><a href="../concept-s/">Concept-S</a></div>
+      <div class="project__nav-prev">
+        <span class="project__nav-label">Previous</span>
+        <a href="../ballshooter/">Ballshooter</a>
+      </div>
+      <div class="project__nav-next">
+        <span class="project__nav-label">Next</span>
+        <a href="../soundscape/">Soundscape</a>
+      </div>
     </nav>
   </main>
   <script src="../../js/nav.js"></script>
