@@ -1,0 +1,38 @@
+
+# BEGIN LSCACHE
+# END LSCACHE
+# BEGIN NON_LSCACHE
+# END NON_LSCACHE
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?newlogin$ /wp-login.php [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?newlogin/(.*) /wp-login.php$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?lostpass$ /wp-login.php?action=lostpassword [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?register$ /wp-login.php?action=register [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/d0f4711431/(.*) /wp-content/plugins/hide-my-wp/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/434b8996f4/(.*) /wp-content/plugins/classic-editor/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/ccc473c329/(.*) /wp-content/plugins/elementor-pro/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/f65f29574d/(.*) /wp-content/plugins/elementor/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/3a894802b5/(.*) /wp-content/plugins/make-column-clickable-elementor/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/123fa82344/(.*) /wp-content/plugins/visual-link-preview/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/modules/(.*) /wp-content/plugins/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/views/9dbb40d076/design.css$ /wp-content/themes/astra/style.css [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/views/9dbb40d076/(.*) /wp-content/themes/astra/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/views/(.*) /wp-content/themes/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?storage/(.*) /wp-content/uploads/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?core/(.*) /wp-content/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?lib/(.*) /wp-includes/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?comments/(.*) /wp-comments-post.php$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?writer/(.*) /author/$2 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
