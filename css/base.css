@@ -102,6 +102,12 @@ ul, ol {
   padding: var(--space-lg);
 }
 
+@media (max-width: 768px) {
+  .main {
+    padding-top: 56px;
+  }
+}
+
 @media (min-width: 769px) {
   .main {
     margin-left: var(--nav-width-tablet);

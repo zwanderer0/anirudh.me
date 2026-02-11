@@ -133,6 +133,14 @@
   border-bottom-color: var(--gold);
 }
 
+/* Mobile: clear hamburger */
+@media (max-width: 768px) {
+  .home {
+    padding-top: 56px;
+    align-items: flex-start;
+  }
+}
+
 /* Tablet+ : side by side */
 @media (min-width: 769px) {
   .home {
