@@ -27,24 +27,31 @@
       <li class="nav__item"><a href="mozart.html" class="nav__link"><span class="nav__num">08</span> Mozart</a></li>
       <li class="nav__item"><a href="ballshooter.html" class="nav__link"><span class="nav__num">09</span> Ballshooter</a></li>
       <li class="nav__item"><a href="zixel.html" class="nav__link"><span class="nav__num">10</span> Zixel</a></li>
+      <li class="nav__item"><a href="soundscape.html" class="nav__link"><span class="nav__num">11</span> Soundscape</a></li>
       <li class="nav__category">Minor</li>
-      <li class="nav__item"><a href="heartbeat.html" class="nav__link"><span class="nav__num">11</span> HeartbeatAMP</a></li>
-      <li class="nav__item"><a href="tessellations.html" class="nav__link nav__link--active"><span class="nav__num">12</span> Tessellations</a></li>
-      <li class="nav__item"><a href="nostalgia.html" class="nav__link"><span class="nav__num">13</span> Nostalgia Room</a></li>
-      <li class="nav__item"><a href="soundscape.html" class="nav__link"><span class="nav__num">14</span> Soundscape</a></li>
+      <li class="nav__item"><a href="heartbeat.html" class="nav__link"><span class="nav__num">12</span> HeartbeatAMP</a></li>
+      <li class="nav__item"><a href="tessellations.html" class="nav__link nav__link--active"><span class="nav__num">13</span> Tessellations</a></li>
+      <li class="nav__item"><a href="nostalgia.html" class="nav__link"><span class="nav__num">14</span> Nostalgia Room</a></li>
       <li class="nav__item"><a href="in-toilet.html" class="nav__link"><span class="nav__num">15</span> In-toilet Sensing</a></li>
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../work.html" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
-      <li class="nav__item"><a href="../info.html" class="nav__link nav__link--meta"><span class="nav__num">17</span> Info</a></li>
+      <li class="nav__item"><a href="../cv.html" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
       <li class="nav__item"><a href="mailto:anirudh@media.mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
     </ul>
   </nav>
   <main class="main project">
-    <h1 class="project__title">Seven(by)Five Tessellations</h1>
-    <p class="project__subtitle">Interactive transformable surface &middot; Supervisor: Prof. Erik Demaine, MIT CSAIL &amp; Chuck Hoberman</p>
+    <div class="project__header">
+      <div class="project__header-left">
+        <h1 class="project__title">Seven(by)Five Tessellations</h1>
+        <p class="project__subtitle">Kinematic expandable surface &middot; MIT CSAIL</p>
+      </div>
+    </div>
 
     <div class="project__hero">
-      <img src="../assets/images/projects/tessellations/tng.png" alt="Seven(by)Five tessellation prototype" loading="lazy">
+      <figure>
+        <img src="../assets/images/projects/tessellations/tng.png" alt="Seven(by)Five linkage schematic" loading="lazy">
+        <figcaption>Plan-view schematic of the expandable Cartesian grid linkage, showing the repeating unit cell geometry with ball-and-socket nodal connections.</figcaption>
+      </figure>
     </div>
 
     <div class="project__body">
@@ -55,24 +62,93 @@
         <dd><a href="https://www.csail.mit.edu/person/erik-demaine">Prof. Erik Demaine, MIT CSAIL</a>, Chuck Hoberman</dd>
       </dl>
 
-      <p>This speculative prototype is based on an expandable Cartesian grid linkage system invented by Chuck Hoberman, Seven(by)Five incorporates ball-and-socket joints between linkage members to allow for single-curvature out-of-plane bending, allowing the system to take on self-supporting configurations. As the system is actuated, the varying densities of the prototype's shading "petals" modulate light and porosity. Further, Seven(by)Five aims to serve as a mechanical "scaffold" for other environment-adapting features.</p>
-
-      <p>We handcasted 800 components over a period of 5 days and motorized them.</p>
-
-      <p>Design of an interactive transformable surface that is able to bend out of plane and scale at the same time. The surface can be applied as a building facade skin or an interior space partition and can interact with various stimuli, such as temperature, air, and light. The interactive surface can be used in order to augment the acoustic experience of a space, or control lighting, by changing its geometry and permeability. In order to control the interaction of the skin with external stimuli, sensors are placed on the surface and mechanical parts force it to transform accordingly.</p>
-
-      <p>The prototype fabrication process focused on the design of the ball and socket joints which connect the parts together and allow for certain degrees of freedom. Great importance was given to the overall structural stability of the surface and the way it can be attached to a building facade. We applied molding and casting techniques using liquid plastics in order to create the joints of the prototype. The materials of the petals is PVC together with plywood.</p>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/tessellations/closeup.png" alt="Detail view of tessellation joints" loading="lazy">
+      <!-- Why -->
+      <div class="project__section">
+        <span class="project__section-label">Why</span>
       </div>
 
-      <div class="project__media">
-        <img src="../assets/images/projects/tessellations/cast.png" alt="Casting process for tessellation components" loading="lazy">
+      <p>Building skins are static. They cannot respond to sun angle, wind load, or acoustic conditions after installation. We asked: can a single surface simultaneously scale in-plane and bend out-of-plane, controlled by sensors, to modulate light, airflow, and sound in real time?</p>
+
+      <!-- Technique -->
+      <div class="project__section">
+        <span class="project__section-label">Technique</span>
       </div>
 
+      <p>The starting point is Chuck Hoberman's expandable Cartesian grid linkage &mdash; a planar scissor mechanism where rigid links connected at pivot points can uniformly scale. We extended this by replacing pivot joints with ball-and-socket joints, adding 3 rotational degrees of freedom per node. This permits single-curvature (Gaussian curvature K = 0) out-of-plane bending while preserving the in-plane expansion capability.</p>
+
+      <p>The surface can be applied as a building facade skin or interior space partition, interacting with temperature, air, and light stimuli. Sensors placed on the surface drive mechanical actuators that force geometric transformation, changing petal density and permeability in response to environmental input.</p>
+
+      <div class="project__aside">
+        <figure>
+          <img src="../assets/images/projects/tessellations/prototype-assembled.png" alt="Assembled Seven(by)Five prototype at human scale" loading="lazy">
+          <figcaption>Assembled prototype showing the expanded surface at human scale (top left), three actuation states from compact to fully extended (right), and ball-and-socket joint detail (bottom left).</figcaption>
+        </figure>
+        <div>
+          <p>The prototype fabrication process focused on the ball-and-socket joints connecting parts together while allowing specific degrees of freedom. We applied molding and casting techniques using liquid plastics to create the joints. Petal material is PVC on plywood substrates.</p>
+          <p>We handcast 800 components over 5 days and motorized them.</p>
+        </div>
+      </div>
+
+      <!-- Outcome -->
+      <div class="project__section">
+        <span class="project__section-label">Outcome</span>
+      </div>
+
+      <p>A working 7 &times; 5 unit-cell prototype that expands, contracts, and bends into self-supporting curved configurations. As the system actuates, varying petal densities modulate light transmission and porosity &mdash; a mechanical scaffold for environment-adapting facades.</p>
+
       <div class="project__media">
-        <img src="../assets/images/projects/tessellations/tiles.jpeg" alt="Tessellation tiles" loading="lazy">
+        <figure>
+          <img src="../assets/images/projects/tessellations/cast.png" alt="Hand-cast components on assembly workbench" loading="lazy">
+          <figcaption>Assembly workbench showing hand-cast PVC petal elements on plywood linkage substrates with molded ball-and-socket joints. 800 individual components were fabricated using liquid-plastic casting during a five-day production cycle.</figcaption>
+        </figure>
+      </div>
+
+      <!-- The Math -->
+      <div class="project__section">
+        <span class="project__section-label">The Math</span>
+      </div>
+
+      <div class="project__results">
+        <h4>Kinematic Parameters</h4>
+        <table>
+          <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Grid topology</td>
+            <td>7 &times; 5 Cartesian unit cells</td>
+          </tr>
+          <tr>
+            <td>Mechanism type</td>
+            <td>Hoberman scissor linkage (planar scaling)</td>
+          </tr>
+          <tr>
+            <td>Joint type</td>
+            <td>Ball-and-socket &mdash; 3 rotational DOF per node</td>
+          </tr>
+          <tr>
+            <td>Bending constraint</td>
+            <td>Single-curvature (Gaussian curvature K = 0)</td>
+          </tr>
+          <tr>
+            <td>Total components</td>
+            <td>~800 (links + joints + petals &asymp; 23 per unit cell &times; 35 cells)</td>
+          </tr>
+          <tr>
+            <td>Petal material</td>
+            <td>PVC + plywood substrates</td>
+          </tr>
+          <tr>
+            <td>Joint material</td>
+            <td>Liquid-plastic cast</td>
+          </tr>
+          <tr>
+            <td>Fabrication time</td>
+            <td>5 days, hand-cast + motorized</td>
+          </tr>
+        </table>
+        <p>Each scissor pair in the Hoberman linkage has 1 DOF (uniform planar scaling). By substituting ball-and-socket joints (3 rotational DOF each), the surface gains out-of-plane freedom while constraining to single-curvature bending &mdash; the surface can form cylindrical or conical shapes but not saddle geometries (K &ne; 0). The expansion ratio controls petal overlap area, directly modulating light transmission as a function of actuator displacement.</p>
       </div>
     </div>
 

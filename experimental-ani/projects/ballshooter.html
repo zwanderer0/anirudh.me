@@ -27,24 +27,30 @@
       <li class="nav__item"><a href="mozart.html" class="nav__link"><span class="nav__num">08</span> Mozart</a></li>
       <li class="nav__item"><a href="ballshooter.html" class="nav__link nav__link--active"><span class="nav__num">09</span> Ballshooter</a></li>
       <li class="nav__item"><a href="zixel.html" class="nav__link"><span class="nav__num">10</span> Zixel</a></li>
+      <li class="nav__item"><a href="soundscape.html" class="nav__link"><span class="nav__num">11</span> Soundscape</a></li>
       <li class="nav__category">Minor</li>
-      <li class="nav__item"><a href="heartbeat.html" class="nav__link"><span class="nav__num">11</span> HeartbeatAMP</a></li>
-      <li class="nav__item"><a href="tessellations.html" class="nav__link"><span class="nav__num">12</span> Tessellations</a></li>
-      <li class="nav__item"><a href="nostalgia.html" class="nav__link"><span class="nav__num">13</span> Nostalgia Room</a></li>
-      <li class="nav__item"><a href="soundscape.html" class="nav__link"><span class="nav__num">14</span> Soundscape</a></li>
+      <li class="nav__item"><a href="heartbeat.html" class="nav__link"><span class="nav__num">12</span> HeartbeatAMP</a></li>
+      <li class="nav__item"><a href="tessellations.html" class="nav__link"><span class="nav__num">13</span> Tessellations</a></li>
+      <li class="nav__item"><a href="nostalgia.html" class="nav__link"><span class="nav__num">14</span> Nostalgia Room</a></li>
       <li class="nav__item"><a href="in-toilet.html" class="nav__link"><span class="nav__num">15</span> In-toilet Sensing</a></li>
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../work.html" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
-      <li class="nav__item"><a href="../info.html" class="nav__link nav__link--meta"><span class="nav__num">17</span> Info</a></li>
+      <li class="nav__item"><a href="../cv.html" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
       <li class="nav__item"><a href="mailto:anirudh@media.mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
     </ul>
   </nav>
   <main class="main project">
-    <h1 class="project__title">Ballshooter</h1>
-    <p class="project__subtitle">Large Format Multitouch Displays &amp; Tangible Space Invaders</p>
-    <div class="project__hero"><img src="../assets/images/projects/ballshooter/ballshooter-main.jpeg" alt="Ballshooter tangible space invaders"></div>
+    <div class="project__header">
+      <div class="project__header-left">
+        <h1 class="project__title">Ballshooter</h1>
+        <p class="project__subtitle">Large Format Multitouch Displays &amp; Tangible Space Invaders</p>
+      </div>
+    </div>
+    <div class="project__hero"><figure><img src="../assets/images/projects/ballshooter/llp-1.png" alt="Laser Light Plane multitouch sensing architecture"><figcaption>Schematic of the Laser Light Plane (LLP) multitouch sensing architecture, illustrating the optical path from infrared laser through a line-generating lens across the acrylic surface, with an infrared camera positioned below to capture contact-point scattering when a finger disrupts the planar beam.</figcaption></figure></div>
     <div class="project__body">
-      <h2>Large Format Multitouch Displays</h2>
+      <div class="project__section">
+        <p class="project__section-label">Large Format Multitouch Displays</p>
+      </div>
 
       <p>Through the IIT Delhi and Google Summer of Code 2009 program I initiated exploration of both the <strong>hardware, form, and interface</strong> side of multitouch gestural interfaces.</p>
 
@@ -56,16 +62,26 @@
 
       <p><strong>Explored various hardware modifications, scales, gestures, and interactions with object tracking, fiducials markers, and application use-cases.</strong> <a href="https://github.com/nuigroup/sketch-up-multitouch">Github</a></p>
 
-      <img src="../assets/images/projects/ballshooter/llp-1.png" alt="LLP multitouch setup" loading="lazy">
-      <img src="../assets/images/projects/ballshooter/IRC2.jpg" alt="Infrared camera multitouch tracking" loading="lazy">
-      <img src="../assets/images/projects/ballshooter/edm.png" alt="Multitouch display engineering diagram" loading="lazy">
-      <img src="../assets/images/projects/ballshooter/blobb.jpeg" alt="Blob tracking on multitouch surface" loading="lazy">
+      <div class="project__media project__media--two-col">
+        <figure>
+          <img src="../assets/images/projects/ballshooter/IRC2.jpg" alt="Infrared camera multitouch tracking" loading="lazy">
+          <figcaption>Composite view of the physical multitouch apparatus: a ceiling-mounted thermal camera for touch detection (upper left), an overhead projector on an articulated arm for rear-projection display (upper right), a marking-menu image-editing application demonstrating multitouch manipulation (lower left), and a finger-drawn painting application rendered on the projected surface (lower right).</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/ballshooter/edm.png" alt="Multitouch display engineering diagram" loading="lazy">
+          <figcaption>Engineering drawing detailing the projector and camera alignment geometry, including the hot-mirror optical fold path, FireFly MV varifocal camera mount, Toshiba TDP-EW25 short-throw projector placement, and dimensioned frame assemblies for the projector housing and mirror bracket (all units in centimeters).</figcaption>
+        </figure>
+      </div>
+
+      <div class="project__media"><figure><img src="../assets/images/projects/ballshooter/blobb.jpeg" alt="Blob tracking on multitouch surface" loading="lazy"><figcaption>Screenshot of the Big Blobby blob-tracking application operating at 59 fps on a 320x240 infrared source feed: the left panel displays raw IR contact points, while the right panel shows numbered blob identifiers (IDs 44--48) output via the TUIO protocol, with the image-processing filter chain -- background subtraction, smoothing, highpass, and amplification -- visible in the lower panel.</figcaption></figure></div>
 
       <div class="project__video">
         <iframe src="https://player.vimeo.com/video/87010289?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0" allowfullscreen loading="lazy" title="Multitouch Display Demo"></iframe>
       </div>
 
-      <h2>See-Through Transparent Displays</h2>
+      <div class="project__section">
+        <p class="project__section-label">See-Through Transparent Displays</p>
+      </div>
 
       <p>See-through transparent displays and interaction. Developed at MIT Media Lab (prism-based projection screen) with my UROP Meghana Bhat.</p>
 
@@ -79,7 +95,9 @@
         <iframe src="https://www.youtube.com/embed/ZCX_SEYbjTE" allowfullscreen loading="lazy" title="Transparent Display YouTube Demo"></iframe>
       </div>
 
-      <h2>Ballshooter: Tangible Space Invaders</h2>
+      <div class="project__section">
+        <p class="project__section-label">Ballshooter: Tangible Space Invaders</p>
+      </div>
 
       <p>Space Invaders in the physical world. In team with Rahul Motiyar, Rajdeep, and Aman, IIT Bombay.</p>
 

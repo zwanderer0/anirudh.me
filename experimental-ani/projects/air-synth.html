@@ -37,84 +37,103 @@
       <li class="nav__item"><a href="mozart.html" class="nav__link"><span class="nav__num">08</span> Mozart</a></li>
       <li class="nav__item"><a href="ballshooter.html" class="nav__link"><span class="nav__num">09</span> Ballshooter</a></li>
       <li class="nav__item"><a href="zixel.html" class="nav__link"><span class="nav__num">10</span> Zixel</a></li>
+      <li class="nav__item"><a href="soundscape.html" class="nav__link"><span class="nav__num">11</span> Soundscape</a></li>
       <li class="nav__category">Minor</li>
-      <li class="nav__item"><a href="heartbeat.html" class="nav__link"><span class="nav__num">11</span> HeartbeatAMP</a></li>
-      <li class="nav__item"><a href="tessellations.html" class="nav__link"><span class="nav__num">12</span> Tessellations</a></li>
-      <li class="nav__item"><a href="nostalgia.html" class="nav__link"><span class="nav__num">13</span> Nostalgia Room</a></li>
-      <li class="nav__item"><a href="soundscape.html" class="nav__link"><span class="nav__num">14</span> Soundscape</a></li>
+      <li class="nav__item"><a href="heartbeat.html" class="nav__link"><span class="nav__num">12</span> HeartbeatAMP</a></li>
+      <li class="nav__item"><a href="tessellations.html" class="nav__link"><span class="nav__num">13</span> Tessellations</a></li>
+      <li class="nav__item"><a href="nostalgia.html" class="nav__link"><span class="nav__num">14</span> Nostalgia Room</a></li>
       <li class="nav__item"><a href="in-toilet.html" class="nav__link"><span class="nav__num">15</span> In-toilet Sensing</a></li>
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../work.html" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
-      <li class="nav__item"><a href="../info.html" class="nav__link nav__link--meta"><span class="nav__num">17</span> Info</a></li>
+      <li class="nav__item"><a href="../cv.html" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
       <li class="nav__item"><a href="mailto:anirudh@media.mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
     </ul>
   </nav>
 
   <main class="main project">
-    <h1 class="project__title">Air-Synth</h1>
-    <p class="project__subtitle">Carbon Emissions to Consumer Products</p>
+    <div class="project__header">
+      <div class="project__header-left">
+        <h1 class="project__title">Air-Synth</h1>
+        <p class="project__subtitle">Carbon Emissions to Consumer Products</p>
+      </div>
+      <div class="project__press">
+        <a href="https://falling-walls.com/de/foundation/people/graviky-labs">Falling Walls Winner</a>
+        <a href="https://www.forbes.com/sites/brookerobertsislam/2021/04/20/pangaias-game-changing-collaboration-draws-carbon-from-air-pollution-to-print-textiles/">Forbes</a>
+        <a href="https://openaircollective.cc/">Open Air Collective</a>
+        <a href="https://mitsloan.mit.edu/ideas-made-to-matter/mit-clean-tech-companies-to-watch">MIT Sloan</a>
+        <a href="https://www.hackster.io/air-synth/air-synth-162320">Hackster (Open Source)</a>
+      </div>
+    </div>
 
     <div class="project__hero">
-      <img src="../assets/images/projects/air-synth/air-synth-main.jpeg" alt="Air-Synth carbon capture reactor" loading="lazy">
+      <figure>
+        <img src="../assets/images/projects/air-synth/air-synth-main.jpeg" alt="Air-Synth carbon capture reactor" loading="lazy">
+        <figcaption>Benchtop electrochemical CO<sub>2</sub> reduction prototype showing the reactor cell, gas humidification bubblers, peristaltic pump, and DC power supply interconnected via PTFE tubing for ambient-pressure catalytic conversion.</figcaption>
+      </figure>
     </div>
 
     <div class="project__body">
-      <p>Presentation at UN COP 27 and Falling Walls Berlin</p>
-
-      <div class="project__video">
-        <iframe src="https://player.vimeo.com/video/771068498?color&autopause=0&loop=0&muted=0&title=0&portrait=0&byline=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-      </div>
+      <p>Presented at UN COP 27 and Falling Walls Berlin. The reactor design and build process have been <a href="https://www.hackster.io/air-synth/air-synth-162320">open-sourced on Hackster</a> for anyone to replicate.</p>
 
       <p>Billions of tonnes of CO2 emissions are released into the environment every year leading to global warming and air pollution. However, if captured and recycled CO2 can be used as a raw feed to make C1-C2 industrial precursors. This has created a new circular opportunity that helps large companies produce sustainable products while reducing their CO2 impact.</p>
 
-      <div class="project__media">
-        <img src="../assets/images/projects/air-synth/reactor-design.png" alt="Air-Synth reactor design" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/air-synth/air-synth-aii.png" alt="Air-Synth carbon capture process" loading="lazy">
+      <div class="project__media project__media--two-col">
+        <figure>
+          <img src="../assets/images/projects/air-synth/reactor-design.png" alt="Air-Synth reactor design" loading="lazy">
+          <figcaption>Rendered presentation slide introducing the Air-Synth v1.1 reactor: a patent-pending electrochemical system designed for CO<sub>2</sub> capture and utilization without elevated heat, pressure, or toxic solvents.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/air-synth/air-synth-aii.png" alt="Air-Synth carbon capture process" loading="lazy">
+          <figcaption>Real-time monitoring dashboard displaying CO<sub>2</sub> input concentration, humidity, and synthesis metrics during an active electrochemical reduction run, with an Erlenmeyer flask visible alongside the reactor apparatus.</figcaption>
+        </figure>
       </div>
 
       <p>I led the carbon capture cell design and validation by organizing a small team of electro-chemical engineers (from the University of Birmingham, Manipal University, Fabmat Jaipur, and MIT) and industrial designers to help design a tabletop reactor that turns CO2 emissions from the air into ethanol, methanol, and ethylene industrial precursors.</p>
 
       <div class="project__media">
-        <img src="../assets/images/projects/air-synth/air-synth-aisyn.jpeg" alt="Air-Synth team and prototype" loading="lazy">
+        <figure>
+          <img src="../assets/images/projects/air-synth/air-synth-aisyn.jpeg" alt="Air-Synth team and prototype" loading="lazy">
+          <figcaption>Laboratory workstation during reactor validation, showing the Air-Synth electrochemical cell connected to a potentiostat, spectrophotometer, gas feed lines, and a laptop logging real-time electrochemical data.</figcaption>
+        </figure>
       </div>
 
-      <div class="project__media">
-        <img src="../assets/images/projects/air-synth/catalyst.png" alt="Air-Synth catalyst design" loading="lazy">
+      <div class="project__aside">
+        <figure>
+          <img src="../assets/images/projects/air-synth/catalyst.png" alt="Air-Synth catalyst design" loading="lazy">
+          <figcaption>Schematic of the patent-pending electrochemical reactor membrane architecture, illustrating the interaction between ambient humidity (proton source), catalyst layer, and ambient CO<sub>2</sub> feedstock at the membrane electrode assembly interface.</figcaption>
+        </figure>
+        <p>Goal: To be able to utilize CO2 emissions at room temperature pressure conditions to make 3D printing material, polymers, and Ethanol, on a &lt;$200 catalyst and reactor BOM.</p>
       </div>
 
-      <p>Goal: To be able to utilize CO2 emissions at room temperature pressure conditions to make 3D printing material, polymers, and Ethanol, on a &lt;$200 catalyst and reactor BOM.</p>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/air-synth/synco.png" alt="Air-Synth synthesis process" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/air-synth/air-process.png" alt="Air-Synth process flow" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/air-synth/gasairsynth.png" alt="Air-Synth gas analysis" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/air-synth/air-synth-screenshot.png" alt="Air-Synth monitoring interface" loading="lazy">
+      <div class="project__media project__media--two-col">
+        <figure>
+          <img src="../assets/images/projects/air-synth/synco.png" alt="Air-Synth synthesis process" loading="lazy">
+          <figcaption>Exploded CAD view of the stacked reactor cell assembly, showing gasket-sealed electrode plates, flow-field channels, and bolt-pattern alignment for gas-tight compression of the membrane electrode assembly.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/air-synth/gasairsynth.png" alt="Air-Synth gas analysis" loading="lazy">
+          <figcaption>Close-up of the machined stainless-steel Air-Synth reactor cell, featuring a central catalyst window, compression bolts, and quick-connect gas fittings for CO<sub>2</sub> inlet and product-stream outlet.</figcaption>
+        </figure>
       </div>
 
       <p>The modular design is currently being developed in collaboration with Open Air collective.</p>
 
       <div class="project__media">
-        <img src="../assets/images/projects/air-synth/tuna.png" alt="Air-Synth modular design" loading="lazy">
+        <figure>
+          <img src="../assets/images/projects/air-synth/tuna.png" alt="Air-Synth modular design" loading="lazy">
+          <figcaption>Tunability diagram illustrating the range of hydrocarbon outputs achievable by varying catalyst composition and operating parameters, including ethylene, ethanol, syngas, polymers, liquid fuel, plastics, and paints.</figcaption>
+        </figure>
       </div>
 
-      <div class="project__media">
-        <img src="../assets/images/projects/air-synth/tester.png" alt="Air-Synth testing setup" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/air-synth/cat.png" alt="Air-Synth catalyst analysis" loading="lazy">
+      <div class="project__media project__media--two-col">
+        <figure>
+          <img src="../assets/images/projects/air-synth/tester.png" alt="Air-Synth testing setup" loading="lazy">
+          <figcaption>Open-source "Hello World" kit architecture for the Air-Synth Open Air prototype, depicting modular sub-assemblies -- reactor body, membrane electrode assembly, and peripherals -- designed for DIY replication and reverse-engineering.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/air-synth/cat.png" alt="Air-Synth catalyst analysis" loading="lazy">
+          <figcaption>Gloved researcher handling a disassembled reactor half-cell with a carbon-coated catalyst electrode visible at center; a second cell housing with deposited catalyst material and assembly hardware rest on the laboratory bench.</figcaption>
+        </figure>
       </div>
     </div>
 

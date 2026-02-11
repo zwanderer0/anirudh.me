@@ -27,71 +27,117 @@
       <li class="nav__item"><a href="mozart.html" class="nav__link"><span class="nav__num">08</span> Mozart</a></li>
       <li class="nav__item"><a href="ballshooter.html" class="nav__link"><span class="nav__num">09</span> Ballshooter</a></li>
       <li class="nav__item"><a href="zixel.html" class="nav__link"><span class="nav__num">10</span> Zixel</a></li>
+      <li class="nav__item"><a href="soundscape.html" class="nav__link"><span class="nav__num">11</span> Soundscape</a></li>
       <li class="nav__category">Minor</li>
-      <li class="nav__item"><a href="heartbeat.html" class="nav__link"><span class="nav__num">11</span> HeartbeatAMP</a></li>
-      <li class="nav__item"><a href="tessellations.html" class="nav__link"><span class="nav__num">12</span> Tessellations</a></li>
-      <li class="nav__item"><a href="nostalgia.html" class="nav__link"><span class="nav__num">13</span> Nostalgia Room</a></li>
-      <li class="nav__item"><a href="soundscape.html" class="nav__link"><span class="nav__num">14</span> Soundscape</a></li>
+      <li class="nav__item"><a href="heartbeat.html" class="nav__link"><span class="nav__num">12</span> HeartbeatAMP</a></li>
+      <li class="nav__item"><a href="tessellations.html" class="nav__link"><span class="nav__num">13</span> Tessellations</a></li>
+      <li class="nav__item"><a href="nostalgia.html" class="nav__link"><span class="nav__num">14</span> Nostalgia Room</a></li>
       <li class="nav__item"><a href="in-toilet.html" class="nav__link"><span class="nav__num">15</span> In-toilet Sensing</a></li>
       <li class="nav__category" style="margin-top: var(--space-lg)"></li>
       <li class="nav__item"><a href="../work.html" class="nav__link nav__link--meta"><span class="nav__num">16</span> All Work</a></li>
-      <li class="nav__item"><a href="../info.html" class="nav__link nav__link--meta"><span class="nav__num">17</span> Info</a></li>
+      <li class="nav__item"><a href="../cv.html" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
       <li class="nav__item"><a href="mailto:anirudh@media.mit.edu" class="nav__link nav__link--meta"><span class="nav__num">18</span> Contact</a></li>
     </ul>
   </nav>
 
   <main class="main project">
-    <h1 class="project__title">Chalkaat</h1>
-    <p class="project__subtitle">Augmented reality laser-cutting</p>
+    <div class="project__header">
+      <div class="project__header-left">
+        <h1 class="project__title">Chalkaat</h1>
+        <p class="project__subtitle">Augmented reality laser-cutting</p>
+      </div>
+      <div class="project__press">
+        <a href="https://hackaday.com/2015/06/28/what-you-see-is-what-you-laser-cut/">Hackaday</a>
+        <a href="https://www.instructables.com/ChalKaat-augmented-reality-based-laser-cutter/">Instructables</a>
+      </div>
+    </div>
+
+    <div class="project__citation">
+      Sharma A., Liu L., Maes P. &mdash; Published at <strong>ACM UIST 2015</strong><br>
+      Sharma A., Madhvanath S., Billinghurst M. &mdash; Published at <strong>ACM ICMI</strong>
+    </div>
 
     <div class="project__hero">
-      <img src="../assets/images/projects/chalkaat/chalkaat-main.jpg" alt="Chalkaat augmented reality laser cutter" loading="lazy">
+      <figure>
+        <img src="../assets/images/projects/chalkaat/chalkaat-main.jpg" alt="Chalkaat augmented reality laser cutter" loading="lazy">
+        <figcaption>Annotated schematic of the Chalkaat system architecture, illustrating the spatial arrangement of three principal components: (a) an overhead RGB camera and DLP projector for optical tracking, (b) a 2&thinsp;W laser mounted on an XY gantry for material actuation, and (c) color-coded fiducial markers placed on the workbed for command differentiation.</figcaption>
+      </figure>
     </div>
 
     <div class="project__body">
-      <div class="project__media">
-        <img src="../assets/images/projects/chalkaat/chalkaat-overview.png" alt="Chalkaat system overview" loading="lazy">
+
+      <!-- ── 1. SYSTEM ── -->
+      <div class="project__section">
+        <p class="project__section-label">System</p>
       </div>
 
-      <div class="project__media">
-        <img src="../assets/images/projects/chalkaat/UI.png" alt="Chalkaat user interface" loading="lazy">
-      </div>
-
-      <p>The evolving field of personal fabrication holds much potential for the coming decade and laser-cutters allow fast and high quality cutting and engraving of a wide range of materials. Our system allows for direct manipulation with laser cutters. The system consists of a semi-transparent display and optical tracking interfaced with the laser cutter so that users can draw virtual graphics on top of their workpiece. The system also helps users to make virtual copies of physical artifacts, which can later be cut.</p>
+      <p>The system consists of a semi-transparent display and optical tracking interfaced with the laser cutter so that users can draw virtual graphics on top of their workpiece. The system also helps users to make virtual copies of physical artifacts, which can later be cut.</p>
 
       <p><strong>&lsquo;Computer-less&rsquo; UI for interacting with laser cutters, where the users can express themselves more directly by working directly &lsquo;on the workpiece&rsquo;.</strong> The camera on top tracks the strokes. Different colored markers allow different commands to be executed.</p>
+
+      <div class="project__media">
+        <figure>
+          <img src="../assets/images/projects/chalkaat/UI.png" alt="Chalkaat user interface" loading="lazy">
+          <figcaption>Perspective sketch of the Chalkaat user-interface configuration. An overhead projector and IR camera illuminate a semi-transparent projection screen above the laser-cutter bed, while an infrared laser with a 120-degree spread enables touch-free depth sensing of user gestures at the workstation.</figcaption>
+        </figure>
+      </div>
+
+      <p>The evolving field of personal fabrication holds much potential for the coming decade and laser-cutters allow fast and high quality cutting and engraving of a wide range of materials. Our system allows for direct manipulation with laser cutters.</p>
 
       <p>We prototyped the interface by building a laser cutter from the ground up, with DLP projection, <em>computer vision and object recognition, stroke tracking</em>.</p>
 
       <p>In team with: Nitesh Kadyan, Meghana Bhat, Fabio Besti</p>
 
+      <div class="project__media">
+        <figure>
+          <img src="../assets/images/projects/chalkaat/Layers.png" alt="Chalkaat system layers" loading="lazy">
+          <figcaption>Comparative visualization of the dual-layer interaction model. The Interaction Layer (top) shows the virtual design progression on the semi-transparent display, while the Actuation Layer (bottom) shows the corresponding physical workpiece &mdash; a square wooden substrate whose corners are progressively rounded from initial state (A), through drafted cut-path overlay (B), to final laser-cut result (C).</figcaption>
+        </figure>
+      </div>
+
+      <div class="project__media">
+        <figure>
+          <img src="../assets/images/projects/chalkaat/A2.png" alt="Chalkaat augmented reality projection" loading="lazy">
+          <figcaption>Procedural task description for a representative use case: converting a square workpiece to rounded corners. The four-step protocol &mdash; placement, freehand drawing on the interaction layer, projection verification on the actuation layer, and cut execution &mdash; demonstrates the direct-manipulation workflow enabled by the system.</figcaption>
+        </figure>
+      </div>
+
+      <div class="project__media">
+        <figure>
+          <img src="../assets/images/projects/chalkaat/chalkaat-team.jpg" alt="Chalkaat augmented reality laser cutter by Fabio Besti, Anirudh Sharma, Nitesh Kadyan" loading="lazy">
+          <figcaption>System assembly diagram attributed to the Chalkaat team (Fabio Besti, Anirudh Sharma, Nitesh Kadyan), showing the labeled hardware stack: overhead RGB camera and projector module (a), XY-gantry-mounted 2&thinsp;W diode laser (b), and color-coded physical markers (c) used as tangible input tokens on the cutting bed.</figcaption>
+        </figure>
+      </div>
+
+      <!-- ── 2. WORKFLOW ── -->
+      <div class="project__section">
+        <p class="project__section-label">Workflow</p>
+      </div>
+
+      <div class="project__media project__media--three-col">
+        <figure>
+          <img src="../assets/images/projects/chalkaat/chalkaat-demo1.png" alt="Step 1: Shape and image scanning via smartphone placed on the laser-cutter workbench" loading="lazy">
+          <figcaption>Step 1 &mdash; Shape and image acquisition. A smartphone displaying the target geometry is placed on the workbed; the overhead camera captures and registers the design.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/chalkaat/chalkaat-demo2.png" alt="Step 2: Shape and image projection for direct manipulation on the workbench surface" loading="lazy">
+          <figcaption>Step 2 &mdash; Projected shape manipulation. The scanned geometry is projected onto the semi-transparent display; the user repositions using color-coded tangible markers.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/images/projects/chalkaat/chalkaat-demo3.png" alt="Step 3: Shape and image laser cut or etching on material" loading="lazy">
+          <figcaption>Step 3 &mdash; Laser actuation. The 2&thinsp;W diode laser traverses the programmed cut-path, producing the finished laser-cut and etched components.</figcaption>
+        </figure>
+      </div>
+
+      <!-- ── 3. VIDEO ── -->
+      <div class="project__section">
+        <p class="project__section-label">Video</p>
+      </div>
+
       <div class="project__video">
         <iframe title="Chalkaat: Augmented Reality Laser-Cutting" src="https://player.vimeo.com/video/136910531?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
       </div>
 
-      <div class="project__media">
-        <img src="../assets/images/projects/chalkaat/Layers.png" alt="Chalkaat system layers" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/chalkaat/A2.png" alt="Chalkaat augmented reality projection" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/chalkaat/chalkaat-team.jpg" alt="Chalkaat augmented reality laser cutter by Fabio Besti, Anirudh Sharma, Nitesh Kadyan" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/chalkaat/chalkaat-demo1.png" alt="Chalkaat demonstration - drawing on workpiece" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/chalkaat/chalkaat-demo2.png" alt="Chalkaat demonstration - virtual graphics overlay" loading="lazy">
-      </div>
-
-      <div class="project__media">
-        <img src="../assets/images/projects/chalkaat/chalkaat-demo3.png" alt="Chalkaat demonstration - laser cutting result" loading="lazy">
-      </div>
     </div>
 
     <nav class="project__nav">

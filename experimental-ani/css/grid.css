@@ -21,38 +21,34 @@
   gap: var(--grid-gap);
 }
 
-/* Ventures: 2 columns */
+/* Ventures: ~2 columns, collapses to 1 on narrow screens */
 .grid--ventures {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
 }
 
-/* Research: 3+2 layout */
+/* Research: ~3 columns */
 .grid--research {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
 }
 
-.grid--research .grid__card:nth-child(4),
-.grid--research .grid__card:nth-child(5) {
-  grid-column: span 1;
-}
-
-/* Use 2-col for the last row of research */
+/* Research row 2: same sizing */
 .grid--research-row2 {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
   margin-top: var(--grid-gap);
 }
 
-/* Minor: 5 columns */
+/* Minor: ~4 columns */
 .grid--minor {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
 }
 
-/* Card */
+/* Card — container query host */
 .grid__card {
   position: relative;
   overflow: hidden;
   aspect-ratio: 16 / 10;
   cursor: pointer;
+  container-type: inline-size;
 }
 
 .grid__card img {
@@ -95,6 +91,32 @@
   text-transform: uppercase;
   color: var(--white);
   letter-spacing: 0.02em;
+  transition: transform var(--duration) var(--ease);
+}
+
+.grid__card-caption {
+  position: absolute;
+  bottom: var(--space-md);
+  left: var(--space-md);
+  right: var(--space-md);
+  z-index: 1;
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity var(--duration) var(--ease), transform var(--duration) var(--ease);
+  pointer-events: none;
+}
+
+.grid__card:hover .grid__card-title {
+  transform: translateY(-14px);
+}
+
+.grid__card:hover .grid__card-caption {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .grid__card a {
@@ -103,21 +125,19 @@
   z-index: 2;
 }
 
-/* Responsive */
-@media (max-width: 1199px) {
-  .grid--minor {
-    grid-template-columns: repeat(3, 1fr);
+/* Container queries — card adapts to its own width */
+@container (max-width: 200px) {
+  .grid__card-title {
+    font-size: 0.625rem;
+  }
+
+  .grid__card-caption {
+    display: none;
   }
 }
 
+/* Small-screen fallback: tighten card proportions */
 @media (max-width: 768px) {
-  .grid--ventures,
-  .grid--research,
-  .grid--research-row2,
-  .grid--minor {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .grid__card {
     aspect-ratio: 4 / 3;
   }
@@ -126,5 +146,9 @@
     font-size: 0.6875rem;
     bottom: var(--space-sm);
     left: var(--space-sm);
+  }
+
+  .grid__card-caption {
+    display: none;
   }
 }

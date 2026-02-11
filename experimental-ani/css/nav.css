@@ -22,9 +22,15 @@
 
 .nav__item {
   margin-bottom: 2px;
+  transition: margin-bottom var(--duration) var(--ease);
+}
+
+.nav__item:has(.nav__link[data-caption]:hover) {
+  margin-bottom: 12px;
 }
 
 .nav__link {
+  position: relative;
   display: flex;
   align-items: baseline;
   gap: var(--space-sm);
@@ -33,13 +39,35 @@
   font-size: 0.75rem;
   color: var(--magenta);
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 1;
   transition: opacity var(--duration) var(--ease);
   white-space: nowrap;
 }
 
 .nav__link:hover {
+  text-shadow: 0 0 1px currentColor;
+}
+
+.nav__link[data-caption]::after {
+  content: attr(data-caption);
+  position: absolute;
+  left: calc(1.5em + var(--space-sm));
+  top: 100%;
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--text-dim);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: opacity var(--duration) var(--ease), transform var(--duration) var(--ease);
+  pointer-events: none;
+}
+
+.nav__link[data-caption]:hover::after {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .nav__link--active {
@@ -61,7 +89,7 @@
 
 .nav__num {
   font-size: 0.625rem;
-  opacity: 0.5;
+  opacity: 0.7;
   min-width: 1.5em;
   font-variant-numeric: tabular-nums;
 }
@@ -161,5 +189,9 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
+  }
+
+  .nav__link[data-caption]::after {
+    display: none;
   }
 }

@@ -33,4 +33,32 @@
       link.classList.add('nav__link--active');
     }
   });
+
+  // Hover captions — short scientific one-liners
+  var captions = {
+    'lechal': 'Haptic wearable satellite navigation',
+    'jackboy': 'Modular audio-jack sensor platform',
+    'air-synth': 'Electrochemical CO\u2082-to-ethanol reactor',
+    'air-ink': 'Carbon capture to pigment upcycling',
+    'glassified': 'AR pen-stroke sensing on transparent OLED',
+    'chalkaat': 'AR-guided laser fabrication',
+    'mozart': 'Multimodal gesture-driven 3D CAD',
+    'ballshooter': 'IR laser-plane multitouch surface',
+    'zixel': '2.5D pin-actuated tactile display',
+    'heartbeat': 'Acoustic cardiac signal processing',
+    'tessellations': 'Kinematic tessellation casting',
+    'nostalgia': 'Algorithmic affective environment',
+    'soundscape': 'Embodied waveform sound sculpture',
+    'in-toilet': 'In-situ urinalysis advisory system'
+  };
+  links.forEach(function (link) {
+    var href = link.getAttribute('href') || '';
+    var keys = Object.keys(captions);
+    for (var i = 0; i < keys.length; i++) {
+      if (href.indexOf(keys[i]) !== -1) {
+        link.setAttribute('data-caption', captions[keys[i]]);
+        break;
+      }
+    }
+  });
 })();
