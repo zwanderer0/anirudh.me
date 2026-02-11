@@ -1,26 +1,27 @@
-/* Homepage — brand landing, no scroll */
+/* Homepage — brand landing, single screen */
 .home {
   display: flex;
   min-height: 100dvh;
   padding: var(--space-lg);
+  align-items: center;
 }
 
 .home__content {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
   width: 100%;
   max-width: 1100px;
 }
 
-/* Photo — on mobile, shows first */
-.home__photo {
+/* Right column: photo + credentials stacked */
+.home__right {
   order: -1;
 }
 
 .home__photo img {
   width: 100%;
-  max-width: 280px;
+  max-width: 260px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   filter: grayscale(20%);
@@ -33,11 +34,11 @@
 
 /* Bio */
 .home__bio {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.7;
   color: var(--text-primary);
-  max-width: 600px;
-  margin-bottom: var(--space-lg);
+  max-width: 560px;
+  margin-bottom: var(--space-md);
 }
 
 .home__bio strong {
@@ -51,35 +52,41 @@
 
 .home__aside {
   color: var(--text-secondary);
-  margin-bottom: var(--space-xl);
+  font-size: 0.8125rem;
 }
 
-/* Credentials */
+/* Credentials — sits under photo */
 .home__credentials {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
-  margin-bottom: var(--space-lg);
-  max-width: 600px;
-  padding-top: var(--space-md);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
 }
 
 .home__cred-title {
   font-family: var(--font-mono);
-  font-size: 0.625rem;
+  font-size: 0.5625rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--text-secondary);
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .home__cred-items {
-  font-size: 0.75rem;
-  line-height: 1.6;
+  font-size: 0.6875rem;
+  line-height: 1.5;
   color: var(--text-dim);
   margin-bottom: 0;
+}
+
+.home__cred-items a {
+  color: var(--text-dim);
+}
+
+.home__cred-items a:hover {
+  color: var(--gold);
+  opacity: 1;
 }
 
 /* Bottom links */
@@ -123,7 +130,7 @@
     flex: 1;
   }
 
-  .home__photo {
+  .home__right {
     order: 2;
     flex: 0 0 28%;
   }
