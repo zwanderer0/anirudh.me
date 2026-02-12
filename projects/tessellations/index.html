@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tessellations — kinematic metal tiles that transform between geometric configurations through constrained folding. Laser-cut stainless steel with living hinges.">
+  <meta name="description" content="Seven(by)Five Tessellations — expandable Cartesian grid linkage with ball-and-socket joints for single-curvature out-of-plane bending. 800 hand-cast components. MIT CSAIL, Prof. Erik Demaine.">
   <meta name="author" content="Anirudh Sharma">
   <meta name="theme-color" content="#FAFAF8">
   <link rel="canonical" href="https://anirudh.me/projects/tessellations/">
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Tessellations — Kinematic Metal Tiles">
-  <meta property="og:description" content="Metal tiles that transform between geometric configurations through constrained folding. Laser-cut stainless steel.">
-  <meta property="og:image" content="https://anirudh.me/assets/images/projects/tessellations/tng.png">
+  <meta property="og:title" content="Seven(by)Five Tessellations — Expandable Kinematic Surfaces">
+  <meta property="og:description" content="Expandable Cartesian grid linkage with ball-and-socket joints for single-curvature out-of-plane bending. 800 hand-cast components. MIT CSAIL.">
+  <meta property="og:image" content="https://anirudh.me/assets/images/projects/tessellations/prototype-assembled.png">
   <meta property="og:url" content="https://anirudh.me/projects/tessellations/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Tessellations — Kinematic Metal Tiles">
-  <meta name="twitter:description" content="Metal tiles that transform between geometric configurations through constrained folding.">
-  <meta name="twitter:image" content="https://anirudh.me/assets/images/projects/tessellations/tng.png">
+  <meta name="twitter:title" content="Seven(by)Five Tessellations — Expandable Kinematic Surfaces">
+  <meta name="twitter:description" content="Expandable Cartesian grid linkage with ball-and-socket joints for single-curvature out-of-plane bending.">
+  <meta name="twitter:image" content="https://anirudh.me/assets/images/projects/tessellations/prototype-assembled.png">
   <link rel="preload" href="../../assets/fonts/space-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/space-grotesk-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
@@ -66,65 +66,55 @@
   <main class="main project">
     <div class="project__header">
       <h1 class="project__title">Seven(by)Five Tessellations</h1>
-      <p class="project__subtitle">Kinematic expandable surfaces from computational geometry</p>
+      <p class="project__subtitle">Expandable kinematic surfaces from computational geometry</p>
     </div>
 
     <div class="project__hero">
       <figure>
-        <img src="../../assets/images/projects/tessellations/tile0.jpeg" width="800" height="600" alt="Tessellation tile pattern" loading="lazy">
-        <figcaption>Laser-cut stainless steel tile unit with living hinges, designed to tessellate into a planar expandable surface.</figcaption>
+        <img src="../../assets/images/projects/tessellations/prototype-assembled.png" width="800" height="600" alt="Seven(by)Five expandable tessellation prototype in multiple views" loading="lazy">
+        <figcaption>Multi-view composite of the Seven(by)Five prototype: expanded linkage array outdoors (top left), close-up of a cast ball-and-socket joint connecting a PVC petal to the plywood linkage member (bottom left), and three sequential stages of deployment showing single-curvature out-of-plane bending (right).</figcaption>
       </figure>
     </div>
 
     <div class="project__body">
       <dl class="project__details">
-        <dt>Advisor</dt>
-        <dd>Prof. Erik Demaine, MIT CSAIL</dd>
-        <dt>Context</dt>
-        <dd>MIT CSAIL, computational geometry research</dd>
+        <dt>Supervisor</dt>
+        <dd>Prof. Erik Demaine, MIT CSAIL; Chuck Hoberman</dd>
+        <dt>Team</dt>
+        <dd>Phillip Ewing, Anirudh Sharma, Georgios Samartzopoulos</dd>
       </dl>
 
       <div class="project__section">
-        <p class="project__section-label">Problem</p>
+        <p class="project__section-label">Concept</p>
       </div>
 
-      <p>A flat sheet that expands into a curved surface without stretching, tearing, or adding material. That is the core constraint. The project started from Chuck Hoberman's expandable Cartesian grid linkage &ndash; a mechanism where rigid tiles connect at nodes that allow rotation but not translation. The question was whether the same principle could produce surfaces with controlled curvature: not just bigger and smaller, but shaped.</p>
+      <p>This speculative prototype is based on an expandable Cartesian grid linkage system invented by Chuck Hoberman. Seven(by)Five incorporates ball-and-socket joints between linkage members to allow for single-curvature out-of-plane bending, allowing the system to take on self-supporting configurations. As the system is actuated, the varying densities of the prototype&rsquo;s shading &ldquo;petals&rdquo; modulate light and porosity. Further, Seven(by)Five aims to serve as a mechanical scaffold for other environment-adapting features.</p>
+
+      <div class="project__media">
+        <figure>
+          <img src="../../assets/images/projects/tessellations/tng.png" width="1730" height="972" alt="Computational pattern layout for the Seven(by)Five tessellation grid" loading="lazy">
+          <figcaption>Computational pattern layout for the Seven(by)Five tessellation grid, showing the repeating unit cell of the expandable Cartesian linkage with ball-and-socket joint positions at each node.</figcaption>
+        </figure>
+      </div>
+
+      <div class="project__section">
+        <p class="project__section-label">Design</p>
+      </div>
+
+      <p>The design is for an interactive transformable surface that can bend out of plane and scale at the same time. The surface can be applied as a building facade skin or an interior space partition and can interact with various stimuli such as temperature, air, and light. The interactive surface can augment the acoustic experience of a space, or control lighting, by changing its geometry and permeability. Sensors placed on the surface detect external stimuli, and mechanical parts force the surface to transform accordingly.</p>
 
       <div class="project__section">
         <p class="project__section-label">Fabrication</p>
       </div>
 
-      <p>Each tile is laser-cut from stainless steel sheet with living hinges at the connection points. The joints use a ball-and-socket geometry that provides three rotational degrees of freedom per node while constraining linear motion to a single axis. This gives the assembled surface the ability to bend in one curvature direction while remaining rigid in the other &ndash; a property that turns out to be useful for deployable structures, architectural skins, and responsive building envelopes.</p>
-
-      <div class="project__media project__media--two-col">
-        <figure>
-          <img src="../../assets/images/projects/tessellations/cast.png" width="600" height="400" alt="Cast tessellation components" loading="lazy">
-          <figcaption>Hand-cast ball-and-socket joint components. Approximately 800 pieces were cast over five days for the full prototype.</figcaption>
-        </figure>
-        <figure>
-          <img src="../../assets/images/projects/tessellations/tiles.jpeg" width="600" height="400" alt="Assembled tile array" loading="lazy">
-          <figcaption>Assembled tile array in expanded configuration, showing single-curvature bending at the joint nodes.</figcaption>
-        </figure>
-      </div>
-
-      <div class="project__section">
-        <p class="project__section-label">Prototype</p>
-      </div>
-
-      <p>The prototype consists of roughly 800 hand-cast components assembled over five days. At full expansion, the surface area increases by a factor determined by the joint geometry &ndash; in this case, approximately 1.4x. The design was computed using the folding algorithms developed in Prof. Erik Demaine's group at MIT CSAIL, where the mathematical constraints of rigid origami meet the practical demands of material fabrication.</p>
+      <p>The prototype fabrication focused on the design of the ball-and-socket joints which connect the parts together and allow for specific degrees of freedom. We applied molding and casting techniques using liquid plastics to create the joints. The petal material is PVC together with plywood. We hand-cast approximately 800 components over a period of five days and motorized the assembly.</p>
 
       <div class="project__media">
         <figure>
-          <img src="../../assets/images/projects/tessellations/prototype-assembled.png" width="800" height="600" alt="Full assembled tessellation prototype" loading="lazy">
-          <figcaption>Full prototype in partially expanded state, demonstrating the transition between compact and deployed configurations.</figcaption>
+          <img src="../../assets/images/projects/tessellations/cast.png" width="1888" height="1028" alt="Assembly of PVC petals with hand-cast ball-and-socket joints" loading="lazy">
+          <figcaption>Assembly of PVC petals onto plywood linkage members with hand-cast ball-and-socket joints. Approximately 800 components were molded and cast in liquid plastic over five days for the full prototype.</figcaption>
         </figure>
       </div>
-
-      <div class="project__section">
-        <p class="project__section-label">Thesis</p>
-      </div>
-
-      <p>The research interest is in the gap between computational geometry and physical material. The math says a surface can fold a certain way; the steel and the joints say otherwise, until the tolerances are right. That negotiation &ndash; between the ideal fold and the real hinge &ndash; is where the interesting engineering lives.</p>
     </div>
 
     <nav class="project__nav">
