@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gsoc on Anirudh Sharma</title>
-    <link>http://localhost:8000/blog/tags/gsoc/</link>
+    <link>https://anirudh.me/blog/tags/gsoc/</link>
     <description>Recent content in Gsoc on Anirudh Sharma</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Jun 2010 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8000/blog/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anirudh.me/blog/tags/gsoc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Plans for the Mozilla Firefox Multitouch UX</title>
-      <link>http://localhost:8000/blog/plans-for-the-mozilla-firefox-multitouch-ux/</link>
+      <link>https://anirudh.me/blog/plans-for-the-mozilla-firefox-multitouch-ux/</link>
       <pubDate>Sat, 05 Jun 2010 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/plans-for-the-mozilla-firefox-multitouch-ux/</guid>
+      <guid>https://anirudh.me/blog/plans-for-the-mozilla-firefox-multitouch-ux/</guid>
       <description>&lt;p&gt;I am quite interested in exploring the Multitouch scenario on Mozilla Firefox for my project under &lt;a href=&#34;http://www.felipe.wordpress.com/&#34;&gt;Felipe&amp;rsquo;s&lt;/a&gt; and &lt;a href=&#34;http://www.gerv.net/&#34;&gt;Gerv&amp;rsquo;s&lt;/a&gt; mentorship. Working with Mozilla Team design team members (&lt;a href=&#34;http://limi.net/&#34;&gt; Alexander Limi&lt;/a&gt;) and mentors is turning out to be a great experience so far. I am learning a lot of new things.&lt;/p&gt;&#xA;&lt;p&gt;Browsing the web is a very distributed activity with a lot of interactions possible. My aim would be to design a minimalist interface, that is slick, fast, and non-obtrusive. Hence devoted past couple of weeks researching on the topic and doing some user study with Natural User Interface Group members.&lt;/p&gt;</description>
     </item>
     <item>
       <title>New Multitouch Notebook, Mozilla Labs, GSoC and fun</title>
-      <link>http://localhost:8000/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</link>
+      <link>https://anirudh.me/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</link>
       <pubDate>Tue, 25 May 2010 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</guid>
+      <guid>https://anirudh.me/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</guid>
       <description>&lt;p&gt;Its week two weeks since I finally bought myself a &lt;strong&gt;Acer Aspire 5738 pzg&lt;/strong&gt; multitouch (actually dual-touch) notebook.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;The Acer Aspire 5738PZG dual-touch notebook&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Its a welcome change, since for the past two years our multitouch experiments required a lot of background effort due to our utter dependence on our custom built MT screen. The capacitive screen is good, its responsive and precise. They&amp;rsquo;ve a Python apploader called Acer Touch Portal which runs a couple of cool Microsoft Surface apps (Globe, Collage, Blackboard etc.).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gestures Plan</title>
-      <link>http://localhost:8000/blog/gestures-plan/</link>
+      <link>https://anirudh.me/blog/gestures-plan/</link>
       <pubDate>Tue, 28 Jul 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/gestures-plan/</guid>
+      <guid>https://anirudh.me/blog/gestures-plan/</guid>
       <description>&lt;p&gt;My thoughts were triggered after I read the &lt;a href=&#34;http://www.billbuxton.com/multitouchOverview.html&#34;&gt;Bill Buxton argument&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;We must focus on &lt;em&gt;streamlining&lt;/em&gt; the interaction. by number of gestures &lt;strong&gt;minimum&lt;/strong&gt;, using them only when they&amp;rsquo;re required and &lt;strong&gt;naturally usable&lt;/strong&gt; -&amp;gt; Simpler and better SketchUp design and modeling experience. This implies that we should using Multitouch in only one thing -&amp;gt; Camera motions in Sketchup i.e. Zoom, PAN and Orbit.&lt;/p&gt;&#xA;&lt;p&gt;There are two modes I am thinking about:&lt;/p&gt;&#xA;&lt;p&gt;MODE 1 Camera = Initialized using a Button1 from a new SketchUp MT Toolbar&lt;/p&gt;</description>
     </item>
     <item>
       <title>Updates Post midterm new</title>
-      <link>http://localhost:8000/blog/updates-post-midterm-new/</link>
+      <link>https://anirudh.me/blog/updates-post-midterm-new/</link>
       <pubDate>Sat, 25 Jul 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/updates-post-midterm-new/</guid>
+      <guid>https://anirudh.me/blog/updates-post-midterm-new/</guid>
       <description>&lt;p&gt;Oh, the EventRelay was so wonderful we just knew :-)&lt;/p&gt;&#xA;&lt;p&gt;On 24th and 25th July I was busy with my Google Summer of Code doing:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The Wiki Page with information about the project readily accessible&lt;/li&gt;&#xA;&lt;li&gt;Some Code Cleanup&lt;/li&gt;&#xA;&lt;li&gt;Adding protected bins on the the repository, so that mentors could try out each.&lt;/li&gt;&#xA;&lt;li&gt;Change-log maintainance&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Apart this I am working atm on how gestures will work now. A separate blogpost should explain how our team is going to go about it. :-)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Let&#39;s begin with what all I...</title>
-      <link>http://localhost:8000/blog/lets-begin-with-what-all-i/</link>
+      <link>https://anirudh.me/blog/lets-begin-with-what-all-i/</link>
       <pubDate>Thu, 25 Jun 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/lets-begin-with-what-all-i/</guid>
+      <guid>https://anirudh.me/blog/lets-begin-with-what-all-i/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;s begin with what all I tried at my end that &lt;strong&gt;didn&amp;rsquo;t work&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; &lt;em&gt;Direct Implementation of Ruby Client within Sketchup&lt;/em&gt; - Didn&amp;rsquo;t work due to the Ruby API&amp;rsquo;s limitation under SketchUp.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; &lt;em&gt;pyGE_touch&lt;/em&gt; - Tried to hack around Win32COM interface to make SketchUp respond to pyGE like script. Didn&amp;rsquo;t workout just because we don&amp;rsquo;t have a COM interface in SketchUp&amp;rsquo;s API.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; &lt;em&gt;Using the SKSocket class&lt;/em&gt; - Though it showed some initial success the if the SKSocket was buffering and finally flushed the data all at once, this wasn&amp;rsquo;t the best of experiences. As per the blogpost on &lt;a href=&#34;http://touchaddict.blogspot.com/2009/06/some-changes-to-strategy.html&#34;&gt;http://touchaddict.blogspot.com/2009/06/some-changes-to-strategy.html&lt;/a&gt; its explianed how it worked for a while &amp;ndash; gave me a lot of hope, but eventually failed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Some changes to the strategy</title>
-      <link>http://localhost:8000/blog/some-changes-to-the-strategy/</link>
+      <link>https://anirudh.me/blog/some-changes-to-the-strategy/</link>
       <pubDate>Wed, 24 Jun 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/some-changes-to-the-strategy/</guid>
+      <guid>https://anirudh.me/blog/some-changes-to-the-strategy/</guid>
       <description>&lt;p&gt;Finally I am dumping the SkSockets approach with our plugin. Though it showed some initial success the if the SKSocket was buffering and finally flushed the data all at once. Which won&amp;rsquo;t work for this as we need constant refresh of data.&lt;/p&gt;&#xA;&lt;p&gt;1 - started osc.exe - set it for small screen size and low framerate.&#xA;2 - used toxy_win UDP to TCP proxy server (gave a link)&#xA;3 - Start the tuioconn.rb code in SU.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Report 1</title>
-      <link>http://localhost:8000/blog/report-1/</link>
+      <link>https://anirudh.me/blog/report-1/</link>
       <pubDate>Sat, 30 May 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/report-1/</guid>
+      <guid>https://anirudh.me/blog/report-1/</guid>
       <description>&lt;p&gt;For the past 4 days I was working with my GSoC project and so far I&amp;rsquo;ve been able to do the following except my to successfully let Google SketchUp talk to TUIO.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Setup the iconset, the UI - that&amp;rsquo;d enable the enabling and disabling of the extension from SketchUp&amp;rsquo;s toolbar.&lt;/li&gt;&#xA;&lt;li&gt;Two operation modes for the plugin SketchUp, B1-Control Navigation B2-Enable Drawing/Sketching&lt;/li&gt;&#xA;&lt;li&gt;Trying with TUIO data into SketchUp.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The TUIO part is the tricky bit &amp;ndash; just wish that the Google SketchUp&amp;rsquo;s API was a little more developer friendly.. but that&amp;rsquo;s what makes it fun to hack around. Slowly getting somewhere :-)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Precoding updates</title>
-      <link>http://localhost:8000/blog/precoding-updates/</link>
+      <link>https://anirudh.me/blog/precoding-updates/</link>
       <pubDate>Sat, 23 May 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/precoding-updates/</guid>
+      <guid>https://anirudh.me/blog/precoding-updates/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;Code Repository setup at &lt;a href=&#34;http://code.google.com/p/sketchupmultitouch/&#34;&gt;Google Code&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihu0eOvmHbVGGH0G1W3N4jN4oBq-R2oNunCIHk1Zhi6yZJSURXLS4qY00bjsGe1z4OCHpAAgElE9nhAZ3Tjv2g5pXf_GwokbLwKiutqSPuzSjlUecFq6y8HJVBYW-nbEU8mNa7GsR8DXcu/s1600/tuio&amp;#43;ruby.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Recently I tried out Colin Harris&amp;rsquo;s Ruby &lt;a href=&#34;http://github.com/aberant/tuio-ruby/tree/master&#34;&gt;TUIO client&lt;/a&gt;, it took me a little longer time (more than expected) to figure out if its working since I was using Adobe Air based SimTouch.air and socketserver executable to do my tests - which didnt work with our Ruby Client. Though later it responded perfectly with ReactiVision TUIO Simulator 1.4 . I could print the TUIO messages :-)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Proposed an idea for GSoC 2009</title>
-      <link>http://localhost:8000/blog/proposed-an-idea-for-gsoc-2009/</link>
+      <link>https://anirudh.me/blog/proposed-an-idea-for-gsoc-2009/</link>
       <pubDate>Thu, 02 Apr 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/proposed-an-idea-for-gsoc-2009/</guid>
+      <guid>https://anirudh.me/blog/proposed-an-idea-for-gsoc-2009/</guid>
       <description>&lt;p&gt;Proposed an Idea for Google Summer of Code to port Google SketchUp to Multitouch. Users would be able to do 3D modeling with simple and intuitive gestures. An Extension Module that would allow Google SketchUp to receive TUIO and hence allow manipulations via Multitouch gestures.&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Lack of a CAD software that could be used via Multitouch has been the motivating factor behind this proposal. Eversince I used the Sketches application on iPhone &amp;ndash; which enables 2D drawing using Multitouch, I felt like doing something similar on my FTIR setup. Adding multitouch ability to an easy to use CAD/modeling software - Google SketchUp would not only make the design process intuitive but also add a lot to the usability factor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Google SoC is on!</title>
-      <link>http://localhost:8000/blog/google-soc-is-on/</link>
+      <link>https://anirudh.me/blog/google-soc-is-on/</link>
       <pubDate>Thu, 19 Mar 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/google-soc-is-on/</guid>
+      <guid>https://anirudh.me/blog/google-soc-is-on/</guid>
       <description>&lt;p&gt;yoo ! Google Summer of Code list was announced yesterday , and its great to see NUIGroup on it. Well i&amp;rsquo;ll be going with my own idea this time. Have been playing around and exploring with the RUBY API and C++ SDK that comes with Google Sketchup. Let&amp;rsquo;s see how it goes, I just posted a request for ideas and suggestions on NUIGroup at &lt;a href=&#34;http://nuigroup.com/forums/viewthread/4801/&#34;&gt;http://nuigroup.com/forums/viewthread/4801/&lt;/a&gt; ..&lt;/p&gt;</description>
     </item>
   </channel>

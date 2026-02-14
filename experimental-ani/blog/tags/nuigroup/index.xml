@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NUIGroup on Anirudh Sharma</title>
-    <link>http://localhost:8000/blog/tags/nuigroup/</link>
+    <link>https://anirudh.me/blog/tags/nuigroup/</link>
     <description>Recent content in NUIGroup on Anirudh Sharma</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Jul 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8000/blog/tags/nuigroup/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anirudh.me/blog/tags/nuigroup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ConceptS: Our new Multitouch Wall</title>
-      <link>http://localhost:8000/blog/concepts-our-new-multitouch-wall/</link>
+      <link>https://anirudh.me/blog/concepts-our-new-multitouch-wall/</link>
       <pubDate>Thu, 30 Jul 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/concepts-our-new-multitouch-wall/</guid>
+      <guid>https://anirudh.me/blog/concepts-our-new-multitouch-wall/</guid>
       <description>&lt;p&gt;Quite a long time since we didn&amp;rsquo;t show our work done in pre-summer-holidays time at IIT delhi&amp;rsquo;s Design lab. Here&amp;rsquo;s a sneak peek into the multitouch wall done by Sparsh team during their IIT Delhi stay.&lt;/p&gt;&#xA;&lt;p&gt;Hail NUI :) The upcoming video will show some custom applications with object marking.&lt;/p&gt;&#xA;&lt;p&gt;Building the wall at IIT Delhi&amp;rsquo;s design lab was proper jugaad &amp;ndash; we sourced a projector, an acrylic sheet, IR LEDs, and a PS3 Eye camera, put it all together in a couple of days. The best part was showing it to people who&amp;rsquo;d never seen multitouch before, their faces when objects on screen responded to their fingers was priceless. Sparsh team putting it together with almost zero budget, that&amp;rsquo;s how we roll :P&lt;/p&gt;</description>
     </item>
     <item>
       <title>Precoding updates</title>
-      <link>http://localhost:8000/blog/precoding-updates/</link>
+      <link>https://anirudh.me/blog/precoding-updates/</link>
       <pubDate>Sat, 23 May 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/precoding-updates/</guid>
+      <guid>https://anirudh.me/blog/precoding-updates/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;Code Repository setup at &lt;a href=&#34;http://code.google.com/p/sketchupmultitouch/&#34;&gt;Google Code&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihu0eOvmHbVGGH0G1W3N4jN4oBq-R2oNunCIHk1Zhi6yZJSURXLS4qY00bjsGe1z4OCHpAAgElE9nhAZ3Tjv2g5pXf_GwokbLwKiutqSPuzSjlUecFq6y8HJVBYW-nbEU8mNa7GsR8DXcu/s1600/tuio&amp;#43;ruby.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Recently I tried out Colin Harris&amp;rsquo;s Ruby &lt;a href=&#34;http://github.com/aberant/tuio-ruby/tree/master&#34;&gt;TUIO client&lt;/a&gt;, it took me a little longer time (more than expected) to figure out if its working since I was using Adobe Air based SimTouch.air and socketserver executable to do my tests - which didnt work with our Ruby Client. Though later it responded perfectly with ReactiVision TUIO Simulator 1.4 . I could print the TUIO messages :-)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Proposed an idea for GSoC 2009</title>
-      <link>http://localhost:8000/blog/proposed-an-idea-for-gsoc-2009/</link>
+      <link>https://anirudh.me/blog/proposed-an-idea-for-gsoc-2009/</link>
       <pubDate>Thu, 02 Apr 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/proposed-an-idea-for-gsoc-2009/</guid>
+      <guid>https://anirudh.me/blog/proposed-an-idea-for-gsoc-2009/</guid>
       <description>&lt;p&gt;Proposed an Idea for Google Summer of Code to port Google SketchUp to Multitouch. Users would be able to do 3D modeling with simple and intuitive gestures. An Extension Module that would allow Google SketchUp to receive TUIO and hence allow manipulations via Multitouch gestures.&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Lack of a CAD software that could be used via Multitouch has been the motivating factor behind this proposal. Eversince I used the Sketches application on iPhone &amp;ndash; which enables 2D drawing using Multitouch, I felt like doing something similar on my FTIR setup. Adding multitouch ability to an easy to use CAD/modeling software - Google SketchUp would not only make the design process intuitive but also add a lot to the usability factor.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stood First - this time its BITS Pilani</title>
-      <link>http://localhost:8000/blog/stood-first-this-time-its-bits-pilani/</link>
+      <link>https://anirudh.me/blog/stood-first-this-time-its-bits-pilani/</link>
       <pubDate>Fri, 27 Mar 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/stood-first-this-time-its-bits-pilani/</guid>
+      <guid>https://anirudh.me/blog/stood-first-this-time-its-bits-pilani/</guid>
       <description>&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH420JPGImfnrrR_WtHxM5bnZueYdT0KjO_Xvm5yZaMXhTXAoqOXz3JnY2T-NnX3lnb_Q84RycYzaMaLdVruiLNR-UNbIZkIXmF7u87S_8GwsK4fNjRSq0kKEkE047hU0NaeBe1akTZ9VK/s1600/DSC02452.JPG&#34; alt=&#34;Demonstrating the multitouch table at BITS Pilani Apogee 2009&#34; loading=&#34;lazy&#34;&gt;&#xA;  &lt;figcaption&gt;Demonstrating the multitouch table at BITS Pilani Apogee 2009&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDaoSu-GfbMEGxu69zE3j4QRE7f1gdNmIjQaf5kPVmcW24qk_FKN-r300USlJjoz-exwaBEbLW6wEJD_ZfzSPqcwkz1uZQj107V3M9wQx18I0_3R4Bk7YBz-HvY8dSxwUwze2NHxOL-Jz4/s1600/DSC02440.JPG&#34; alt=&#34;Audience trying the multitouch surface at the showcase&#34; loading=&#34;lazy&#34;&gt;&#xA;  &lt;figcaption&gt;Audience trying the multitouch surface at the showcase&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ-Qhe3YsAgvNr9OF2YGPxKP6O4IIAAmyGveLGRbiTNLcatnRNcFZMa-Py1dZoRaPOFzIfm-IF2dZD8wLBJDTmPQ0lrus-YFQXSM_QazjxXv8SscdbD7g-t_E6Ujl63YXJ3k5JpB1ZrTkx/s1600/DSC02438.JPG&#34; alt=&#34;The multitouch table setup at the Apogee event venue&#34; loading=&#34;lazy&#34;&gt;&#xA;  &lt;figcaption&gt;The multitouch table setup at the Apogee event venue&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;We showcased how multitouch technology is going to change the way we interact with machines. Thanks to &lt;a href=&#34;http://www.nuigroup.com/&#34;&gt;NUIGroup&lt;/a&gt; community, we could showcase some applications done by Seth Sandler and Lawrence Muller at &lt;a href=&#34;http://www.bits-apogee.org/&#34;&gt;Apogee 2009&lt;/a&gt; - held annually at BITS Pilani. In addition to this how to make a Flash App from scratch - with TUIO data (OSC implemented) sent by Touchlib.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Google SoC is on!</title>
-      <link>http://localhost:8000/blog/google-soc-is-on/</link>
+      <link>https://anirudh.me/blog/google-soc-is-on/</link>
       <pubDate>Thu, 19 Mar 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/google-soc-is-on/</guid>
+      <guid>https://anirudh.me/blog/google-soc-is-on/</guid>
       <description>&lt;p&gt;yoo ! Google Summer of Code list was announced yesterday , and its great to see NUIGroup on it. Well i&amp;rsquo;ll be going with my own idea this time. Have been playing around and exploring with the RUBY API and C++ SDK that comes with Google Sketchup. Let&amp;rsquo;s see how it goes, I just posted a request for ideas and suggestions on NUIGroup at &lt;a href=&#34;http://nuigroup.com/forums/viewthread/4801/&#34;&gt;http://nuigroup.com/forums/viewthread/4801/&lt;/a&gt; ..&lt;/p&gt;</description>
     </item>
     <item>
       <title>New Apps and some bite of Python</title>
-      <link>http://localhost:8000/blog/new-apps-and-some-bite-of-python/</link>
+      <link>https://anirudh.me/blog/new-apps-and-some-bite-of-python/</link>
       <pubDate>Fri, 27 Feb 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/new-apps-and-some-bite-of-python/</guid>
+      <guid>https://anirudh.me/blog/new-apps-and-some-bite-of-python/</guid>
       <description>&lt;p&gt;Well now I am learning actionscript from Scratch and planning to do some Multitouch apps using it. We happen to be fans of the &lt;a href=&#34;http://wiki.nuigroup.com/Rotatablescalable&#34;&gt;RotatableScalable Class&lt;/a&gt; by NUIGroup, which has some prewritten magic that we can directly extend in our code.&lt;/p&gt;&#xA;&lt;p&gt;Another thing that deserves a mention is &lt;a href=&#34;http://code.google.com/p/pymt/&#34;&gt;pyMT&lt;/a&gt;, which Sharath introduced us to, who happens to be a bigtime fan of the Python language and contributor this project. He&amp;rsquo;s doing his final year project with his team back there in Mangalore , and hey, pyMT&amp;rsquo;s Python apps look great !&lt;/p&gt;</description>
     </item>
     <item>
       <title>First Prize at IIT Kanpur&#39;s Techkriti</title>
-      <link>http://localhost:8000/blog/first-prize-at-iit-kanpurs-techkriti/</link>
+      <link>https://anirudh.me/blog/first-prize-at-iit-kanpurs-techkriti/</link>
       <pubDate>Sat, 21 Feb 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/first-prize-at-iit-kanpurs-techkriti/</guid>
+      <guid>https://anirudh.me/blog/first-prize-at-iit-kanpurs-techkriti/</guid>
       <description>&lt;p&gt;We got our table running at Indian Institute of Technology Kanpur&amp;rsquo;s annual technical festival- Techkriti, one of the largest ones in India and voila! got First Prize there :)&lt;/p&gt;&#xA;&lt;p&gt;Number of Teams at the exhibit - 20&#xA;Number of Projects that applied - approx 400&lt;/p&gt;&#xA;&lt;p&gt;A lot of hardware including the whole wooden box setup and the large projector had to be shipped around 300 Kilometers from here- and explaining Multitouch/FTIR/NUIGroup to the audience for 3 long days countless number of times. And that paid off well :) with some moolah raking in, well the first prize got us richer by Rs. 30000/- , enough money to let us by the new Lasers and a couple of cameras for a new multitouch setup.&lt;/p&gt;</description>
     </item>
   </channel>

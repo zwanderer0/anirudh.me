@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bits Pilani on Anirudh Sharma</title>
-    <link>http://localhost:8000/blog/tags/bits-pilani/</link>
+    <link>https://anirudh.me/blog/tags/bits-pilani/</link>
     <description>Recent content in Bits Pilani on Anirudh Sharma</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Mar 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8000/blog/tags/bits-pilani/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anirudh.me/blog/tags/bits-pilani/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stood First - this time its BITS Pilani</title>
-      <link>http://localhost:8000/blog/stood-first-this-time-its-bits-pilani/</link>
+      <link>https://anirudh.me/blog/stood-first-this-time-its-bits-pilani/</link>
       <pubDate>Fri, 27 Mar 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/stood-first-this-time-its-bits-pilani/</guid>
+      <guid>https://anirudh.me/blog/stood-first-this-time-its-bits-pilani/</guid>
       <description>&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH420JPGImfnrrR_WtHxM5bnZueYdT0KjO_Xvm5yZaMXhTXAoqOXz3JnY2T-NnX3lnb_Q84RycYzaMaLdVruiLNR-UNbIZkIXmF7u87S_8GwsK4fNjRSq0kKEkE047hU0NaeBe1akTZ9VK/s1600/DSC02452.JPG&#34; alt=&#34;Demonstrating the multitouch table at BITS Pilani Apogee 2009&#34; loading=&#34;lazy&#34;&gt;&#xA;  &lt;figcaption&gt;Demonstrating the multitouch table at BITS Pilani Apogee 2009&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDaoSu-GfbMEGxu69zE3j4QRE7f1gdNmIjQaf5kPVmcW24qk_FKN-r300USlJjoz-exwaBEbLW6wEJD_ZfzSPqcwkz1uZQj107V3M9wQx18I0_3R4Bk7YBz-HvY8dSxwUwze2NHxOL-Jz4/s1600/DSC02440.JPG&#34; alt=&#34;Audience trying the multitouch surface at the showcase&#34; loading=&#34;lazy&#34;&gt;&#xA;  &lt;figcaption&gt;Audience trying the multitouch surface at the showcase&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ-Qhe3YsAgvNr9OF2YGPxKP6O4IIAAmyGveLGRbiTNLcatnRNcFZMa-Py1dZoRaPOFzIfm-IF2dZD8wLBJDTmPQ0lrus-YFQXSM_QazjxXv8SscdbD7g-t_E6Ujl63YXJ3k5JpB1ZrTkx/s1600/DSC02438.JPG&#34; alt=&#34;The multitouch table setup at the Apogee event venue&#34; loading=&#34;lazy&#34;&gt;&#xA;  &lt;figcaption&gt;The multitouch table setup at the Apogee event venue&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;We showcased how multitouch technology is going to change the way we interact with machines. Thanks to &lt;a href=&#34;http://www.nuigroup.com/&#34;&gt;NUIGroup&lt;/a&gt; community, we could showcase some applications done by Seth Sandler and Lawrence Muller at &lt;a href=&#34;http://www.bits-apogee.org/&#34;&gt;Apogee 2009&lt;/a&gt; - held annually at BITS Pilani. In addition to this how to make a Flash App from scratch - with TUIO data (OSC implemented) sent by Touchlib.&lt;/p&gt;</description>
     </item>
   </channel>

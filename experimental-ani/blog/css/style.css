@@ -3,35 +3,36 @@
    Blot Journal theme — ET Book on cream
    ═══════════════════════════════════════════════ */
 
-@font-face { font-family: 'ET Book'; font-style: normal; font-weight: 400; src: url('https://cdn.blot.im/fonts/et-book/400.woff') format('woff'), url('https://cdn.blot.im/fonts/et-book/400.ttf') format('truetype') }
-@font-face { font-family: 'ET Book'; font-style: italic; font-weight: 400; src: url('https://cdn.blot.im/fonts/et-book/400-italic.woff') format('woff'), url('https://cdn.blot.im/fonts/et-book/400-italic.ttf') format('truetype') }
-@font-face { font-family: 'ET Book'; font-style: normal; font-weight: 600; src: url('https://cdn.blot.im/fonts/et-book/600.woff') format('woff'), url('https://cdn.blot.im/fonts/et-book/600.ttf') format('truetype') }
+@font-face { font-family: 'Space Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/space-mono-regular.woff2') format('woff2'); }
+@font-face { font-family: 'Space Mono'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/space-mono-bold.woff2') format('woff2'); }
+@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('../fonts/space-grotesk-regular.woff2') format('woff2'); }
 
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
-  font-family: 'ET Book', Georgia, serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.72;
   color: #111;
-  background: #FFFFF8;
+  background: #FAFAF8;
   margin: 0;
   padding: 3em 4em 5em;
   word-wrap: break-word;
 }
 
 ::selection {
-  background: #111;
+  background: #7A2680;
   color: #FFFFF8;
 }
 
 a {
-  color: #111;
+  color: #7A2680;
   text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #7A5210;
+  text-decoration: none;
 }
 
 /* ── Main Site Link — fixed top right ────── */
@@ -40,22 +41,21 @@ a:hover {
   position: fixed;
   top: 24px;
   right: 32px;
-  font-family: 'ET Book', Georgia, serif;
-  font-style: italic;
+  font-family: 'Space Mono', monospace;
   font-size: 0.9rem;
-  color: Gray;
+  color: #545454;
   text-decoration: none;
   z-index: 999;
   padding: 4px 12px;
-  border: 1px solid Gray;
+  border: 1.5px solid #7A2680;
   border-radius: 3px;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .site-link:hover {
-  background: #111;
-  color: #FFFFF8;
-  border-color: #111;
+  background: #7A2680;
+  color: #fff;
+  border-color: #7A2680;
 }
 
 /* ── Site Header ─────────────────────────── */
@@ -69,8 +69,7 @@ a:hover {
 }
 
 .logo {
-  font-family: 'ET Book', Georgia, serif;
-  font-style: italic;
+  font-family: 'Space Mono', monospace;
   font-size: 1.1rem;
   text-decoration: none;
   color: #111;
@@ -84,9 +83,8 @@ a:hover {
 }
 
 .nav a {
-  font-family: 'ET Book', Georgia, serif;
-  font-style: italic;
-  font-size: 1.1rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.875rem;
   text-decoration: none;
   color: #111;
 }
@@ -96,7 +94,7 @@ a:hover {
 }
 
 .back-link {
-  color: Gray;
+  color: #545454;
 }
 
 /* ── Container ───────────────────────────── */
@@ -126,34 +124,33 @@ a:hover {
 }
 
 .post-title {
-  font-family: 'ET Book', Georgia, serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.8;
   text-decoration: none;
   display: inline;
 }
 
 .post-date {
-  font-family: 'ET Book', Georgia, serif;
-  font-size: 1.1rem;
-  color: Gray;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8125rem;
+  color: #545454;
   display: inline;
 }
 
 .post-date::before {
   content: " – ";
-  color: Gray;
+  color: #545454;
 }
 
 /* Pagination */
 .pagination {
   margin-top: 2.5rem;
-  font-style: italic;
 }
 
 .pagination a {
-  font-family: 'ET Book', Georgia, serif;
+  font-family: 'Space Mono', monospace;
   font-size: 1.1rem;
   color: #111;
   text-decoration: none;
@@ -162,13 +159,13 @@ a:hover {
 .pagination a:hover { text-decoration: underline; }
 
 .pagination .meta {
-  font-family: 'ET Book', Georgia, serif;
+  font-family: 'Space Mono', monospace;
   font-size: 1.1rem;
-  color: Gray;
+  color: #545454;
 }
 
 .pagination .meta a {
-  color: Gray;
+  color: #545454;
   text-decoration: none;
 }
 
@@ -177,23 +174,24 @@ a:hover {
 /* ── Single Post ─────────────────────────── */
 
 .container h1 {
-  font-family: 'ET Book', Georgia, serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 2.4rem;
   line-height: 1.15;
-  font-weight: 400;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
   margin: 0 0 1.5rem;
 }
 
 .post-meta {
-  font-family: 'ET Book', Georgia, serif;
-  font-style: italic;
+  font-family: 'Space Mono', monospace;
   font-size: 0.95rem;
-  color: Gray;
+  color: #545454;
   margin-bottom: 2.5rem;
 }
 
 .post-meta a {
-  color: Gray;
+  color: #545454;
   text-decoration: none;
 }
 
@@ -212,37 +210,40 @@ a:hover {
 }
 
 .entry a {
-  color: #111;
-  text-decoration: underline;
+  color: #7A2680;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 
 .entry a:hover {
-  text-decoration: underline;
+  color: #7A5210;
+  border-bottom-color: #7A5210;
+  text-decoration: none;
 }
 
 .entry h2 {
-  font-family: 'ET Book', Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .entry h3 {
-  font-family: 'ET Book', Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.2;
+  text-transform: uppercase;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 .entry h4, .entry h5, .entry h6 {
-  font-family: 'ET Book', Georgia, serif;
-  font-style: italic;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   margin-top: 1.5rem;
@@ -290,7 +291,7 @@ img {
   width: 200px;
   margin-right: -240px;
   margin-top: 0;
-  font-family: 'ET Book', Georgia, serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-style: italic;
   font-size: 0.9rem;
   line-height: 1.4;
@@ -327,7 +328,7 @@ img {
 blockquote {
   margin: 1.2rem 0 1.2rem 1.5rem;
   padding-left: 1rem;
-  border-left: 2px solid #ddd;
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
   color: #333;
 }
 
@@ -376,7 +377,7 @@ pre, code {
 }
 
 /* Syntax — muted */
-.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: Gray; font-style: italic; }
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: #545454; font-style: italic; }
 .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr { font-weight: 600; }
 .highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .se { color: #444; }
 
@@ -427,7 +428,7 @@ ul.task-list { list-style: none; padding-left: 0; }
 .post-nav__label {
   font-style: italic;
   font-size: 0.9rem;
-  color: Gray;
+  color: #545454;
   margin-bottom: 0.3rem;
 }
 
@@ -441,8 +442,8 @@ ul.task-list { list-style: none; padding-left: 0; }
 /* ── Archives ────────────────────────────── */
 
 .archive-year {
-  font-style: italic;
-  font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
   font-size: 1.8rem;
   line-height: 1;
   margin: 2.5rem 0 0.8rem;
@@ -535,4 +536,10 @@ ul.task-list { list-style: none; padding-left: 0; }
     line-height: 1.15;
     margin-bottom: 1rem;
   }
+}
+
+/* Focus styles */
+a:focus-visible {
+  outline: 2px solid #7A2680;
+  outline-offset: 2px;
 }

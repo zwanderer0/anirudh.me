@@ -29,6 +29,9 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="../blog/" class="diary-link">diary</a>
+
   <!-- Hamburger -->
   <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
     <span class="nav__toggle-bar"></span>
@@ -37,49 +40,20 @@
   </button>
 
   <!-- Sidebar Nav -->
-  <nav class="nav">
-    <ul class="nav__list">
+  <nav class="nav" aria-label="Main navigation">
+    <ul class="nav__list nav__primary">
       <li class="nav__item">
         <a href="../" class="nav__link nav__link--home">
           <span class="nav__num">01</span> Anirudh Sharma
         </a>
       </li>
-
-      <li class="nav__category">Ventures</li>
-      <li class="nav__item"><a href="../projects/lechal/" class="nav__link"><span class="nav__num">02</span> Lechal</a></li>
-      <li class="nav__item"><a href="../projects/jackboy/" class="nav__link"><span class="nav__num">03</span> Jackboy</a></li>
-      <li class="nav__item"><a href="../projects/air-synth/" class="nav__link"><span class="nav__num">04</span> Air-Synth</a></li>
-      <li class="nav__item"><a href="../projects/air-ink/" class="nav__link"><span class="nav__num">05</span> Air-Ink</a></li>
-
-      <li class="nav__category">Research</li>
-      <li class="nav__item"><a href="../projects/glassified/" class="nav__link"><span class="nav__num">06</span> Glassified</a></li>
-      <li class="nav__item"><a href="../projects/chalkaat/" class="nav__link"><span class="nav__num">07</span> Chalkaat</a></li>
-      <li class="nav__item"><a href="../projects/mozart/" class="nav__link"><span class="nav__num">08</span> Mozart</a></li>
-      <li class="nav__item"><a href="../projects/ballshooter/" class="nav__link"><span class="nav__num">09</span> Ballshooter</a></li>
-      <li class="nav__item"><a href="../projects/zixel/" class="nav__link"><span class="nav__num">10</span> Zixel</a></li>
-      <li class="nav__item"><a href="../projects/soundscape/" class="nav__link"><span class="nav__num">11</span> Soundscape</a></li>
-
-      <li class="nav__category">Experiments</li>
-      <li class="nav__item"><a href="../projects/heartbeat/" class="nav__link"><span class="nav__num">12</span> HeartbeatAMP</a></li>
-      <li class="nav__item"><a href="../projects/tessellations/" class="nav__link"><span class="nav__num">13</span> Tessellations</a></li>
-      <li class="nav__item"><a href="../projects/nostalgia/" class="nav__link"><span class="nav__num">14</span> Nostalgia Room</a></li>
-      <li class="nav__item"><a href="../projects/in-toilet/" class="nav__link"><span class="nav__num">15</span> In-toilet Sensing</a></li>
-
-      <li class="nav__category" style="margin-top: var(--space-lg)"></li>
-      <li class="nav__item"><a href="../work/" class="nav__link nav__link--meta nav__link--active"><span class="nav__num">16</span> All Work</a></li>
-      <li class="nav__item"><a href="../cv/" class="nav__link nav__link--meta"><span class="nav__num">17</span> CV</a></li>
-      <li class="nav__item"><a href="https://mail.google.com/mail/?view=cm&to=anirudhs@mit.edu" target="_blank" class="nav__link nav__link--meta" data-caption="anirudhs@mit.edu"><span class="nav__num">18</span> Contact</a></li>
+      <li class="nav__item"><a href="../work/" class="nav__link nav__link--active"><span class="nav__num">02</span> Work</a></li>
+      <li class="nav__item"><a href="../cv/" class="nav__link"><span class="nav__num">03</span> CV</a></li>
     </ul>
-    <div class="nav__social">
-      <a href="https://scholar.google.com/citations?user=-tjtOPAAAAAJ&hl=en&oi=sra" target="_blank" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
-      <a href="https://www.linkedin.com/in/zwanderer/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://github.com/zwanderer0" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://x.com/zwander3r" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-    </div>
-  </nav>
+</nav>
 
   <!-- Main Content -->
-  <main class="main work-page">
+  <main class="main work-page" id="main-content">
 
     <!-- Ventures -->
     <section class="grid-section">
@@ -192,5 +166,8 @@
 
   <script src="../js/nav.js"></script>
   <script src="../js/effects.js"></script>
+
+  <footer class="site-footer">&copy; 2026 Anirudh Sharma</footer>
+
 </body>
 </html>

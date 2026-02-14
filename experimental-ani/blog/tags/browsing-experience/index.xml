@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Browsing Experience on Anirudh Sharma</title>
-    <link>http://localhost:8000/blog/tags/browsing-experience/</link>
+    <link>https://anirudh.me/blog/tags/browsing-experience/</link>
     <description>Recent content in Browsing Experience on Anirudh Sharma</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 May 2010 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8000/blog/tags/browsing-experience/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anirudh.me/blog/tags/browsing-experience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Multitouch Notebook, Mozilla Labs, GSoC and fun</title>
-      <link>http://localhost:8000/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</link>
+      <link>https://anirudh.me/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</link>
       <pubDate>Tue, 25 May 2010 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</guid>
+      <guid>https://anirudh.me/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</guid>
       <description>&lt;p&gt;Its week two weeks since I finally bought myself a &lt;strong&gt;Acer Aspire 5738 pzg&lt;/strong&gt; multitouch (actually dual-touch) notebook.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;The Acer Aspire 5738PZG dual-touch notebook&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Its a welcome change, since for the past two years our multitouch experiments required a lot of background effort due to our utter dependence on our custom built MT screen. The capacitive screen is good, its responsive and precise. They&amp;rsquo;ve a Python apploader called Acer Touch Portal which runs a couple of cool Microsoft Surface apps (Globe, Collage, Blackboard etc.).&lt;/p&gt;</description>
     </item>
   </channel>

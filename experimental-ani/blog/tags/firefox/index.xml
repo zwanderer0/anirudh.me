@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Firefox on Anirudh Sharma</title>
-    <link>http://localhost:8000/blog/tags/firefox/</link>
+    <link>https://anirudh.me/blog/tags/firefox/</link>
     <description>Recent content in Firefox on Anirudh Sharma</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Jun 2010 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8000/blog/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anirudh.me/blog/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Plans for the Mozilla Firefox Multitouch UX</title>
-      <link>http://localhost:8000/blog/plans-for-the-mozilla-firefox-multitouch-ux/</link>
+      <link>https://anirudh.me/blog/plans-for-the-mozilla-firefox-multitouch-ux/</link>
       <pubDate>Sat, 05 Jun 2010 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/plans-for-the-mozilla-firefox-multitouch-ux/</guid>
+      <guid>https://anirudh.me/blog/plans-for-the-mozilla-firefox-multitouch-ux/</guid>
       <description>&lt;p&gt;I am quite interested in exploring the Multitouch scenario on Mozilla Firefox for my project under &lt;a href=&#34;http://www.felipe.wordpress.com/&#34;&gt;Felipe&amp;rsquo;s&lt;/a&gt; and &lt;a href=&#34;http://www.gerv.net/&#34;&gt;Gerv&amp;rsquo;s&lt;/a&gt; mentorship. Working with Mozilla Team design team members (&lt;a href=&#34;http://limi.net/&#34;&gt; Alexander Limi&lt;/a&gt;) and mentors is turning out to be a great experience so far. I am learning a lot of new things.&lt;/p&gt;&#xA;&lt;p&gt;Browsing the web is a very distributed activity with a lot of interactions possible. My aim would be to design a minimalist interface, that is slick, fast, and non-obtrusive. Hence devoted past couple of weeks researching on the topic and doing some user study with Natural User Interface Group members.&lt;/p&gt;</description>
     </item>
   </channel>

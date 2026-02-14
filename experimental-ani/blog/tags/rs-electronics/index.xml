@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rs Electronics on Anirudh Sharma</title>
-    <link>http://localhost:8000/blog/tags/rs-electronics/</link>
+    <link>https://anirudh.me/blog/tags/rs-electronics/</link>
     <description>Recent content in Rs Electronics on Anirudh Sharma</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Oct 2008 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8000/blog/tags/rs-electronics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anirudh.me/blog/tags/rs-electronics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Done ! the FTIR acrylic frame</title>
-      <link>http://localhost:8000/blog/done-the-ftir-acrylic-frame/</link>
+      <link>https://anirudh.me/blog/done-the-ftir-acrylic-frame/</link>
       <pubDate>Tue, 21 Oct 2008 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/done-the-ftir-acrylic-frame/</guid>
+      <guid>https://anirudh.me/blog/done-the-ftir-acrylic-frame/</guid>
       <description>&lt;p&gt;After much haggling and bargaining we got our 6 mm thick plexi-glass sheet, after manual polishing and shining the task at hand was to fit in the LED&amp;rsquo;s inside so as to facilitate the &lt;a href=&#34;http://cs.nyu.edu/%7Ejhan/ftirtouch/&#34;&gt;FTIR&lt;/a&gt; ( Frustrated Total Internal Reflection), the principle behind the project.&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipWoo46HpaaWTY6cmmSWiZDU8OVA78OZbASJg-wJGYA32R-z2doux6wSNzXNOUss8iES2VJrE6BxtMrg0fumenzWc7KDeQO4eOiWxjt6QzL9mMoQo7zcHqlauQfk3MHPYYAbxPcx4zgKtK/s1600/ftirschematic.gif&#34; alt=&#34;Schematic of frustrated total internal reflection in acrylic&#34; loading=&#34;lazy&#34;&gt;&#xA;  &lt;figcaption&gt;Schematic of frustrated total internal reflection in acrylic&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Since Sudhanshu and Rahul were most affluent in Electronics and Architecture, we moved to R.S. Electronics, owned by Rahul&amp;rsquo;s father &amp;ldquo;Mr. &amp;hellip; &amp;quot; so as to get our LED&amp;rsquo;s fixed in the acrylic frame. After putting in 15 hours we could get the IR LEDs fixed into the wooden frame. Here are some images of Infrared glowing acrylic frame from a night-vision camera.&lt;/p&gt;</description>
     </item>
   </channel>

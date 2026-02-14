@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gsoc-In on Anirudh Sharma</title>
-    <link>http://localhost:8000/blog/tags/gsoc-in/</link>
+    <link>https://anirudh.me/blog/tags/gsoc-in/</link>
     <description>Recent content in Gsoc-In on Anirudh Sharma</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Apr 2009 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8000/blog/tags/gsoc-in/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://anirudh.me/blog/tags/gsoc-in/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google SoC: I am in :)</title>
-      <link>http://localhost:8000/blog/google-soc-i-am-in/</link>
+      <link>https://anirudh.me/blog/google-soc-i-am-in/</link>
       <pubDate>Thu, 23 Apr 2009 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8000/blog/google-soc-i-am-in/</guid>
+      <guid>https://anirudh.me/blog/google-soc-i-am-in/</guid>
       <description>&lt;p&gt;After falcon4ever and tito&amp;rsquo;s hint I was keeping my fingers crossed. Phew ! at 12:30 AM IST 22 April dot, the results for Google Summer of Code -2009 were announced. Sudhanshu broke me the news on call, I was in ! It was one of the best moments of my life- the feeling within was a mix of several emotions. The mood was upbeat, yet I had in mind the upcoming summer ahead. Being selected is just the beginning, the real groundwork starts now.&lt;/p&gt;</description>
     </item>
   </channel>

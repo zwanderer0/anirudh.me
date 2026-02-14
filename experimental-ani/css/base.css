@@ -61,6 +61,68 @@ a:hover {
   color: var(--gold);
 }
 
+/* Focus styles for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 0 0 4px 4px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: none;
+}
+
+/* Diary link — fixed top right, mirrors blog's site-link */
+.diary-link {
+  position: fixed;
+  top: 24px;
+  right: 32px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  z-index: 999;
+  padding: 4px 12px;
+  border: 1.5px solid var(--accent);
+  border-radius: 3px;
+  transition: background var(--duration) var(--ease), color var(--duration) var(--ease);
+}
+
+.diary-link:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .diary-link {
+    top: 12px;
+    right: 12px;
+    font-size: 0.6875rem;
+    padding: 3px 10px;
+  }
+}
+
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 700;
@@ -146,5 +208,30 @@ ul, ol {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Footer */
+.site-footer {
+  margin-top: var(--space-2xl);
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 769px) {
+  .site-footer {
+    margin-left: var(--nav-width-tablet);
+    padding: var(--space-md) var(--space-xl);
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-footer {
+    margin-left: var(--nav-width);
+    padding: var(--space-md) var(--space-3xl);
   }
 }

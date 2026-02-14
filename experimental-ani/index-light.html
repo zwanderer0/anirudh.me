@@ -335,13 +335,15 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
     <span class="nav__toggle-bar"></span>
     <span class="nav__toggle-bar"></span>
     <span class="nav__toggle-bar"></span>
   </button>
 
-  <nav class="nav">
+  <nav class="nav" aria-label="Main navigation">
     <ul class="nav__list">
       <li class="nav__item">
         <a href="./" class="nav__link nav__link--home nav__link--active">
@@ -372,7 +374,7 @@
     </ul>
   </nav>
 
-  <main class="home">
+  <main class="home" id="main-content">
     <div class="home__content">
       <div class="home__text">
         <h1 class="sr-only">Anirudh Sharma</h1>
@@ -425,5 +427,8 @@
       });
     }
   </script>
+
+  <footer class="site-footer">&copy; 2026 Anirudh Sharma</footer>
+
 </body>
 </html>
