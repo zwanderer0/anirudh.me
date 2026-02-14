@@ -109,11 +109,6 @@ a:hover {
   max-width: 640px;
   min-width: 320px;
   margin: 0 auto;
-  padding-right: 33%;
-}
-
-.container h1 {
-  width: 133%;
 }
 
 /* ── Homepage Post List ──────────────────── */
@@ -319,14 +314,13 @@ img {
 .entry-figure figcaption {
   float: right;
   clear: right;
-  width: 33%;
+  width: 200px;
+  margin-right: -240px;
   margin-top: 0;
-  padding-left: 30px;
-  box-sizing: border-box;
   font-style: italic;
-  font-size: 1.1rem;
-  line-height: 1.3;
-  color: #111;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #555;
 }
 
 .caption {
@@ -506,12 +500,11 @@ ul.task-list { list-style-type: none; }
   .margin.right { float: right; }
   .margin.left { text-align: left; float: left; }
   .wide, .wide.left, .wide.right { width: 100%; margin: 0; }
-  .container { padding-right: 0; }
   .entry-figure figcaption {
     float: none;
     width: 100%;
-    padding-left: 0;
-    padding-top: 0.3rem;
+    margin-right: 0;
+    padding: 0.3rem 0 0;
   }
 }
 
@@ -522,7 +515,6 @@ ul.task-list { list-style-type: none; }
     border-top: 1px solid rgba(0,0,0,0.1);
     min-width: auto;
   }
-  .container h1 { width: 100%; }
   .index .margin { display: block; width: 100%; }
   .nav { float: none; display: block; margin: 0; width: 100%; }
   .nav a { margin: 0 1em 0 0; color: #111; }
