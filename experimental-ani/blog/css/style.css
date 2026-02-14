@@ -19,7 +19,7 @@ body {
   font-family: 'ET Book', serif;
   color: #111;
   background: #FFFFF8;
-  padding: 3em 4em 5em;
+  padding: 1.5em 4em 5em;
   word-wrap: break-word;
 }
 
@@ -64,7 +64,7 @@ a:hover {
 
 .site-header {
   max-width: 640px;
-  margin: 0 auto 3em;
+  margin: 0 auto 1.5em;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -182,8 +182,8 @@ h2, h3 { margin-top: 2em; }
 .container h1 {
   font-size: 48px;
   line-height: 48px;
-  margin-bottom: 60px;
-  margin-top: 60px;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
   font-weight: 400;
 }
 
