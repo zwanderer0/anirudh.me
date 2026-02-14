@@ -2,6 +2,8 @@ backend:
   name: github
   repo: zwanderer0/anirudh.me
   branch: master
+  auth_type: pkce
+  app_id: Ov23liXjbMtQlxbHVIfE
 
 media_folder: "hugo-blog/content/images"
 public_folder: "/blog/images"
