@@ -92,6 +92,7 @@
   color: var(--gold);
 }
 
+
 .nav__num {
   font-size: 0.625rem;
   color: var(--text-dim);
@@ -226,12 +227,66 @@
   }
 }
 
-/* Social icons */
+/* ── Unified nav: primary links ── */
+.nav__primary {
+  margin-bottom: var(--space-md);
+}
+
+.nav__primary .nav__link {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.nav__primary .nav__link:hover {
+  color: var(--accent);
+}
+
+/* ── Collapsible project index ── */
+.nav__details {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__details summary {
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 8px 0 8px calc(1.5em + var(--space-sm));
+  list-style: none;
+  user-select: none;
+  border-top: 1px solid var(--rule);
+  margin-top: var(--space-md);
+}
+
+.nav__details summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav__details summary::before {
+  content: '▸ ';
+  font-size: 0.5rem;
+  transition: transform var(--duration) var(--ease);
+  display: inline-block;
+}
+
+.nav__details[open] summary::before {
+  content: '▾ ';
+}
+
+.nav__details .nav__list {
+  padding-left: 0;
+}
+
+/* Social icons — pushed to bottom of sidebar */
 .nav__social {
   display: flex;
   gap: 14px;
   padding-left: calc(1.5em + var(--space-sm));
-  margin-top: 16px;
+  margin-top: auto;
 }
 
 .nav__social a {

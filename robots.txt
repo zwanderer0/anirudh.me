@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://anirudh.me/sitemap.xml
+Sitemap: https://anirudh.me/blog/sitemap.xml

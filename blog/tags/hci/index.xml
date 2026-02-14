@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HCI on Anirudh Sharma</title>
+    <link>https://anirudh.me/blog/tags/hci/</link>
+    <description>Recent content in HCI on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Mar 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://anirudh.me/blog/tags/hci/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google SoC is on!</title>
+      <link>https://anirudh.me/blog/google-soc-is-on/</link>
+      <pubDate>Thu, 19 Mar 2009 00:00:00 +0000</pubDate>
+      <guid>https://anirudh.me/blog/google-soc-is-on/</guid>
+      <description>&lt;p&gt;yoo ! Google Summer of Code list was announced yesterday , and its great to see NUIGroup on it. Well i&amp;rsquo;ll be going with my own idea this time. Have been playing around and exploring with the RUBY API and C++ SDK that comes with Google Sketchup. Let&amp;rsquo;s see how it goes, I just posted a request for ideas and suggestions on NUIGroup at &lt;a href=&#34;http://nuigroup.com/forums/viewthread/4801/&#34;&gt;http://nuigroup.com/forums/viewthread/4801/&lt;/a&gt; ..&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

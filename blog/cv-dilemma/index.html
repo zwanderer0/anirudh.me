@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>CV dilemma — Anirudh Sharma's Blog</title>
+  <meta name="description" content="Thoughts on invention, design, and technology">
+  <meta property="og:site_name" content="Anirudh Sharma">
+  <meta property="og:title" content="CV dilemma">
+  
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://anirudh.me/blog/cv-dilemma/">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://anirudh.me/blog/index.xml">
+  <link rel="stylesheet" href="https://anirudh.me/blog/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});">
+  </script>
+</head>
+
+  <body>
+    <a href="../" class="site-link">&larr; Main Site</a>
+
+<header class="site-header">
+  <a href="https://anirudh.me/blog/" class="logo">Anirudh Sharma's Blog</a>
+  <nav class="nav">
+    <a href="https://anirudh.me/blog/archives/">Archives</a>
+    
+  </nav>
+</header>
+
+    
+<div class="container">
+  <h1>CV dilemma</h1>
+
+  <div class="post-meta">
+    May 26, 2010
+    
+    &middot; <a href="https://anirudh.me/tags/parameterization/">parameterization</a>
+    
+    &middot; <a href="https://anirudh.me/tags/opencv/">openCV</a>
+    
+    &middot; <a href="https://anirudh.me/tags/distortion/">distortion</a>
+    
+  </div>
+
+  <div class="entry">
+    <p>Looks like there&rsquo;s a problem with OpenCV&rsquo;s distributed parameterization of coordinates used during the camera calibration tasks.  Three distinct sources of information on img distortion formulae apparently give three non-equivalent description of the parameters and equations involved:</p>
+<p><strong>(1)</strong> In their book &ldquo;Learning OpenCV&rdquo;  write regarding lens distortion:</p>
+<p>$$x_{\text{corrected}} = x(1 + k_1 r^2 + k_2 r^4 + k_3 r^6) + [2p_1 xy + p_2(r^2 + 2x^2)]$$</p>
+<p>$$y_{\text{corrected}} = y(1 + k_1 r^2 + k_2 r^4 + k_3 r^6) + [p_1(r^2 + 2y^2) + 2p_2 xy]$$</p>
+<p>where $r = \sqrt{x^2 + y^2}$.</p>
+<p>Assumably, $(x, y)$ are the pixel coordinates (in pixel units) in the uncorrected captured image corresponding to world-point objects with coordinates $(X, Y, Z)$, camera-frame referenced, for which</p>
+<p>$$x_{\text{corrected}} = f_x \frac{X}{Z} + c_x \quad \text{and} \quad y_{\text{corrected}} = f_y \frac{Y}{Z} + c_y$$</p>
+<p>where $f_x$, $f_y$, $c_x$, and $c_y$, are the capturing camera&rsquo;s intrinsic parameters. Therefore, having $(x, y)$ from a captured image, one can derive the desired points $(x_{\text{correct}}, y_{\text{correct}})$ to obtain an un-distorted image of the captured world scene.</p>
+<p>However&hellip;</p>
+<p><strong>(2)</strong> The complication issue comes when we look at OpenCV 2.0 C Reference entry under the &ldquo;Camera Calibration and 3D Reconstruction section&rdquo;. For the ease of the comparing task we begin with all world-point $(X, Y, Z)$ coordinates being expressed w.r.t the camera&rsquo;s reference frame, just like the first point. Consequently, the transformation matrix $[R \mid t]$ is of no concern.</p>
+<p>In the C reference, it is expressed that:</p>
+<p>$$x&rsquo; = \frac{X}{Z}$$</p>
+<p>$$y&rsquo; = \frac{Y}{Z}$$</p>
+<p>$$x&rsquo;&rsquo; = x&rsquo;(1 + k_1 r&rsquo;^2 + k_2 r&rsquo;^4 + k_3 r&rsquo;^6) + [2p_1 x&rsquo; y&rsquo; + p_2(r&rsquo;^2 + 2x&rsquo;^2)]$$</p>
+<p>$$y&rsquo;&rsquo; = y&rsquo;(1 + k_1 r&rsquo;^2 + k_2 r&rsquo;^4 + k_3 r&rsquo;^6) + [p_1(r&rsquo;^2 + 2y&rsquo;^2) + 2p_2 x&rsquo; y&rsquo;]$$</p>
+<p>where $r&rsquo; = \sqrt{x&rsquo;^2 + y&rsquo;^2}$, and finally</p>
+<p>$$u = f_x x&rsquo;&rsquo; + c_x$$</p>
+<p>$$v = f_y y&rsquo;&rsquo; + c_y$$</p>
+<p>One can see these expressions are not equiv. to the ones presented in #1, with the result that the two sets of corrected coordinates $(x_{\text{correct}}, y_{\text{correct}})$ and $(u, v)$ aren&rsquo;t the same. Why the contradiction? It seems to me the first set makes more sense as I can attach physical meaning to each and every $x$ and $y$ in there, while I find no physical meaning in $x&rsquo; = X/Z$ and $y&rsquo; = Y/Z$ when the camera focal length is not exactly $= 1$. Moreover, one cannot calculate $x&rsquo;$ and $y&rsquo;$ since we don&rsquo;t know $(X, Y, Z)$.</p>
+<p><strong>(3)</strong> Unfortunately, things get even murkier when we refer to the writings in Intel&rsquo;s OpenCV Library Reference Manual&rsquo;s section Lens Distortion (page 6-4), which states in part:</p>
+<p>&ldquo;Let $(u, v)$ be true pixel image coordinates, that is, coordinates with ideal projection, and $(\tilde{u}, \tilde{v})$ be corresponding real observed (distorted) image coordinates. Similarly, $(x, y)$ are ideal (distortion-free) and $(\tilde{x}, \tilde{y})$ are real (distorted) image physical coordinates. Taking into account two expansion terms gives the following:</p>
+<p>$$\tilde{x} = x(1 + k_1 r^2 + k_2 r^4) + [2p_1 xy + p_2(r^2 + 2x^2)]$$</p>
+<p>$$\tilde{y} = y(1 + k_1 r^2 + k_2 r^4) + [2p_2 xy + p_2(r^2 + 2y^2)]$$</p>
+<p>where $r = \sqrt{x^2 + y^2}$. &hellip;</p>
+<p>&ldquo;Because $\tilde{u} = c_x + f_x u$ and $\tilde{v} = c_y + f_y v$, &hellip; the resultant system can be rewritten as follows:</p>
+<p>$$\tilde{u} = u + (u - c_x)\left[k_1 r^2 + k_2 r^4 + 2p_1 y + p_2\left(\frac{r^2}{x} + 2x\right)\right]$$</p>
+<p>$$\tilde{v} = v + (v - c_y)\left[k_1 r^2 + k_2 r^4 + 2p_2 x + p_1\left(\frac{r^2}{y} + 2y\right)\right]$$</p>
+<p>The latter relations are used to undistort images from the camera.&rdquo;</p>
+<p>Well, it would appear that the expressions involving $\tilde{x}$ and $\tilde{y}$ coincided with the two expressions given at the top of this writing involving $x_{\text{correct}}$ and $y_{\text{correct}}$. However, $\tilde{x}$ and $\tilde{y}$ do not refer to corrected coordinates, according to the given description. I don&rsquo;t understand the distinction between the meaning of the coordinates $(\tilde{x}, \tilde{y})$ and $(\tilde{u}, \tilde{v})$, or for that matter, between the pairs $(x, y)$ and $(u, v)$. From their descriptions it appears their only distinction is that $(\tilde{x}, \tilde{y})$ and $(x, y)$ refer to &lsquo;physical&rsquo; coordinates while $(\tilde{u}, \tilde{v})$ and $(u, v)$ do not. What is this distinction all about? Aren&rsquo;t they all physical coordinates? I&rsquo;m lost!. ( OpenCV ML)</p>
+
+  </div>
+
+  <nav class="post-nav">
+    
+    <a href="/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/">
+      <div class="post-nav__label">&larr; Previous</div>
+      <div class="post-nav__title">New Multitouch Notebook, Mozilla Labs, GSoC and fun</div>
+    </a>
+    
+
+    
+    <a href="/blog/last-few-days-at-college/" class="next">
+      <div class="post-nav__label">Next &rarr;</div>
+      <div class="post-nav__title">Last few days at college</div>
+    </a>
+    
+  </nav>
+</div>
+
+    <footer style="text-align:center; padding:3rem 1rem 4rem; font-family:'ET Book', Georgia, serif; font-style:italic; font-size:1rem; color:Gray;">
+  &copy; 2026 Anirudh Sharma
+</footer>
+
+  </body>
+</html>

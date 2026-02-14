@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Proposed an idea for GSoC 2009 — Anirudh Sharma's Blog</title>
+  <meta name="description" content="Thoughts on invention, design, and technology">
+  <meta property="og:site_name" content="Anirudh Sharma">
+  <meta property="og:title" content="Proposed an idea for GSoC 2009">
+  
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://anirudh.me/blog/proposed-an-idea-for-gsoc-2009/">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://anirudh.me/blog/index.xml">
+  <link rel="stylesheet" href="https://anirudh.me/blog/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});">
+  </script>
+</head>
+
+  <body>
+    <a href="../" class="site-link">&larr; Main Site</a>
+
+<header class="site-header">
+  <a href="https://anirudh.me/blog/" class="logo">Anirudh Sharma's Blog</a>
+  <nav class="nav">
+    <a href="https://anirudh.me/blog/archives/">Archives</a>
+    
+  </nav>
+</header>
+
+    
+<div class="container">
+  <h1>Proposed an idea for GSoC 2009</h1>
+
+  <div class="post-meta">
+    April 2, 2009
+    
+    &middot; <a href="https://anirudh.me/tags/nuigroup/">NUIGroup</a>
+    
+    &middot; <a href="https://anirudh.me/tags/gsoc/">gsoc</a>
+    
+    &middot; <a href="https://anirudh.me/tags/as3-for-multitouch/">AS3 for Multitouch</a>
+    
+    &middot; <a href="https://anirudh.me/tags/google-sketchup/">Google Sketchup</a>
+    
+    &middot; <a href="https://anirudh.me/tags/multitouch-cad/">Multitouch CAD</a>
+    
+    &middot; <a href="https://anirudh.me/tags/gsoc-india/">gsoc india</a>
+    
+  </div>
+
+  <div class="entry">
+    <p>Proposed an Idea for Google Summer of Code to port Google SketchUp to Multitouch. Users would be able to do 3D modeling with simple and intuitive gestures. An Extension Module that would allow Google SketchUp to receive TUIO and hence allow manipulations via Multitouch gestures.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Lack of a CAD software that could be used via Multitouch has been the motivating factor behind this proposal. Eversince I used the Sketches application on iPhone &ndash; which enables 2D drawing using Multitouch, I felt like doing something similar on my FTIR setup. Adding multitouch ability to an easy to use CAD/modeling software - Google SketchUp would not only make the design process intuitive but also add a lot to the usability factor.</p>
+<p>The reason behind choosing Google SketchUp and not start developing something from scratch is due to its easy to start UI. By experience I&rsquo;ve felt that Google SketchUp is one of the easiest and widely used surface modeling tools around &ndash; what&rsquo;s impressive about it &ndash; its patented Push-Pull technique, being free to use and support for both Windows and OSX environments. Hence, the idea is simple - to develop an extension with new gesture-sets for Google SketchUp that&rsquo;d ease the modeling procedure via Multitouch. An additional Bimanual Gesture support that&rsquo;d allow an IR Pen and hand simultaneously has also been proposed as an add-on.</p>
+<h2 id="development-plan">Development Plan</h2>
+<p>Google SketchUp comes with a powerful Ruby API and a C++ SDK. The plugins for Google SketchUp are written as Ruby scripts that are interpreted by Google SketchUp. Also, there is a Ruby TUIO Client implementation by Collin Harris to start up with.</p>
+<p>The procedure would be to create ruby scripts with gestures defined for specific tasks that would map to two primary tasks:</p>
+<ol>
+<li>Workspace navigation</li>
+<li>Drawing</li>
+</ol>
+<p>This shall keep the interface intuitive and not let the end user confuse the SketchUp during the Drawing and navigation gesture. A new toolbar menu set will be created which shall contain two sets. This has a certain advantage over the traditional mouse system since it&rsquo;d minimize the need to access the toolbar repeatedly for specific tasks:</p>
+<h2 id="set-1--camera-movements--workspace-navigation">SET 1 &ndash; Camera Movements / Workspace Navigation</h2>
+<p>This includes gestures to ZOOM-IN, ZOOM-OUT, PAN, AND ORBIT and taking measurements:</p>
+<ul>
+<li>Rotation of workspace/model in 3D &ndash; Orbit Tool</li>
+<li>Panning &ndash; Single touch drag</li>
+<li>Tapping initial and final point to make measurements</li>
+</ul>
+<h2 id="set-2--drawing">SET 2 &ndash; Drawing</h2>
+<p>This shall enable drawing using gestures via SketchUp. The tentative plan for the gestures has been described in the text and mockups below:</p>
+<ul>
+<li>Select Square Option and use four fingers to enlarge rectangle. SketchUp would take care of the approximations when user intends to draw a square.</li>
+<li>Select Line Option and tap at two points on screen to create a line segment in between.</li>
+<li>Select Circle Option to draw circle using Multitouch by manipulating radius using MT</li>
+</ul>
+<hr>
+<p>The Complete PDF for the Proposal can be accessed <a href="http://nuigroup.com/?ACT=28&amp;fid=86&amp;aid=2917_f5RxlZLGQIa7VPy6ITHt">here</a></p>
+
+  </div>
+
+  <nav class="post-nav">
+    
+    <a href="/blog/stood-first-this-time-its-bits-pilani/">
+      <div class="post-nav__label">&larr; Previous</div>
+      <div class="post-nav__title">Stood First - this time its BITS Pilani</div>
+    </a>
+    
+
+    
+    <a href="/blog/google-soc-i-am-in/" class="next">
+      <div class="post-nav__label">Next &rarr;</div>
+      <div class="post-nav__title">Google SoC: I am in :)</div>
+    </a>
+    
+  </nav>
+</div>
+
+    <footer style="text-align:center; padding:3rem 1rem 4rem; font-family:'ET Book', Georgia, serif; font-style:italic; font-size:1rem; color:Gray;">
+  &copy; 2026 Anirudh Sharma
+</footer>
+
+  </body>
+</html>

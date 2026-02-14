@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Gestures Plan — Anirudh Sharma's Blog</title>
+  <meta name="description" content="Thoughts on invention, design, and technology">
+  <meta property="og:site_name" content="Anirudh Sharma">
+  <meta property="og:title" content="Gestures Plan">
+  
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://anirudh.me/blog/gestures-plan/">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://anirudh.me/blog/index.xml">
+  <link rel="stylesheet" href="https://anirudh.me/blog/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});">
+  </script>
+</head>
+
+  <body>
+    <a href="../" class="site-link">&larr; Main Site</a>
+
+<header class="site-header">
+  <a href="https://anirudh.me/blog/" class="logo">Anirudh Sharma's Blog</a>
+  <nav class="nav">
+    <a href="https://anirudh.me/blog/archives/">Archives</a>
+    
+  </nav>
+</header>
+
+    
+<div class="container">
+  <h1>Gestures Plan</h1>
+
+  <div class="post-meta">
+    July 28, 2009
+    
+    &middot; <a href="https://anirudh.me/tags/gsoc/">gsoc</a>
+    
+    &middot; <a href="https://anirudh.me/tags/multitouch-sketchup/">Multitouch Sketchup</a>
+    
+    &middot; <a href="https://anirudh.me/tags/gsoc-india/">gsoc india</a>
+    
+    &middot; <a href="https://anirudh.me/tags/google-sketchup/">Google Sketchup</a>
+    
+    &middot; <a href="https://anirudh.me/tags/gestures/">gestures</a>
+    
+  </div>
+
+  <div class="entry">
+    <p>My thoughts were triggered after I read the <a href="http://www.billbuxton.com/multitouchOverview.html">Bill Buxton argument</a>.</p>
+<p>We must focus on <em>streamlining</em> the interaction. by number of gestures <strong>minimum</strong>, using them only when they&rsquo;re required and <strong>naturally usable</strong> -&gt; Simpler and better SketchUp design and modeling experience. This implies that we should using Multitouch in only one thing -&gt; Camera motions in Sketchup i.e. Zoom, PAN and Orbit.</p>
+<p>There are two modes I am thinking about:</p>
+<p>MODE 1 Camera = Initialized using a Button1 from a new SketchUp MT Toolbar</p>
+<ol>
+<li>
+<p><strong>Zoom</strong> - Drag apart two fingers/MT cursors<figure class="entry-figure">
+  <img src="/blog/images/blog/gesture-works.png" alt="" loading="lazy">
+</figure>
+</p>
+</li>
+<li>
+<p><strong>Orbit</strong> - Keep two fingers constant and move third vertically to the axis of the two.</p>
+<pre><code>       X X O ^
+</code></pre>
+</li>
+<li>
+<p><strong>Pan</strong> - Drag in any direction with single finger</p>
+<pre><code>     O-&gt;
+</code></pre>
+</li>
+</ol>
+<p>MODE 2 Drawing = Initalized using Button2 from SketchUp MT toolbar</p>
+<ul>
+<li>SketchUp&rsquo;s drawing interface is meant to be exploited using single touch (mouse) so we plan not messing around with that - Therefore we&rsquo;re drawing with the help of mouse emulation and it&rsquo;ll do. by just checking if the amount of fingers/touches (TUIO cursors) ==1 and then emulating the MOUSE.</li>
+</ul>
+<p>Trying to draw in sketchup using MT might be analogical to killing a mosquito with a stick.</p>
+<p><strong>So let&rsquo;s keep the drawing Single Touch</strong></p>
+
+  </div>
+
+  <nav class="post-nav">
+    
+    <a href="/blog/i-am-trying-to/">
+      <div class="post-nav__label">&larr; Previous</div>
+      <div class="post-nav__title">I am trying to.</div>
+    </a>
+    
+
+    
+    <a href="/blog/usability-survey-results-how-will-multitouch-on-google-sketchup-feel-like/" class="next">
+      <div class="post-nav__label">Next &rarr;</div>
+      <div class="post-nav__title">Usability Survey Results &#34;How will Multitouch on Google Sketchup feel like&#34;</div>
+    </a>
+    
+  </nav>
+</div>
+
+    <footer style="text-align:center; padding:3rem 1rem 4rem; font-family:'ET Book', Georgia, serif; font-style:italic; font-size:1rem; color:Gray;">
+  &copy; 2026 Anirudh Sharma
+</footer>
+
+  </body>
+</html>

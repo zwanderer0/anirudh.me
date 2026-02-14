@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gestures on Anirudh Sharma</title>
+    <link>https://anirudh.me/blog/tags/gestures/</link>
+    <description>Recent content in Gestures on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jul 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://anirudh.me/blog/tags/gestures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gestures Plan</title>
+      <link>https://anirudh.me/blog/gestures-plan/</link>
+      <pubDate>Tue, 28 Jul 2009 00:00:00 +0000</pubDate>
+      <guid>https://anirudh.me/blog/gestures-plan/</guid>
+      <description>&lt;p&gt;My thoughts were triggered after I read the &lt;a href=&#34;http://www.billbuxton.com/multitouchOverview.html&#34;&gt;Bill Buxton argument&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;We must focus on &lt;em&gt;streamlining&lt;/em&gt; the interaction. by number of gestures &lt;strong&gt;minimum&lt;/strong&gt;, using them only when they&amp;rsquo;re required and &lt;strong&gt;naturally usable&lt;/strong&gt; -&amp;gt; Simpler and better SketchUp design and modeling experience. This implies that we should using Multitouch in only one thing -&amp;gt; Camera motions in Sketchup i.e. Zoom, PAN and Orbit.&lt;/p&gt;&#xA;&lt;p&gt;There are two modes I am thinking about:&lt;/p&gt;&#xA;&lt;p&gt;MODE 1 Camera = Initialized using a Button1 from a new SketchUp MT Toolbar&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Update</title>
+      <link>https://anirudh.me/blog/update/</link>
+      <pubDate>Wed, 03 Jun 2009 00:00:00 +0000</pubDate>
+      <guid>https://anirudh.me/blog/update/</guid>
+      <description>&lt;p&gt;Simultaneously I had a word with patali, regarding pyGE if something similar will work with Google SketchUp. We can go with an external script, that will sends TUIO using &lt;code&gt;win32com&lt;/code&gt; directly &lt;a href=&#34;http://code.google.com/p/pymt/source/browse/examples/kaswy/PyGE_touch.py&#34;&gt;http://code.google.com/p/pymt/source/browse/examples/kaswy/PyGE_touch.py&lt;/a&gt; like passing commands. That&amp;rsquo;s how the Google Earth is controlled via python and we can make these commands user defined:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;We run an external script and this script launches the Google SketchUp&lt;/li&gt;&#xA;&lt;li&gt;Takes in the TUIO, processes gestures and talks to SketchUp&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;But we will resort to this option if all else fails, after trying this successfully I&amp;rsquo;ll come back to usual TUIO implementation within SketchUp. Started to try if that works out with Sketchup. The only difference being that Google Earth comes with a direct WIN32 COM interface and SketchUp doesn&amp;rsquo;t. But we might be able to add that support via a DLL.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

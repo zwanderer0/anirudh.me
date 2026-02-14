@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beginning on Anirudh Sharma</title>
+    <link>https://anirudh.me/blog/tags/beginning/</link>
+    <description>Recent content in Beginning on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Oct 2008 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://anirudh.me/blog/tags/beginning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plans for the Multitouch Console :)</title>
+      <link>https://anirudh.me/blog/plans-for-the-multitouch-console/</link>
+      <pubDate>Fri, 10 Oct 2008 00:00:00 +0000</pubDate>
+      <guid>https://anirudh.me/blog/plans-for-the-multitouch-console/</guid>
+      <description>&lt;p&gt;It all started in way back in the humid month of August, 2008, when we planned to build a multitouch table prototype on our own. The terms like &amp;ldquo;complaint surface&amp;rdquo; , &amp;ldquo;display ratio&amp;rdquo;, &amp;ldquo;angle of throw&amp;rdquo; started to make a little sense to us. I showed the NUI video to Sudhanshu, Rahul - after getting mesmerized by what all is achievable by Multitouch they got fired up :-) We were a team now.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

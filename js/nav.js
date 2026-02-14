@@ -61,4 +61,14 @@
       }
     }
   });
+
+  // Auto-expand project details when on a project page
+  var details = document.querySelector('.nav__details');
+  if (details) {
+    var isProjectPage = currentPath.indexOf('/projects/') !== -1;
+    var isWorkPage = currentPath.indexOf('/work/') !== -1;
+    if (isProjectPage || isWorkPage) {
+      details.setAttribute('open', '');
+    }
+  }
 })();

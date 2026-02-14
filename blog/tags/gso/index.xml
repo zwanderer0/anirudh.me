@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gso on Anirudh Sharma</title>
+    <link>https://anirudh.me/blog/tags/gso/</link>
+    <description>Recent content in Gso on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Aug 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://anirudh.me/blog/tags/gso/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Approaching Final evals</title>
+      <link>https://anirudh.me/blog/approaching-final-evals/</link>
+      <pubDate>Wed, 12 Aug 2009 00:00:00 +0000</pubDate>
+      <guid>https://anirudh.me/blog/approaching-final-evals/</guid>
+      <description>&lt;p&gt;The &amp;ldquo;pencils down&amp;rdquo; date for GSoC is approaching fast. This is the core of the work during this time.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt;. Code cleaning. Decided to keep the previous ruby tuio client experiments&amp;rsquo; work safe in the repository (pre-midterms GSoC work). It might be useful in the future development where better and refined gestures might be inculcated.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;2&lt;/strong&gt;. Code commenting wherever necessary&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;3&lt;/strong&gt;. Documentation&amp;rsquo;s skeleton done&lt;/p&gt;&#xA;&lt;p&gt;3.a) Compile HowTo&amp;rsquo;s&#xA;3.b) Readme&amp;rsquo;s&#xA;3.c) Changelog&#xA;3.d) Etc.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Update — Anirudh Sharma's Blog</title>
+  <meta name="description" content="Thoughts on invention, design, and technology">
+  <meta property="og:site_name" content="Anirudh Sharma">
+  <meta property="og:title" content="Update">
+  
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://anirudh.me/blog/update/">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://anirudh.me/blog/index.xml">
+  <link rel="stylesheet" href="https://anirudh.me/blog/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});">
+  </script>
+</head>
+
+  <body>
+    <a href="../" class="site-link">&larr; Main Site</a>
+
+<header class="site-header">
+  <a href="https://anirudh.me/blog/" class="logo">Anirudh Sharma's Blog</a>
+  <nav class="nav">
+    <a href="https://anirudh.me/blog/archives/">Archives</a>
+    
+  </nav>
+</header>
+
+    
+<div class="container">
+  <h1>Update</h1>
+
+  <div class="post-meta">
+    June 3, 2009
+    
+    &middot; <a href="https://anirudh.me/tags/pymt/">pyMT</a>
+    
+    &middot; <a href="https://anirudh.me/tags/google-sketchup/">Google Sketchup</a>
+    
+    &middot; <a href="https://anirudh.me/tags/gestures/">gestures</a>
+    
+  </div>
+
+  <div class="entry">
+    <p>Simultaneously I had a word with patali, regarding pyGE if something similar will work with Google SketchUp. We can go with an external script, that will sends TUIO using <code>win32com</code> directly <a href="http://code.google.com/p/pymt/source/browse/examples/kaswy/PyGE_touch.py">http://code.google.com/p/pymt/source/browse/examples/kaswy/PyGE_touch.py</a> like passing commands. That&rsquo;s how the Google Earth is controlled via python and we can make these commands user defined:</p>
+<ol>
+<li>We run an external script and this script launches the Google SketchUp</li>
+<li>Takes in the TUIO, processes gestures and talks to SketchUp</li>
+</ol>
+<p>But we will resort to this option if all else fails, after trying this successfully I&rsquo;ll come back to usual TUIO implementation within SketchUp. Started to try if that works out with Sketchup. The only difference being that Google Earth comes with a direct WIN32 COM interface and SketchUp doesn&rsquo;t. But we might be able to add that support via a DLL.</p>
+<p>Lots of workarounds, but atleast we have options. patali&rsquo;s been super helpful bouncing ideas around. More updates soon.</p>
+
+  </div>
+
+  <nav class="post-nav">
+    
+    <a href="/blog/report-1/">
+      <div class="post-nav__label">&larr; Previous</div>
+      <div class="post-nav__title">Report 1</div>
+    </a>
+    
+
+    
+    <a href="/blog/dilemma/" class="next">
+      <div class="post-nav__label">Next &rarr;</div>
+      <div class="post-nav__title">Dilemma</div>
+    </a>
+    
+  </nav>
+</div>
+
+    <footer style="text-align:center; padding:3rem 1rem 4rem; font-family:'ET Book', Georgia, serif; font-style:italic; font-size:1rem; color:Gray;">
+  &copy; 2026 Anirudh Sharma
+</footer>
+
+  </body>
+</html>
