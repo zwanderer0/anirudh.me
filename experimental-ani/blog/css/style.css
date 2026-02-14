@@ -3,19 +3,22 @@
    Blot Journal theme — ET Book on cream
    ═══════════════════════════════════════════════ */
 
-@font-face { font-family: 'Space Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/space-mono-regular.woff2') format('woff2'); }
-@font-face { font-family: 'Space Mono'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/space-mono-bold.woff2') format('woff2'); }
-@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('../fonts/space-grotesk-regular.woff2') format('woff2'); }
+@font-face { font-family: 'ET Book'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/et-book-400.woff') format('woff'); }
+@font-face { font-family: 'ET Book'; font-style: italic; font-weight: 400; font-display: swap; src: url('../fonts/et-book-400-italic.woff') format('woff'); }
+@font-face { font-family: 'ET Book'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/et-book-600.woff') format('woff'); }
 
-*, *::before, *::after { box-sizing: border-box; }
+.pull-double { margin-left: -.4248046875em; }
+.push-double { margin-right: .4248046875em; }
+.pull-single { margin-left: -.1845703125em; }
+.push-single { margin-right: .1845703125em; }
+.push-double, .push-single { display: inline-block; }
 
 body {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.72;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-family: 'ET Book', serif;
   color: #111;
-  background: #FAFAF8;
-  margin: 0;
+  background: #FFFFF8;
   padding: 3em 4em 5em;
   word-wrap: break-word;
 }
@@ -26,13 +29,12 @@ body {
 }
 
 a {
-  color: #7A2680;
+  color: #111;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #7A5210;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* ── Main Site Link — fixed top right ────── */
@@ -41,21 +43,21 @@ a:hover {
   position: fixed;
   top: 24px;
   right: 32px;
-  font-family: 'Space Mono', monospace;
-  font-size: 0.9rem;
-  color: #545454;
+  font-style: italic;
+  font-size: 1rem;
+  color: #111;
   text-decoration: none;
   z-index: 999;
   padding: 4px 12px;
-  border: 1.5px solid #7A2680;
+  border: 1.5px solid #111;
   border-radius: 3px;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .site-link:hover {
-  background: #7A2680;
-  color: #fff;
-  border-color: #7A2680;
+  background: #111;
+  color: #FFFFF8;
+  border-color: #111;
 }
 
 /* ── Site Header ─────────────────────────── */
@@ -69,8 +71,8 @@ a:hover {
 }
 
 .logo {
-  font-family: 'Space Mono', monospace;
-  font-size: 1.1rem;
+  font-style: italic;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #111;
 }
@@ -79,12 +81,12 @@ a:hover {
 
 .nav {
   display: flex;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 .nav a {
-  font-family: 'Space Mono', monospace;
-  font-size: 0.875rem;
+  font-style: italic;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #111;
 }
@@ -97,6 +99,9 @@ a:hover {
   color: #545454;
 }
 
+.small { font-size: 12px; }
+.light { color: Gray; text-decoration: none; }
+
 /* ── Container ───────────────────────────── */
 
 .container {
@@ -104,6 +109,11 @@ a:hover {
   max-width: 640px;
   min-width: 320px;
   margin: 0 auto;
+  padding-right: 33%;
+}
+
+.container h1 {
+  width: 133%;
 }
 
 /* ── Homepage Post List ──────────────────── */
@@ -124,24 +134,23 @@ a:hover {
 }
 
 .post-title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1.8;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
   text-decoration: none;
   display: inline;
 }
 
 .post-date {
-  font-family: 'Space Mono', monospace;
-  font-size: 0.8125rem;
-  color: #545454;
+  font-size: 1rem;
+  color: Gray;
   display: inline;
+  text-decoration: none;
 }
 
 .post-date::before {
   content: " – ";
-  color: #545454;
+  color: Gray;
 }
 
 /* Pagination */
@@ -150,8 +159,7 @@ a:hover {
 }
 
 .pagination a {
-  font-family: 'Space Mono', monospace;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #111;
   text-decoration: none;
 }
@@ -159,8 +167,7 @@ a:hover {
 .pagination a:hover { text-decoration: underline; }
 
 .pagination .meta {
-  font-family: 'Space Mono', monospace;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #545454;
 }
 
@@ -173,25 +180,56 @@ a:hover {
 
 /* ── Single Post ─────────────────────────── */
 
+h1, h2, h3, h4, h5, h6 { font-size: inherit; }
+
+h2, h3 { margin-top: 2em; }
+
 .container h1 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2.4rem;
-  line-height: 1.15;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
-  margin: 0 0 1.5rem;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  font-weight: 400;
 }
 
+p.subtitle {
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  display: block;
+  line-height: 1;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 3.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+/* Date spacing for entry */
+h1 + .light { margin-top: -0.75em; margin-bottom: 1.5em; }
+
 .post-meta {
-  font-family: 'Space Mono', monospace;
-  font-size: 0.95rem;
-  color: #545454;
+  font-size: 1rem;
+  color: Gray;
   margin-bottom: 2.5rem;
 }
 
 .post-meta a {
-  color: #545454;
+  color: Gray;
   text-decoration: none;
 }
 
@@ -203,99 +241,68 @@ a:hover {
   margin-top: 1rem;
 }
 
-.entry p {
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
+p {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding-right: 0;
   vertical-align: baseline;
 }
 
+p, li, blockquote, figcaption {
+  orphans: 2;
+  widows: 2;
+}
+
 .entry a {
-  color: #7A2680;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+  color: #111;
+  text-decoration: underline;
 }
 
 .entry a:hover {
-  color: #7A5210;
-  border-bottom-color: #7A5210;
-  text-decoration: none;
-}
-
-.entry h2 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 1.15;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.entry h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.entry h4, .entry h5, .entry h6 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.8rem;
+  text-decoration: underline;
 }
 
 /* ── Margin Notes (Tufte-style) ──────────── */
 
 .margin {
-  float: right;
-  clear: right;
-  width: 200px;
-  margin-right: -240px;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: #555;
+  position: absolute;
+  box-sizing: border-box;
+  width: 33%;
+  font-size: 1.1rem;
+  line-height: 1.3;
 }
 
-.margin p {
-  font-style: italic;
-  margin-top: 2px;
+.margin p { font-style: italic; margin-top: 2px; }
+
+.left.margin {
+  right: 0;
+  padding-right: 30px;
+  text-align: right;
 }
+
+.right.margin {
+  right: 0;
+  padding-left: 30px;
+}
+
+.wide {
+  width: 158.6666667%;
+  margin-left: -29.3333333%;
+  overflow: auto;
+}
+
+.wide.left, .wide.right { width: 129.3333333%; float: none; }
+.wide.left { margin: 0 0 0 -29.3333333%; }
+.wide.right { margin: 0 -29.3333333% 0 0; }
+
+.margin p, .column p { margin-top: 2px; }
+.margin h1, .margin h2, .margin h3 { margin-top: 0; }
 
 /* ── Images & Figures ────────────────────── */
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.entry-figure {
-  position: relative;
-  margin: 1.4rem 0;
-  padding: 0;
-}
-
-.entry-figure img {
-  width: 100%;
-  height: auto;
-}
-
-.entry-figure figcaption {
-  float: right;
-  clear: right;
-  width: 200px;
-  margin-right: -240px;
-  margin-top: 0;
-  font-family: 'Space Grotesk', sans-serif;
-  font-style: italic;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: #555;
 }
 
 .caption {
@@ -326,10 +333,8 @@ img {
 /* ── Blockquotes ─────────────────────────── */
 
 blockquote {
-  margin: 1.2rem 0 1.2rem 1.5rem;
-  padding-left: 1rem;
-  border-left: 2px solid rgba(0, 0, 0, 0.12);
-  color: #333;
+  color: #111;
+  margin: 21px 40px;
 }
 
 blockquote p { margin: 0.5rem 0; }
@@ -349,20 +354,14 @@ hr {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 1.4rem 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 24px;
   word-break: keep-all;
 }
 
-tr {
-  border-top: 1px solid #111;
-}
-
-th, td {
-  border: 1px solid #111;
-  padding: 5px 12px 6px;
-}
+tr { box-sizing: border-box; border-top: 1px solid #111; padding: 0; }
+th, td { box-sizing: border-box; border: 1px solid #111; padding: 5px 12px 6px; }
 
 /* ── Code ────────────────────────────────── */
 
@@ -383,7 +382,7 @@ pre, code {
 
 /* ── KaTeX Math ──────────────────────────── */
 
-.katex { font-size: 1.1em; }
+.katex { font-size: 1.2em; }
 
 /* ── Footnotes ───────────────────────────── */
 
@@ -397,14 +396,17 @@ pre, code {
 
 /* ── Lists ───────────────────────────────── */
 
-.entry ul, .entry ol {
-  padding-left: 1.5rem;
-  margin: 1.2rem 0;
-}
+ul.task-list { list-style-type: none; }
 
-.entry li { margin: 0.25rem 0; }
+/* ── Columns ─────────────────────────────── */
 
-ul.task-list { list-style: none; padding-left: 0; }
+.column { box-sizing: border-box; float: left; }
+.column.two { width: 50%; padding-right: 12px; }
+.column.two + .column.two { padding: 0 0 0 12px; }
+.column.three { width: 33.333333%; padding: 0 16px 0 0; }
+.column.three + .column.three { padding: 0 8px; }
+.column.three + .column.three + .column.three { padding: 0 0 0 16px; }
+.clear { width: 100%; clear: both; }
 
 /* ── Post Navigation ─────────────────────── */
 
@@ -428,7 +430,7 @@ ul.task-list { list-style: none; padding-left: 0; }
 .post-nav__label {
   font-style: italic;
   font-size: 0.9rem;
-  color: #545454;
+  color: Gray;
   margin-bottom: 0.3rem;
 }
 
@@ -442,11 +444,10 @@ ul.task-list { list-style: none; padding-left: 0; }
 /* ── Archives ────────────────────────────── */
 
 .archive-year {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 1;
-  margin: 2.5rem 0 0.8rem;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  margin: 60px 0 20px;
 }
 
 .archive-year:first-of-type { margin-top: 1rem; }
@@ -471,71 +472,54 @@ ul.task-list { list-style: none; padding-left: 0; }
 /* ── Responsive ──────────────────────────── */
 
 @media screen and (max-width: 1060px) {
-  .margin {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding-left: 0;
-    font-style: italic;
+  .margin,
+  .margin.right,
+  .margin.left {
+    position: relative;
+    display: block;
+    top: auto; left: auto; right: auto; bottom: auto;
   }
-
-  .entry-figure figcaption {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    padding: 0.3rem 0 0;
-  }
+  .margin.right { float: right; }
+  .margin.left { text-align: left; float: left; }
+  .wide, .wide.left, .wide.right { width: 100%; margin: 0; }
+  .container { padding-right: 0; }
 }
 
 @media screen and (max-width: 900px) {
-  body {
-    padding: 2em;
-  }
-
   .container {
+    margin: 1em 0 2em;
+    padding-top: 1.5em;
+    border-top: 1px solid rgba(0,0,0,0.1);
     min-width: auto;
   }
-
-  .site-header {
-    margin-bottom: 2em;
-  }
-
-  .post-nav {
-    grid-template-columns: 1fr;
-  }
-
+  .container h1 { width: 100%; }
+  .index .margin { display: block; width: 100%; }
+  .nav { float: none; display: block; margin: 0; width: 100%; }
+  .nav a { margin: 0 1em 0 0; color: #111; }
+  .site-header { margin-bottom: 2em; }
+  .post-nav { grid-template-columns: 1fr; }
   .post-nav .next { text-align: left; }
 }
 
 @media screen and (max-width: 600px) {
   body {
-    padding: 1em;
+    padding: 0.4em;
     padding-top: 3.5em;
   }
-
+  .margin { width: 40%; }
+  .margin.right { padding-left: 16px; }
+  .margin.left { padding-right: 16px; }
   .site-link {
     top: 12px;
     right: 12px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     padding: 3px 10px;
   }
-
   .site-header {
     flex-direction: column;
     gap: 0.5rem;
   }
-
-  .nav {
-    gap: 1em;
-  }
-
-  .container h1 {
-    font-size: 1.8rem;
-    line-height: 1.15;
-    margin-bottom: 1rem;
-  }
+  .nav { gap: 1em; }
 }
 
 /* Focus styles */
