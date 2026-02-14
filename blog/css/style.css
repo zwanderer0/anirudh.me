@@ -305,6 +305,30 @@ img {
   height: auto;
 }
 
+.entry-figure {
+  position: relative;
+  margin: 1.4rem 0;
+  padding: 0;
+}
+
+.entry-figure img {
+  width: 100%;
+  height: auto;
+}
+
+.entry-figure figcaption {
+  float: right;
+  clear: right;
+  width: 33%;
+  margin-top: 0;
+  padding-left: 30px;
+  box-sizing: border-box;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: #111;
+}
+
 .caption {
   display: block;
   font-style: italic;
@@ -483,6 +507,12 @@ ul.task-list { list-style-type: none; }
   .margin.left { text-align: left; float: left; }
   .wide, .wide.left, .wide.right { width: 100%; margin: 0; }
   .container { padding-right: 0; }
+  .entry-figure figcaption {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 0.3rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
