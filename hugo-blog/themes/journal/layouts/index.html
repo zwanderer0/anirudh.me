@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="container index">
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ $paginator := .Paginate $posts }}
+  {{ range $paginator.Pages }}
+  <a class="post-item" href="{{ .RelPermalink }}">
+    <div class="post-title">{{ .Title }}</div>
+    <div class="post-date">{{ .Date.Format "January 2, 2006" }}</div>
+  </a>
+  {{ end }}
+
+  {{ if gt $paginator.TotalPages 1 }}
+  <div class="pagination">
+    {{ if $paginator.HasPrev }}
+    <a href="{{ $paginator.Prev.URL }}">&larr; Newer posts</a>
+    {{ end }}
+
+    {{ if $paginator.HasNext }}
+    <a href="{{ $paginator.Next.URL }}">Older posts &rarr;</a>
+    {{ end }}
+
+    <span class="meta">
+      page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+      &nbsp;&middot;&nbsp;
+      <a href="{{ "archives/" | absURL }}">View all posts</a>
+    </span>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,25 @@
+baseURL = "https://anirudh.me/blog/"
+languageCode = "en-us"
+title = "Anirudh Sharma"
+theme = "journal"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  author = "Anirudh Sharma"
+  description = "Thoughts on invention, design, and technology"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[permalinks]
+  [permalinks.page]
+    posts = "/:slug/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false

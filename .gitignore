@@ -1,7 +1,12 @@
-.DS_Store
-
-# Hugo source — drafts contain private content, keep local only
-hugo-blog/
-
 # Local Netlify folder
 .netlify
+
+# Hugo build cache
+hugo-blog/public/
+hugo-blog/resources/
+
+# Unused themes
+hugo-blog/themes/PaperMod/
+
+# OS files
+.DS_Store
