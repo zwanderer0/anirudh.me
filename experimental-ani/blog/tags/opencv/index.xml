@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenCV on Anirudh Sharma</title>
+    <link>http://localhost:8000/blog/tags/opencv/</link>
+    <description>Recent content in OpenCV on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 May 2010 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:8000/blog/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CV dilemma</title>
+      <link>http://localhost:8000/blog/cv-dilemma/</link>
+      <pubDate>Wed, 26 May 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/cv-dilemma/</guid>
+      <description>&lt;p&gt;Looks like there&amp;rsquo;s a problem with OpenCV&amp;rsquo;s distributed parameterization of coordinates used during the camera calibration tasks.  Three distinct sources of information on img distortion formulae apparently give three non-equivalent description of the parameters and equations involved:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;(1)&lt;/strong&gt; In their book &amp;ldquo;Learning OpenCV&amp;rdquo;  write regarding lens distortion:&lt;/p&gt;&#xA;&lt;p&gt;$$x_{\text{corrected}} = x(1 + k_1 r^2 + k_2 r^4 + k_3 r^6) + [2p_1 xy + p_2(r^2 + 2x^2)]$$&lt;/p&gt;&#xA;&lt;p&gt;$$y_{\text{corrected}} = y(1 + k_1 r^2 + k_2 r^4 + k_3 r^6) + [p_1(r^2 + 2y^2) + 2p_2 xy]$$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alternative hack for the Gesture Keyboard</title>
+      <link>http://localhost:8000/blog/alternative-hack-for-the-gesture-keyboard/</link>
+      <pubDate>Mon, 25 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/alternative-hack-for-the-gesture-keyboard/</guid>
+      <description>&lt;p&gt;Long time for this post too! eh. mugging for the exams is quite a shakle to breakaway from :-P The reason I am writing this post amid the tests is being overwhelmed by Rahul Motiyar&amp;rsquo;s new multitouch monitor mount hack. The thoughts from the B&amp;rsquo;lore trip and the above work culminated :-P&lt;/p&gt;&#xA;&lt;p&gt;I happened to visit and take a look around HPL India B&amp;rsquo;lore. The way gesture keyboard solves the problem of indic languges was sure eye catcher. Its a tablet with a Stylus input interface using which a computer newbie can type in Hindi almost with zero learning curve.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

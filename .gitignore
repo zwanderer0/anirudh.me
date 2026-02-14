@@ -1,1 +1,4 @@
 .DS_Store
+
+# Hugo source — drafts contain private content, keep local only
+hugo-blog/

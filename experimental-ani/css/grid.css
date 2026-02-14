@@ -89,7 +89,7 @@
   font-size: clamp(0.75rem, 1.5vw, 1.125rem);
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--white);
+  color: #fff;
   letter-spacing: 0.02em;
   transition: transform var(--duration) var(--ease);
 }

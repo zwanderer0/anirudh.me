@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AS3 for Multitouch on Anirudh Sharma</title>
+    <link>http://localhost:8000/blog/tags/as3-for-multitouch/</link>
+    <description>Recent content in AS3 for Multitouch on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 May 2010 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:8000/blog/tags/as3-for-multitouch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Multitouch Notebook, Mozilla Labs, GSoC and fun</title>
+      <link>http://localhost:8000/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</link>
+      <pubDate>Tue, 25 May 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/new-multitouch-notebook-mozilla-labs-gsoc-and-fun/</guid>
+      <description>&lt;p&gt;Its week two weeks since I finally bought myself a &lt;strong&gt;Acer Aspire 5738 pzg&lt;/strong&gt; multitouch (actually dual-touch) notebook.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;The Acer Aspire 5738PZG dual-touch notebook&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Its a welcome change, since for the past two years our multitouch experiments required a lot of background effort due to our utter dependence on our custom built MT screen. The capacitive screen is good, its responsive and precise. They&amp;rsquo;ve a Python apploader called Acer Touch Portal which runs a couple of cool Microsoft Surface apps (Globe, Collage, Blackboard etc.).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Proposed an idea for GSoC 2009</title>
+      <link>http://localhost:8000/blog/proposed-an-idea-for-gsoc-2009/</link>
+      <pubDate>Thu, 02 Apr 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/proposed-an-idea-for-gsoc-2009/</guid>
+      <description>&lt;p&gt;Proposed an Idea for Google Summer of Code to port Google SketchUp to Multitouch. Users would be able to do 3D modeling with simple and intuitive gestures. An Extension Module that would allow Google SketchUp to receive TUIO and hence allow manipulations via Multitouch gestures.&lt;/p&gt;&#xA;&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;&#xA;&lt;p&gt;Lack of a CAD software that could be used via Multitouch has been the motivating factor behind this proposal. Eversince I used the Sketches application on iPhone &amp;ndash; which enables 2D drawing using Multitouch, I felt like doing something similar on my FTIR setup. Adding multitouch ability to an easy to use CAD/modeling software - Google SketchUp would not only make the design process intuitive but also add a lot to the usability factor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Apps and some bite of Python</title>
+      <link>http://localhost:8000/blog/new-apps-and-some-bite-of-python/</link>
+      <pubDate>Fri, 27 Feb 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/new-apps-and-some-bite-of-python/</guid>
+      <description>&lt;p&gt;Well now I am learning actionscript from Scratch and planning to do some Multitouch apps using it. We happen to be fans of the &lt;a href=&#34;http://wiki.nuigroup.com/Rotatablescalable&#34;&gt;RotatableScalable Class&lt;/a&gt; by NUIGroup, which has some prewritten magic that we can directly extend in our code.&lt;/p&gt;&#xA;&lt;p&gt;Another thing that deserves a mention is &lt;a href=&#34;http://code.google.com/p/pymt/&#34;&gt;pyMT&lt;/a&gt;, which Sharath introduced us to, who happens to be a bigtime fan of the Python language and contributor this project. He&amp;rsquo;s doing his final year project with his team back there in Mangalore , and hey, pyMT&amp;rsquo;s Python apps look great !&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

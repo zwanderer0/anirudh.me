@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accelerometer on Anirudh Sharma</title>
+    <link>http://localhost:8000/blog/tags/accelerometer/</link>
+    <description>Recent content in Accelerometer on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jun 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:8000/blog/tags/accelerometer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysing an autorickshaw ride in Bangalore</title>
+      <link>http://localhost:8000/blog/analysing-an-autorickshaw-ride-in-bangalore/</link>
+      <pubDate>Tue, 21 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/analysing-an-autorickshaw-ride-in-bangalore/</guid>
+      <description>&lt;p&gt;The bumpy ride on the Bangalore streets triggered a thought the other day, why not log the data and analyse it later(whackily purposeless initially).&lt;/p&gt;&#xA;&lt;p&gt;The desire to log is esp. a fallout of my recent stint with user studies dealing with data cleaning/analysis and deriving statistical results from it: formally two-way ANOVA tests, T-tests etc. and who doesn&amp;rsquo;t love clean graphs telling a story :-)&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;A Bangalore autorickshaw, the test vehicle for this experiment&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

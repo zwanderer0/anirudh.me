@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FoSS GN09 on Anirudh Sharma</title>
+    <link>http://localhost:8000/blog/tags/foss-gn09/</link>
+    <description>Recent content in FoSS GN09 on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Oct 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:8000/blog/tags/foss-gn09/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FOSS GN09 Coming Up Soon</title>
+      <link>http://localhost:8000/blog/foss-gn09-coming-up-soon/</link>
+      <pubDate>Wed, 21 Oct 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/foss-gn09-coming-up-soon/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ve planned a FOSS event in college from 28-31st October. We&amp;rsquo;ll be talking to people about enhancing their contribution to the commnity, code, and the spirit behind.&lt;/p&gt;&#xA;&lt;p&gt;Probably we&amp;rsquo;ll be having &lt;a href=&#34;http://www.niyam.com/&#34;&gt;Niyam Bhushan&lt;/a&gt;. So we&amp;rsquo;ll be talking and doing an unconference on Human Computer Interaction, Multitouch, programming gestures, why a programmer should consider design while writing code etc. We&amp;rsquo;ve also planned to do a hackfest on how to build a DIY multitouch table with junk hardware etc. and writing some gestures code in AS3&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

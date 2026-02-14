@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Some changes to the strategy — Anirudh Sharma's Blog</title>
+  <meta name="description" content="Thoughts on invention, design, and technology">
+  <meta property="og:site_name" content="Anirudh Sharma">
+  <meta property="og:title" content="Some changes to the strategy">
+  
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="http://localhost:8000/blog/some-changes-to-the-strategy/">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:8000/blog/index.xml">
+  <link rel="stylesheet" href="http://localhost:8000/blog/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});">
+  </script>
+</head>
+
+  <body>
+    <a href="../" class="site-link">&larr; Main Site</a>
+
+<header class="site-header">
+  <a href="http://localhost:8000/blog/" class="logo">Anirudh Sharma's Blog</a>
+  <nav class="nav">
+    <a href="http://localhost:8000/blog/archives/">Archives</a>
+    
+  </nav>
+</header>
+
+    
+<div class="container">
+  <h1>Some changes to the strategy</h1>
+
+  <div class="post-meta">
+    June 24, 2009
+    
+    &middot; <a href="http://localhost:8000/tags/gsoc/">gsoc</a>
+    
+    &middot; <a href="http://localhost:8000/tags/c&#43;&#43;/">C&#43;&#43;</a>
+    
+    &middot; <a href="http://localhost:8000/tags/google-sketchup/">Google Sketchup</a>
+    
+    &middot; <a href="http://localhost:8000/tags/ruby/">ruby</a>
+    
+  </div>
+
+  <div class="entry">
+    <p>Finally I am dumping the SkSockets approach with our plugin. Though it showed some initial success the if the SKSocket was buffering and finally flushed the data all at once. Which won&rsquo;t work for this as we need constant refresh of data.</p>
+<p>1 - started osc.exe - set it for small screen size and low framerate.
+2 - used toxy_win UDP to TCP proxy server (gave a link)
+3 - Start the tuioconn.rb code in SU.</p>
+<p>This made SketchUp&rsquo;s screen turn white for long, and random messages (which i didn&rsquo;t log sadly), but i couldnt get it done twice again. Maybe it is the SU Socket is waiting on something like 2 newlines as a signal to flush, but with osc you never get 2 in a row because its a stream of messages. The one time it did work, it must have hit the Socket limit set in SU and then flushed everything it had been buffering.</p>
+<p>So for this week I am dumping this approach finally, and keeping the writing TUIO to text file in the background.</p>
+<p>Moving on with the next big thing is the DLL integration trial. We&rsquo;ve got a tried and tested C++ client for TUIO, and TBD has a couple of examples on how to writing a DLL for SketchUp. The DLL route feels solid &ndash; at least we won&rsquo;t be fighting SketchUp&rsquo;s socket implementation anymore. Let&rsquo;s wait and watch till the next blogpost. :)</p>
+
+  </div>
+
+  <nav class="post-nav">
+    
+    <a href="/blog/updations/">
+      <div class="post-nav__label">&larr; Previous</div>
+      <div class="post-nav__title">Updations</div>
+    </a>
+    
+
+    
+    <a href="/blog/lets-begin-with-what-all-i/" class="next">
+      <div class="post-nav__label">Next &rarr;</div>
+      <div class="post-nav__title">Let&#39;s begin with what all I...</div>
+    </a>
+    
+  </nav>
+</div>
+
+    <footer style="text-align:center; padding:3rem 1rem 4rem; font-family:'ET Book', Georgia, serif; font-style:italic; font-size:1rem; color:Gray;">
+  &copy; 2026 Anirudh Sharma
+</footer>
+
+  </body>
+</html>

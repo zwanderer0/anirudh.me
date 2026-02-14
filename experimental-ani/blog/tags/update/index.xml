@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Update on Anirudh Sharma</title>
+    <link>http://localhost:8000/blog/tags/update/</link>
+    <description>Recent content in Update on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 May 2009 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:8000/blog/tags/update/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Report 1</title>
+      <link>http://localhost:8000/blog/report-1/</link>
+      <pubDate>Sat, 30 May 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/report-1/</guid>
+      <description>&lt;p&gt;For the past 4 days I was working with my GSoC project and so far I&amp;rsquo;ve been able to do the following except my to successfully let Google SketchUp talk to TUIO.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Setup the iconset, the UI - that&amp;rsquo;d enable the enabling and disabling of the extension from SketchUp&amp;rsquo;s toolbar.&lt;/li&gt;&#xA;&lt;li&gt;Two operation modes for the plugin SketchUp, B1-Control Navigation B2-Enable Drawing/Sketching&lt;/li&gt;&#xA;&lt;li&gt;Trying with TUIO data into SketchUp.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The TUIO part is the tricky bit &amp;ndash; just wish that the Google SketchUp&amp;rsquo;s API was a little more developer friendly.. but that&amp;rsquo;s what makes it fun to hack around. Slowly getting somewhere :-)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Precoding updates</title>
+      <link>http://localhost:8000/blog/precoding-updates/</link>
+      <pubDate>Sat, 23 May 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/precoding-updates/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Code Repository setup at &lt;a href=&#34;http://code.google.com/p/sketchupmultitouch/&#34;&gt;Google Code&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;entry-figure&#34;&gt;&#xA;  &lt;img src=&#34;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihu0eOvmHbVGGH0G1W3N4jN4oBq-R2oNunCIHk1Zhi6yZJSURXLS4qY00bjsGe1z4OCHpAAgElE9nhAZ3Tjv2g5pXf_GwokbLwKiutqSPuzSjlUecFq6y8HJVBYW-nbEU8mNa7GsR8DXcu/s1600/tuio&amp;#43;ruby.JPG&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Recently I tried out Colin Harris&amp;rsquo;s Ruby &lt;a href=&#34;http://github.com/aberant/tuio-ruby/tree/master&#34;&gt;TUIO client&lt;/a&gt;, it took me a little longer time (more than expected) to figure out if its working since I was using Adobe Air based SimTouch.air and socketserver executable to do my tests - which didnt work with our Ruby Client. Though later it responded perfectly with ReactiVision TUIO Simulator 1.4 . I could print the TUIO messages :-)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Got a new site,</title>
+      <link>http://localhost:8000/blog/got-a-new-site/</link>
+      <pubDate>Thu, 29 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/got-a-new-site/</guid>
+      <description>&lt;p&gt;Our new website is now hosted at &lt;a href=&#34;http://www.sparsh-i.com/&#34;&gt;www.sparsh-i.com&lt;/a&gt;. The Vimeo Video on the homepage made it popular and hit the digg frontpage :) ! its a great feeling ! The video received more than 30 comments in 24 hours of launching &lt;a href=&#34;http://vimeo.com/2953423&#34;&gt;http://vimeo.com/2953423&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

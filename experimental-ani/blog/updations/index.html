@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Updations — Anirudh Sharma's Blog</title>
+  <meta name="description" content="Thoughts on invention, design, and technology">
+  <meta property="og:site_name" content="Anirudh Sharma">
+  <meta property="og:title" content="Updations">
+  
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="http://localhost:8000/blog/updations/">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:8000/blog/index.xml">
+  <link rel="stylesheet" href="http://localhost:8000/blog/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});">
+  </script>
+</head>
+
+  <body>
+    <a href="../" class="site-link">&larr; Main Site</a>
+
+<header class="site-header">
+  <a href="http://localhost:8000/blog/" class="logo">Anirudh Sharma's Blog</a>
+  <nav class="nav">
+    <a href="http://localhost:8000/blog/archives/">Archives</a>
+    
+  </nav>
+</header>
+
+    
+<div class="container">
+  <h1>Updations</h1>
+
+  <div class="post-meta">
+    June 21, 2009
+    
+  </div>
+
+  <div class="entry">
+    <p>Got back from home after 5 days, it was probably a long gap, resumed the GSoC work now.</p>
+<ol>
+<li>The TUIO client now appends cursor coordinates to a text file, the x_pos and y_pos, example coordinates 0.535937488079071, 0.410416662693024.</li>
+<li>Writing a ruby script SketchUp plugin that reads the TUIO cursor information from the text file.</li>
+</ol>
+<p>The downsides to this after discussing with Jay Morrisson:</p>
+<ol>
+<li>it&rsquo;s subject to slowdown by writing to/reading from disk</li>
+<li>The serialization has to be done by oneself</li>
+</ol>
+<p>After this works I&rsquo;ll consider one more option of trying the dRB ruby gems (Distributed Queue in Ruby) since we can just focus on the sketchup integration.</p>
+<p>Half the GSoC battle is just getting two things to talk to each other &ndash; you try one bridge, it breaks, you try another, repeat. just wish that the Google SketchUp&rsquo;s API was a little more developer friendly.. but we&rsquo;ll get there. :)</p>
+
+  </div>
+
+  <nav class="post-nav">
+    
+    <a href="/blog/dilemma/">
+      <div class="post-nav__label">&larr; Previous</div>
+      <div class="post-nav__title">Dilemma</div>
+    </a>
+    
+
+    
+    <a href="/blog/some-changes-to-the-strategy/" class="next">
+      <div class="post-nav__label">Next &rarr;</div>
+      <div class="post-nav__title">Some changes to the strategy</div>
+    </a>
+    
+  </nav>
+</div>
+
+    <footer style="text-align:center; padding:3rem 1rem 4rem; font-family:'ET Book', Georgia, serif; font-style:italic; font-size:1rem; color:Gray;">
+  &copy; 2026 Anirudh Sharma
+</footer>
+
+  </body>
+</html>

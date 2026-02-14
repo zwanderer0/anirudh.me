@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Touch on Anirudh Sharma</title>
+    <link>http://localhost:8000/blog/tags/touch/</link>
+    <description>Recent content in Touch on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Oct 2008 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:8000/blog/tags/touch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>maiden post</title>
+      <link>http://localhost:8000/blog/maiden-post/</link>
+      <pubDate>Sun, 05 Oct 2008 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/maiden-post/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re here to share our experience, photographs, and videos for the project we&amp;rsquo;ve been pursuing for the last 3 weeks or so. I bid adieu , with this maiden post :)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

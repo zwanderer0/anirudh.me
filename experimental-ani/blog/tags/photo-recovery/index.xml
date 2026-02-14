@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photo Recovery on Anirudh Sharma</title>
+    <link>http://localhost:8000/blog/tags/photo-recovery/</link>
+    <description>Recent content in Photo Recovery on Anirudh Sharma</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Feb 2010 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:8000/blog/tags/photo-recovery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The iPhone Photograph Recovery experience</title>
+      <link>http://localhost:8000/blog/the-iphone-photograph-recovery-experience/</link>
+      <pubDate>Sun, 14 Feb 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:8000/blog/the-iphone-photograph-recovery-experience/</guid>
+      <description>&lt;p&gt;Around a week back while playing around with a friend, i took some photographs from my iPhone that were one of the most inseparable ones to me. Due to a stupid backup method, I happened to accidently delete and lose them in a jiffy.&lt;/p&gt;&#xA;&lt;p&gt;The odds to recovering them were low, and i took some precautions like minimally using my iPhone so that disk Read+Write sessions do not overwrite the data permanently.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

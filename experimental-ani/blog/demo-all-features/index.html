@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Demo: All Features — Anirudh Sharma's Blog</title>
+  <meta name="description" content="Thoughts on invention, design, and technology">
+  <meta property="og:site_name" content="Anirudh Sharma">
+  <meta property="og:title" content="Demo: All Features">
+  
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="http://localhost:8000/blog/demo-all-features/">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:8000/blog/index.xml">
+  <link rel="stylesheet" href="http://localhost:8000/blog/css/style.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true},{left: '$', right: '$', display: false}]});">
+  </script>
+</head>
+
+  <body>
+    <header class="site-header">
+  <a href="http://localhost:8000/" class="logo">Anirudh Sharma's Blog</a>
+  <nav class="nav">
+    <a href="http://localhost:8000/blog/archives/">Archives</a>
+    
+    <a href="https://anirudh.me" class="back-link">Main Site</a>
+  </nav>
+</header>
+
+    
+<div class="container">
+  <h1>Demo: All Features</h1>
+
+  <div class="post-meta">
+    February 12, 2026
+    
+    &middot; <a href="http://localhost:8000/tags/demo/">demo</a>
+    
+  </div>
+
+  <div class="entry">
+    <p>This post demonstrates every feature available in the Journal theme — margin notes, tables, math formulas, video embeds, code blocks, and images.</p>
+<h2 id="margin-notes">Margin Notes</h2>
+<p>You can place small annotations in the right margin, like a whispered aside to the reader.</p>
+<span class="margin right">This is a margin note — small text that sits to the right of the main content, Tufte-style.</span>
+
+<p>The margin notes appear alongside the paragraph they&rsquo;re placed next to. They&rsquo;re perfect for citations, asides, or additional context without interrupting the flow of reading.</p>
+<span class="margin right">Margin notes collapse inline on mobile screens.</span>
+
+<p>Here is another paragraph with its own margin note. The notes stack naturally as you scroll down the page.</p>
+<h2 id="tables">Tables</h2>
+<p>Tables render with clean borders matching the theme:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Project</th>
+          <th>Year</th>
+          <th>Category</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Sparsh</td>
+          <td>2008</td>
+          <td>Multitouch</td>
+      </tr>
+      <tr>
+          <td>LeChal</td>
+          <td>2011</td>
+          <td>Haptic Wearable</td>
+      </tr>
+      <tr>
+          <td>Air-Ink</td>
+          <td>2013</td>
+          <td>Pollution → Art</td>
+      </tr>
+      <tr>
+          <td>Glassified</td>
+          <td>2014</td>
+          <td>Smart Glass</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="math-formulas">Math Formulas</h2>
+<p>Inline math works with single dollar signs: the focal length formula is $\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}$.</p>
+<p>Display math uses double dollar signs:</p>
+<p>$$
+U(P) = \frac{e^{ikr}}{ir} \iint_S U(Q) , e^{-ik\frac{r^2}{2R}} , e^{ikr\cos(\theta)} , dS
+$$</p>
+<p>Maxwell&rsquo;s equations:</p>
+<p>$$
+\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
+$$</p>
+<h2 id="video-embeds">Video Embeds</h2>
+<p>Embed a YouTube video by its ID:</p>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+</div>
+
+<h2 id="code-blocks">Code Blocks</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">double</span> <span class="nf">calculateFocalLength</span><span class="p">(</span><span class="kt">double</span> <span class="n">d_o</span><span class="p">,</span> <span class="kt">double</span> <span class="n">d_i</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">f</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">((</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">d_o</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">d_i</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">d_o</span> <span class="o">=</span> <span class="mf">30.0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">d_i</span> <span class="o">=</span> <span class="mf">15.0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">focalLength</span> <span class="o">=</span> <span class="nf">calculateFocalLength</span><span class="p">(</span><span class="n">d_o</span><span class="p">,</span> <span class="n">d_i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;Focal length: %.2f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">focalLength</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">focal_length</span><span class="p">(</span><span class="n">d_o</span><span class="p">,</span> <span class="n">d_i</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">((</span><span class="mi">1</span><span class="o">/</span><span class="n">d_o</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">d_i</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;f = </span><span class="si">{</span><span class="n">focal_length</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="images">Images</h2>
+<p>Images scale to the content width automatically:</p>
+<p><figure class="entry-figure">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Adams_The_Tetons_and_the_Snake_River.jpg" alt="Ansel Adams - Tetons and Snake River" loading="lazy">
+  <figcaption>Ansel Adams - Tetons and Snake River</figcaption>
+</figure>
+</p>
+<span class="margin right">Ansel Adams, <em>The Tetons and the Snake River</em>, 1942. Grand Teton National Park, Wyoming.</span>
+
+<h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>Diu cogita an tibi in amicitiam aliquis recipiendus sit. The best inventions come from observation, not inspiration.</p>
+</blockquote>
+<hr>
+<p>That&rsquo;s everything. Margin notes, tables, math, video, code, images, and blockquotes — all working.</p>
+
+  </div>
+
+  <nav class="post-nav">
+    
+    <a href="/blog/hard-hard-user-interfaces/">
+      <div class="post-nav__label">&larr; Previous</div>
+      <div class="post-nav__title">Hard hard user interfaces.</div>
+    </a>
+    
+
+    
+    <a href="/blog/testo/" class="next">
+      <div class="post-nav__label">Next &rarr;</div>
+      <div class="post-nav__title">Testo</div>
+    </a>
+    
+  </nav>
+</div>
+
+    <footer style="text-align:center; padding:3rem 1rem 4rem; font-family:'ET Book', Georgia, serif; font-style:italic; font-size:1rem; color:Gray;">
+  &copy; 2026 Anirudh Sharma
+</footer>
+
+  </body>
+</html>
