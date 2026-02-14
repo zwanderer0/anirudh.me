@@ -103,7 +103,7 @@
   font-family: var(--font-mono);
   font-size: 0.5625rem;
   letter-spacing: 0.04em;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.85);
   opacity: 0;
   transform: translateY(4px);
   transition: opacity var(--duration) var(--ease), transform var(--duration) var(--ease);
