@@ -2,3 +2,6 @@
 
 # Hugo source — drafts contain private content, keep local only
 hugo-blog/
+
+# Local Netlify folder
+.netlify

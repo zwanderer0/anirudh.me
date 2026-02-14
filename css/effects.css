@@ -1,0 +1,213 @@
+/* ═══════════════════════════════════════════════════
+   EFFECTS — atmosphere, entrance, scroll reveal
+   Terminal-meets-editorial: precise, measured, alive
+   ═══════════════════════════════════════════════════ */
+
+/* ── Keyframes ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleReveal {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes lineGrow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* ── Nav entrance cascade ── */
+.nav__item,
+.nav__category {
+  animation: fadeUp 0.35s var(--ease) both;
+  animation-delay: calc(var(--i, 0) * 22ms + 60ms);
+}
+
+
+/* ── Page content entrance ── */
+.project__header {
+  animation: fadeUp 0.55s var(--ease) both;
+  animation-delay: 0.18s;
+}
+
+.project__hero {
+  animation: scaleReveal 0.65s var(--ease) both;
+  animation-delay: 0.3s;
+}
+
+.home__content {
+  animation: fadeUp 0.55s var(--ease) both;
+  animation-delay: 0.12s;
+}
+
+/* Work grid sections stagger */
+.work-page .grid-section:nth-child(1) { animation: fadeUp 0.5s var(--ease) both; animation-delay: 0.15s; }
+.work-page .grid-section:nth-child(2) { animation: fadeUp 0.5s var(--ease) both; animation-delay: 0.28s; }
+.work-page .grid-section:nth-child(3) { animation: fadeUp 0.5s var(--ease) both; animation-delay: 0.4s; }
+
+/* Grid cards stagger entrance */
+.grid__card {
+  animation: fadeUp 0.4s var(--ease) both;
+  animation-delay: calc(var(--card-i, 0) * 50ms + 250ms);
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children when parent reveals */
+.reveal--visible .reveal__child {
+  animation: fadeUp 0.4s var(--ease) both;
+}
+
+/* ── Section title underline ── */
+.grid-section__title {
+  position: relative;
+  padding-bottom: var(--space-sm);
+}
+
+.grid-section__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 1px;
+  background: var(--text-dim);
+  animation: lineGrow 0.5s var(--ease) both;
+  animation-delay: 0.5s;
+  transform-origin: left;
+}
+
+/* ── Enhanced hovers ── */
+
+/* Press links: magenta underline sweep */
+.project__press a {
+  position: relative;
+}
+
+.project__press a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s var(--ease);
+}
+
+.project__press a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.project__press a:hover {
+  opacity: 1;
+}
+
+/* Image figures: subtle lift */
+.project__media figure {
+  transition: transform 0.3s var(--ease);
+}
+
+.project__media figure:hover {
+  transform: translateY(-2px);
+}
+
+/* Homepage photo: remove desaturation on hover */
+.home__photo img {
+  transition: filter 0.5s var(--ease);
+}
+
+.home__photo:hover img {
+  filter: grayscale(0%) contrast(1.02);
+}
+
+/* Homepage right column entrance */
+.home__right {
+  animation: fadeUp 0.55s var(--ease) both;
+  animation-delay: 0.2s;
+}
+
+/* ── Results panel glow ── */
+.project__results {
+  border-left-color: var(--accent);
+  box-shadow: -4px 0 12px rgba(122, 38, 128, 0.08);
+}
+
+/* ── Citation border shimmer ── */
+.project__citation {
+  border-color: rgba(139, 94, 20, 0.2);
+  box-shadow: 0 0 0 1px rgba(139, 94, 20, 0.06);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.1) var(--bg);
+}
+
+/* ── Nav link hover glow refinement ── */
+.nav__link:hover {
+  text-shadow: none;
+  opacity: 1;
+}
+
+/* ── Prev/Next nav hover ── */
+.project__nav a {
+  position: relative;
+}
+
+.project__nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s var(--ease);
+}
+
+.project__nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
