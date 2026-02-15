@@ -1,16 +1,25 @@
 # anirudh.me — Project Documentation
 
+## CRITICAL: Always sync before any work
+**Before making ANY changes, run:**
+```bash
+git pull --no-rebase origin master
+```
+The live site may have been updated via the CMS or from another computer. Failing to pull first WILL cause merge conflicts or lost work. This is mandatory, not optional.
+
 ## Architecture
-- **Local source**: `experimental-ani/` directory
+- **Local source**: Root directory (`/`) — files at repo root are the live site
 - **GitHub repo**: `zwanderer0/anirudh.me` (master branch)
 - **Live site**: https://anirudh.me (GitHub Pages + GoDaddy DNS)
 - **Static HTML/CSS/JS** — no build step, no framework
 
 ## How to make edits
-1. Edit files in `experimental-ani/`
-2. Stage and commit: `git add <files> && git commit -m "Your message"`
-3. Push: `git push origin master`
-4. GitHub Pages auto-deploys — site updates in ~1 minute
+1. **Pull first:** `git pull --no-rebase origin master`
+2. Edit files at repo root (HTML/CSS/JS) or in `hugo-blog/` (blog posts)
+3. If blog changed, rebuild: `cd hugo-blog && hugo --baseURL="https://anirudh.me/blog/" --destination="../blog/" --cleanDestinationDir`
+4. Stage and commit: `git add <files> && git commit -m "Your message"`
+5. Push: `git push origin master`
+6. GitHub Pages auto-deploys — site updates in ~1 minute
 
 ## MIT Redirects (all redirect to anirudh.me)
 | URL | Location | File |
