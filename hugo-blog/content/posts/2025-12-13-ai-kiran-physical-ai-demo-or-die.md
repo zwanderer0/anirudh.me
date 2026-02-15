@@ -2,9 +2,8 @@
 title: "Demo or Die: Physical AI @ SF Consulate General"
 date: 2026-01-10
 draft: false
-slug: "ai-kiran-physical-ai-demo-or-die"
+slug: ai-kiran-physical-ai-demo-or-die
 ---
-
 The morning of AI Kiran, Lesley Ray was still fixing her BrainHome prototype. Cables, sensor arrays, a laptop that wouldn't talk to the controller board. I watched her troubleshoot with the same calm panic I recognized from my own past. In 2013, I was an [INK](https://www.inktalks.com/) Fellow in Kochi. The night before I was supposed to present on the main stage, I was in my hotel room (jetlagged after a flight from Boston) with my carbon pollution ink prototype in pieces, trying to get the filtration layer to hold. That's Physical Systems. There are no clean deploys. It's machines and systems and soldering irons and things that refuse to boot five minutes before you go on. That's what makes it real. I moved to Silicon Valley 3 years ago where 90% of conversations around me are pure software (nothing wrong with it), but I relate more strongly to problems I see and things I can hold. Multimodality.
 
 [Raji Kannan](https://bluerobins.com/) pulled me into organizing this. She's a friend from MIT Media Lab days, and when Raji calls, you say yes.
@@ -71,4 +70,4 @@ I missed this one. The panel explored how local stories, lived experiences, and 
 
 ## Why this matters
 
-Most of what we call AI today lives inside screens. But the breakthroughs that changed my own life were physical. Those weren't software updates. They were things you could hold.
+Most of what we call AI today lives inside screens. But the breakthroughs that changed my own life were physical. They were things you could hold.
