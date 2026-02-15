@@ -5,8 +5,8 @@
   <title>{{ if .IsHome }}Anirudh Sharma's Blog{{ else }}{{ .Title }} — Anirudh Sharma's Blog{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  <meta property="og:title" content="{{ .Title }}">
-  {{ with .Params.summary }}<meta property="og:description" content="{{ . }}">{{ end }}
+  <meta property="og:title" content="{{ if .IsHome }}Anirudh Sharma's Blog — Thoughts on invention, design, and technology{{ else }}{{ .Title }} — Anirudh Sharma{{ end }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   {{ if .IsPage }}<meta property="og:type" content="article">{{ else }}<meta property="og:type" content="website">{{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "index.xml" | absURL }}">

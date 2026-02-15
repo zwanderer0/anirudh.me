@@ -1,5 +1,6 @@
 {{ define "main" }}
 <div class="container index">
+  <h1 style="display:none;">Anirudh Sharma's Blog</h1>
   {{ $posts := where .Site.RegularPages "Section" "posts" }}
   {{ $paginator := .Paginate $posts }}
   {{ range $paginator.Pages }}
