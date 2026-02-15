@@ -17,6 +17,10 @@ theme = "journal"
   [permalinks.page]
     posts = "/:slug/"
 
+[sitemap]
+  changefreq = ""
+  priority = -1
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
