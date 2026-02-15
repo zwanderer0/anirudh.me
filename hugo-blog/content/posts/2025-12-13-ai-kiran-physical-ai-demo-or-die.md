@@ -22,7 +22,7 @@ The MIT Media Lab coined "demo or die" as an alternative to academia's "publish 
 
 ### Tejas Rode and Petika
 
-The evening opened with live music. Tejas plays the Petika, a digital microtonal harmonium he built to preserve the Agra Gharana tradition of Indian classical music. A lineage going back centuries. The instrument itself is new, but the music it carries is ancient.
+The evening opened with live music. Tejas plays the Petika, a digital microtonal harmonium he built to preserve the practices of Agra Gharana tradition of Indian classical music, a lineage going back centuries. The instrument itself is new, but the music it enables is ancient.
 
 ![Tejas Rode performing with the Petika, accompanied by tabla and vocals, at the Consulate General of India](/blog/images/ai-kiran/tejas-performance.jpg)
 
