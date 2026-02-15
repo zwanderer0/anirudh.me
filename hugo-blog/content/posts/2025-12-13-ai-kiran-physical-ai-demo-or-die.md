@@ -65,7 +65,7 @@ The in-between moments were my favorite part. People holding chai and plates of 
 
 ## The panel
 
-I missed this one. Supriya Gujral, [Deepak Ramola](https://www.deepakramola.com/), Arvind Sanjeev, and Dinoop Dayanand sat in the Consulate's library for a conversation about where design and AI goes from here. Deepak is a good friend. He [now teaches at Stanford](https://profiles.stanford.edu/deepak-ramola), and his work sits at the intersection of subliminal art and design. This panel was apt.
+I missed this one. The panel explored how local stories, lived experiences, and cultural knowledge can shape multilingual, affordable, and human-centered design for underrepresented communities across India and the U.S. Supriya Gujral, [Deepak Ramola](https://www.deepakramola.com/), Arvind Sanjeev, and [Dinoop Dayanand](https://dinoopdayanand.com/) sat in the Consulate's library for it. Deepak is a good friend, a wisdom historian and story collector who [now teaches at Stanford](https://profiles.stanford.edu/deepak-ramola). Arvind is an interaction artist. Dinoop and I used to work together at HP Labs.
 
 ![Supriya Gujral, Deepak Ramola, and Arvind Sanjeev during the AI Kiran panel in the Consulate library](/blog/images/ai-kiran/panel-closeup.jpg)
 
