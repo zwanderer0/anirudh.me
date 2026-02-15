@@ -104,11 +104,31 @@
         });
       });
     } else {
-      // We have a token — inject auth before CMS loads
-      localStorage.setItem('decap-cms-user', JSON.stringify({
-        token: stored,
-        backendName: 'github'
-      }));
+      // We have a token — validate it before loading CMS
+      fetch('https://api.github.com/user', {
+        headers: { 'Authorization': 'token ' + stored }
+      }).then(function(r) {
+        if (!r.ok) throw new Error('Token expired');
+        return r.json();
+      }).then(function(user) {
+        localStorage.setItem('decap-cms-user', JSON.stringify({
+          token: stored,
+          backendName: 'github'
+        }));
+        loadCMS();
+      }).catch(function() {
+        // Token is bad — clear it and reload to show login
+        localStorage.removeItem('cms-github-token');
+        localStorage.removeItem('decap-cms-user');
+        location.reload();
+      });
+    }
+
+    function loadCMS() {
+      // Add logout button
+      var logoutBtn = document.createElement('div');
+      logoutBtn.innerHTML = '<button onclick="localStorage.removeItem(\'cms-github-token\');localStorage.removeItem(\'decap-cms-user\');location.reload();" style="position:fixed;bottom:12px;right:12px;z-index:9999;font-size:0.8rem;padding:5px 12px;border:1px solid #ccc;background:#fff;cursor:pointer;border-radius:3px;">Logout</button>';
+      document.body.appendChild(logoutBtn);
 
       // Load Decap CMS
       var script = document.createElement('script');
@@ -230,5 +250,6 @@
       document.head.appendChild(script);
     }
   </script>
+
 </body>
 </html>
