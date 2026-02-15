@@ -7,6 +7,10 @@ on:
       - 'hugo-blog/hugo.toml'
       - 'hugo-blog/themes/**'
 
+concurrency:
+  group: blog-rebuild
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,6 +38,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Rebuild blog from CMS edit"
+            git commit -m "Rebuild blog from CMS edit [skip ci]"
             git push
           fi
