@@ -1,5 +1,5 @@
 ---
-title: "AI Kiran: A Gathering of Physical AI"
+title: "Demo or Die: Physical AI @ AI Kiran"
 date: 2026-01-10
 draft: false
 slug: "ai-kiran-physical-ai-demo-or-die"
